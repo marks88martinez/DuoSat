@@ -44,9 +44,9 @@
 
 
             <div class="form-group">
-                <label for="exampleInputEmail1">Subcategorias</label>
+                <label for="exampleInputEmail1">Categorias</label>
 
-                {!! Form::select('codigo_sub_cat',$subcategoria,null,['class'=>'form-control','id'=>'exampleInputEmail1']) !!}
+                {!! Form::select('codigo_categoria',$cat,null,['class'=>'form-control','id'=>'exampleInputEmail1']) !!}
             </div>
 
 
@@ -130,7 +130,8 @@
                 @foreach($producto as $sub_cats)
                 <tr>
                     <td>{{$sub_cats->codigo_producto}}</td>
-                    <td>{{$sub_cats->subcategoria->nombre}}</td>
+                    <td>{{$sub_cats->nombre_producto}}</td>
+
 
                     <td>{{$sub_cats->nombre_producto}}</td>
                     <td>{{$sub_cats->descripcion}}</td>
@@ -153,7 +154,12 @@
                     </td>
 
                     <td><img class="imagen_icon" src="{{$sub_cats->imagenes  !=null ? $sub_cats->imagenes->url_imagenes: ''}}" alt=""></td>
-                    <td>sdsds</td>
+                    <td>
+                        {!!Form::open(['route'=>['producto.destroy',$sub_cats->codigo_producto], 'method'=>'DELETE'])!!}
+
+                        {!! Form::submit('Eliminar ',['class'=>'fa fa-trash-o btn btn-danger btn-xs']) !!}
+                        {!!Form::close()!!}
+                    </td>
                 </tr>
                 @endforeach
 

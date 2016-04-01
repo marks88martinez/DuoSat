@@ -3,36 +3,31 @@
 
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h3 class="box-title">Nueva Atributos</h3>
+            <h3 class="box-title">Nueva Banner</h3>
         </div><!-- /.box-header -->
         <!-- form start -->
         {{--<form role="form">--}}
-        {!!Form::open(['route'=>'atributo.store', 'method'=>'POST'])!!}
-
-
-
+        {!!Form::open(['route'=>'imagenes_banner.store', 'method'=>'POST','files' => true])!!}
         <div class="box-body">
-
-
-
-
-
-
             <div class="form-group">
+                <label for="exampleInputEmail1">Nombre Banner</label>
+                {!!Form::text('nombre_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Nombre del Atributo</label>
-                {!!Form::text('nombre_atributo',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}
 
             </div>
-            {{--<div class="form-group">--}}
-                {{--<label for="exampleInputEmail1">Descripcion</label>--}}
+            <div class="form-group">
+                {{--<label for="exampleInputEmail1">Link</label>--}}
 
 
-                {{--{!!Form::textarea('descripcion',null,['class'=>'form-control','id'=>'exampleInputEmail1','rows'=>'3', 'placeholder'=>'Ingrese su nombre'])  !!}--}}
-            {{--</div>--}}
+                {{--{!!Form::text('url_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}--}}
+            </div>
 
+            <div class="form-group">
+                <label for="exampleInputEmail1">Icono</label>
 
+            {!! Form::file('url_banner') !!}
+
+            </div>
 
 
 
@@ -51,29 +46,40 @@
 
 
     {{--******************************************--}}
-
+    <style>
+       .imagen_icon{
+            width: 100px;
+            height: auto;
+        }
+    </style>
 
 
 
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Atributos</h3>
+            <h3 class="box-title">Usuarios</h3>
         </div><!-- /.box-header -->
         <div class="box-body">
             <table class="table table-bordered">
                 <tbody><tr>
                     <th style="width: 10px">#</th>
                     <th>Nombre</th>
-
+                    <th>Descripcion</th>
 
                     <th style="width: 40px">Label</th>
                 </tr>
-                @foreach($attr as $sub_cats)
+
+
+                @foreach($banner as $cat)
                 <tr>
-                    <td>{{$sub_cats->codigo_atributo}}</td>
-                    <td>{{$sub_cats->nombre_atributo}}</td>
+                    <td>{{$cat->codigo_imagen}}</td>
+                    <td>{{$cat->nombre_banner}}</td>
+
+                    <td><img class="imagen_icon" src="{{$cat->url_banner}}" alt=""></td>
+
+
                     <td>
-                        {!!Form::open(['route'=>['atributo.destroy',$sub_cats->codigo_atributo], 'method'=>'DELETE'])!!}
+                        {!!Form::open(['route'=>['imagenes_banner.destroy',$cat->codigo_imagen], 'method'=>'DELETE'])!!}
 
                         {!! Form::submit('Eliminar ',['class'=>'fa fa-trash-o btn btn-danger btn-xs']) !!}
                         {!!Form::close()!!}

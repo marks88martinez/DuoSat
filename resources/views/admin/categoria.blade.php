@@ -76,7 +76,12 @@
                     <td><img class="imagen_icon" src="{{$cat->url_icon}}" alt=""></td>
 
 
-                    <td><span class="badge bg-red">55%</span></td>
+                    <td>
+                        {!!Form::open(['route'=>['categoria.destroy',$cat->codigo_categoria], 'method'=>'DELETE'])!!}
+
+                        {!! Form::submit('Eliminar ',['class'=>'fa fa-trash-o btn btn-danger btn-xs']) !!}
+                        {!!Form::close()!!}
+                    </td>
                 </tr>
                 @endforeach
 

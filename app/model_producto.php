@@ -8,7 +8,7 @@ class model_producto extends Model
 {
     protected $table = 'productos';
     protected $primaryKey = 'codigo_producto';
-    protected $fillable = ['nombre_producto','descripcion','codigo_sub_cat','codigo_atributo','codigo_imagen', 'estado'];
+    protected $fillable = ['nombre_producto','descripcion','codigo_categoria','codigo_atributo','codigo_imagen', 'estado'];
     public $timestamps = false;
 
 
@@ -21,8 +21,8 @@ class model_producto extends Model
         return $this->hasMany('App\model_producto_atributo','codigo_producto', 'codigo_producto');
     }
 
-    public function subcategoria(){
-        return $this->belongsTo('App\model_subcategoria','codigo_sub_cat','codigo_sub_categorias');
+    public function categoria(){
+        return $this->belongsTo('App\model_categoria','codigo_categoria','codigo_categoria');
 
     }
 

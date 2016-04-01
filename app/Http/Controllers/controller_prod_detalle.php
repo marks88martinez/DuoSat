@@ -2,26 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use App\model_atributo;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Redirect;
+use App\model_producto;
 
-class controller_atributo extends Controller
+class controller_prod_detalle extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        $attr =model_atributo::select('codigo_atributo','nombre_atributo','estado')
-            ->where('estado','=',1)
-            ->get();
-       return view('admin.atributo', compact('attr'));
+//        dd($id);
+
+        $producto = model_producto::with('categoria','producto_atributos.prodattr_attr','imagenes')
+
+        ->find($id);
+//        dd($producto);
+
+
+
+
+
+       return view('producto',compact('producto'));
     }
 
     /**
@@ -42,13 +49,7 @@ class controller_atributo extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request);
-        model_atributo::create([
-            'nombre_atributo'=>$request['nombre_atributo'],
-             'estado'=>1
-
-        ]);
-        return Redirect::to('atributo');
+        //
     }
 
     /**
@@ -93,7 +94,6 @@ class controller_atributo extends Controller
      */
     public function destroy($id)
     {
-        model_atributo::where('codigo_atributo','=',$id)->update(array('estado'=>2));
-        return Redirect::to('atributo');
+        //
     }
 }

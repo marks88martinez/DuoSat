@@ -13,4 +13,9 @@ class model_subcategoria extends Model
 
     public  $timestamps = false;
 
+    public function categoria()
+    {
+        return $this->belongsTo('App\model_categoria', 'codigo_categoria', 'codigo_categoria');
+    }
+
 }

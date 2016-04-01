@@ -27,7 +27,10 @@ class controller_categoria extends Controller
 
     public function index()
     {
-      $categoria = model_categoria::all();
+      $categoria = model_categoria::select('codigo_categoria','nombre','descripcion','url_icon','estado')
+          ->where('estado','=',1)
+          ->get();
+
 
 
         return view('admin.categoria', compact('categoria'));
@@ -68,7 +71,9 @@ class controller_categoria extends Controller
         model_categoria::create([
             'nombre'=>$request['nombre'],
             'descripcion'=>$request['descripcion'],
-            'url_icon'=>$imagen_final
+            'url_icon'=>$imagen_final,
+            'estado'=>1
+
         ]);
 //        dd($request );
 
@@ -119,6 +124,10 @@ class controller_categoria extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        model_categoria::where('codigo_categoria','=',$id)->update(array('estado'=>2));
+
+
+       return Redirect::to('/categoria');
     }
 }

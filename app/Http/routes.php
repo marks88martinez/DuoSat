@@ -11,15 +11,31 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+//admin
 
 Route::get('/banner','controller_inicio@banner');
 
 Route::get('usuario','controller_inicio@store');
 
 Route::resource('categoria', 'controller_categoria');
-Route::resource('subcategoria', 'controller_subcategoria');
+//Route::resource('subcategoria', 'controller_subcategoria');
 Route::resource('atributo', 'controller_atributo');
 Route::resource('producto', 'controller_producto');
+Route::resource('imagenes_banner', 'controller_imagenes_banner');
+
+// vistas
+Route::resource('/','controller_vista');
+Route::get('productos/{id}',['as'=>'productos.id','uses'=>'controller_prod_detalle@index']);
+
+//Route::get('producto/{id}', function(){
+//     return 'user'.$id;
+//});
+
+
+
+
+

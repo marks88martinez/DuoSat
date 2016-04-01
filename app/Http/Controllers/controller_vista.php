@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\model_atributo;
+use App\model_categoria;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Redirect;
+use App\model_subcategoria;
+use App\model_imagenes_banner;
 
-class controller_atributo extends Controller
+class controller_vista extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +19,11 @@ class controller_atributo extends Controller
      */
     public function index()
     {
-        $attr =model_atributo::select('codigo_atributo','nombre_atributo','estado')
-            ->where('estado','=',1)
-            ->get();
-       return view('admin.atributo', compact('attr'));
+        $banner = model_imagenes_banner::all();
+
+
+
+        return view('portada',compact('banner'));
     }
 
     /**
@@ -42,13 +44,7 @@ class controller_atributo extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request);
-        model_atributo::create([
-            'nombre_atributo'=>$request['nombre_atributo'],
-             'estado'=>1
-
-        ]);
-        return Redirect::to('atributo');
+        //
     }
 
     /**
@@ -93,7 +89,6 @@ class controller_atributo extends Controller
      */
     public function destroy($id)
     {
-        model_atributo::where('codigo_atributo','=',$id)->update(array('estado'=>2));
-        return Redirect::to('atributo');
+        //
     }
 }

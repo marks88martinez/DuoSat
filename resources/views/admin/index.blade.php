@@ -103,12 +103,12 @@ desired effect
                 {{--<li class="header"> </li>--}}
                 <!-- Optionally, you can add icons to the links -->
                 <li class="active"><a href="{{URL::to('/usuario')}}"><i class="fa fa-link"></i> <span>User</span></a></li>
-                <li><a href="#"><i class="fa fa-link"></i><span>Banners</span></a></li>
+                <li><a href="{{URL::to('imagenes_banner')}}"><i class="fa fa-link"></i><span>Banners</span></a></li>
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>Insercion</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
                         <li><a href="{{URL::to('/categoria')}}">Categoria</a></li>
-                        <li><a href="{{URL::to('/subcategoria')}}">SubCategoria</a></li>
+                        {{--<li><a href="{{URL::to('/subcategoria')}}">SubCategoria</a></li>--}}
                         <li><a href="{{URL::to('/atributo')}}">Atributos</a></li>
                         <li><a href="{{URL::to('/producto')}}">Productos</a></li>
                     </ul>

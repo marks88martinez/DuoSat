@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\model_atributo;
+use App\model_imagenes_banner;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
+use Image;
 
-class controller_atributo extends Controller
+class controller_imagenes_banner extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +19,9 @@ class controller_atributo extends Controller
      */
     public function index()
     {
-        $attr =model_atributo::select('codigo_atributo','nombre_atributo','estado')
-            ->where('estado','=',1)
-            ->get();
-       return view('admin.atributo', compact('attr'));
+        $banner = model_imagenes_banner::all();
+
+       return view('admin.imagenes_banner', compact('banner'));
     }
 
     /**
@@ -43,12 +43,21 @@ class controller_atributo extends Controller
     public function store(Request $request)
     {
 //        dd($request);
-        model_atributo::create([
-            'nombre_atributo'=>$request['nombre_atributo'],
-             'estado'=>1
 
+        $nombre_imagen = time().'.png';
+        $imagen_final = 'admin/img/img_banner/'.$nombre_imagen;
+        $int_imagen= Image::make($request->file('url_banner'));
+        $int_imagen->resize(2500, null, function($constraint){
+            $constraint->aspectRatio();
+        });
+        $int_imagen->save($imagen_final);
+
+        model_imagenes_banner::create([
+            'nombre_banner'=>$request['nombre_banner'],
+            'url_banner'=>$imagen_final
         ]);
-        return Redirect::to('atributo');
+
+        return Redirect::to('imagenes_banner');
     }
 
     /**
@@ -93,7 +102,10 @@ class controller_atributo extends Controller
      */
     public function destroy($id)
     {
-        model_atributo::where('codigo_atributo','=',$id)->update(array('estado'=>2));
-        return Redirect::to('atributo');
+
+        $ver = model_imagenes_banner::find($id);
+        $ver->delete();
+
+        return Redirect::to('imagenes_banner');
     }
 }

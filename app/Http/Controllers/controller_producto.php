@@ -13,6 +13,7 @@ use App\model_atributo;
 use App\model_producto_atributo;
 use Illuminate\Support\Facades\Redirect;
 use Image;
+use App\model_categoria;
 
 class controller_producto extends Controller
 {
@@ -34,8 +35,10 @@ class controller_producto extends Controller
 
 
 
-        $producto = model_producto::with('subcategoria','producto_atributos.prodattr_attr','imagenes')
-        ->get();
+        $producto = model_producto::with('categoria','producto_atributos.prodattr_attr','imagenes')
+
+         ->where('estado','=',1)
+         ->get();
 
 //        dd($producto);
 
@@ -44,14 +47,19 @@ class controller_producto extends Controller
 
 
 //        **********************************
-        $subcat = model_subcategoria::all();
-        $subcategoria = array();
+        $categoria = model_categoria::select('codigo_categoria','nombre','descripcion','url_icon','estado')
+            ->where('estado','=',1)
+            ->get();
+        $cat = array();
 
-        foreach($subcat as $subcats){
-            $subcategoria[$subcats->codigo_sub_categorias]= $subcats->nombre;
+        foreach($categoria as $categorias){
+            $cat[$categorias->codigo_categoria]= $categorias->nombre;
         }
+
 //      ************************************
-        $atributo = model_atributo::all();
+        $atributo = model_atributo::select('codigo_atributo','nombre_atributo','estado')
+            ->where('estado','=',1)
+            ->get();
         $attr = array();
         foreach($atributo as $atributos){
             $attr[$atributos->codigo_atributo]=$atributos->nombre_atributo;
@@ -63,7 +71,7 @@ class controller_producto extends Controller
 
 
 
-        return view('admin.producto',compact('subcategoria', 'attr', 'producto'));
+        return view('admin.producto',compact('cat', 'attr', 'producto'));
     }
 
     /**
@@ -100,7 +108,7 @@ class controller_producto extends Controller
         $producto = model_producto::create([
             'nombre_producto'=>$request['nombre_producto'],
             'descripcion'=>$request['descripcion'],
-            'codigo_sub_cat'=>$request['codigo_sub_cat'],
+            'codigo_categoria'=>$request['codigo_categoria'],
 
 
             'estado'=>1,
