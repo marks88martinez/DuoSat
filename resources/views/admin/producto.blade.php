@@ -124,6 +124,7 @@
                     <th>Atributos</th>
                     <th>Descripcion del atributos</th>
                     <th>Imagen</th>
+                    <th></th>
 
                     <th style="width: 40px">Label</th>
                 </tr>
@@ -154,6 +155,9 @@
                     </td>
 
                     <td><img class="imagen_icon" src="{{$sub_cats->imagenes  !=null ? $sub_cats->imagenes->url_imagenes: ''}}" alt=""></td>
+
+                    <td align="center"> {!! link_to_route('producto.edit', $title = 'Editar', $parameters = $sub_cats->codigo_producto, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>
+
                     <td>
                         {!!Form::open(['route'=>['producto.destroy',$sub_cats->codigo_producto], 'method'=>'DELETE'])!!}
 

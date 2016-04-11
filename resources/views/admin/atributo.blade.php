@@ -64,6 +64,7 @@
                 <tbody><tr>
                     <th style="width: 10px">#</th>
                     <th>Nombre</th>
+                    <th></th>
 
 
                     <th style="width: 40px">Label</th>
@@ -72,6 +73,7 @@
                 <tr>
                     <td>{{$sub_cats->codigo_atributo}}</td>
                     <td>{{$sub_cats->nombre_atributo}}</td>
+                    <td align="center"> {!! link_to_route('atributo.edit', $title = 'Editar', $parameters = $sub_cats->codigo_atributo, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>
                     <td>
                         {!!Form::open(['route'=>['atributo.destroy',$sub_cats->codigo_atributo], 'method'=>'DELETE'])!!}
 

@@ -25,6 +25,10 @@ class model_producto extends Model
         return $this->belongsTo('App\model_categoria','codigo_categoria','codigo_categoria');
 
     }
+    public function producto_campos(){
+        return $this->hasMany('App\model_producto_campos','codigo_producto','codigo_producto');
+
+    }
 
 
 }

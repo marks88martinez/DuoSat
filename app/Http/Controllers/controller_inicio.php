@@ -87,6 +87,6 @@ class controller_inicio extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }

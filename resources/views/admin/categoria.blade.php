@@ -66,6 +66,7 @@
                     <th>Nombre</th>
                     <th>Descripcion</th>
                     <th>Descripcion</th>
+                    <th></th>
                     <th style="width: 40px">Label</th>
                 </tr>
                 @foreach($categoria as $cat)
@@ -75,7 +76,7 @@
                     <td>{{$cat->descripcion}}</td>
                     <td><img class="imagen_icon" src="{{$cat->url_icon}}" alt=""></td>
 
-
+                    <td align="center"> {!! link_to_route('categoria.edit', $title = 'Editar', $parameters = $cat->codigo_categoria, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>
                     <td>
                         {!!Form::open(['route'=>['categoria.destroy',$cat->codigo_categoria], 'method'=>'DELETE'])!!}
 

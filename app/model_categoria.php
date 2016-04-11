@@ -13,7 +13,7 @@ class model_categoria extends Model
 
     public  $timestamps = false;
 
-    protected $fillable = ['nombre','descripcion', 'url_icon'];
+    protected $fillable = ['nombre','descripcion', 'url_icon','estado'];
 
     public  function productos(){
        return $this->hasMany('App\model_producto','codigo_categoria','codigo_categoria');

@@ -65,8 +65,9 @@
                     <th style="width: 10px">#</th>
                     <th>Nombre</th>
                     <th>Descripcion</th>
+                    <th style="width: 40px"></th>
 
-                    <th style="width: 40px">Label</th>
+                    <th style="width: 40px"></th>
                 </tr>
 
 
@@ -76,6 +77,10 @@
                     <td>{{$cat->nombre_banner}}</td>
 
                     <td><img class="imagen_icon" src="{{$cat->url_banner}}" alt=""></td>
+
+                    <td align="center"> {!! link_to_route('imagenes_banner.edit', $title = 'Editar', $parameters = $cat->codigo_imagen, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>
+
+
 
 
                     <td>

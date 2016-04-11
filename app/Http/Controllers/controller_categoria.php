@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\model_categoria;
 use Illuminate\Support\Facades\Redirect;
 use Image;
+use Session;
 
 
 
@@ -75,8 +76,8 @@ class controller_categoria extends Controller
             'estado'=>1
 
         ]);
-//        dd($request );
 
+        Session::flash('message','Creado exitosamente');
         return Redirect::to('/categoria');
 
 
@@ -101,7 +102,14 @@ class controller_categoria extends Controller
      */
     public function edit($id)
     {
-        //
+
+        $categoria = model_categoria::find($id);
+
+
+        return view('editar.edit_categoria', ['categoria'=>$categoria]);
+
+
+
     }
 
     /**
@@ -113,7 +121,12 @@ class controller_categoria extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $categoria = model_categoria::find($id);
+        $categoria->fill($request->all());
+        $categoria->save();
+
+        Session::flash('message','Actulizado exitosamente');
+        return Redirect::to('categoria');
     }
 
     /**
@@ -128,6 +141,7 @@ class controller_categoria extends Controller
         model_categoria::where('codigo_categoria','=',$id)->update(array('estado'=>2));
 
 
+        Session::flash('message','Eliminado exitosamente');
        return Redirect::to('/categoria');
     }
 }

@@ -30,6 +30,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+
+    <!-- jQuery 2.1.4 -->
+    <script src="{{URL::to('admin/plugins/jQuery/jQuery-2.1.4.min.js')}}"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="{{URL::to('admin/bootstrap/js/bootstrap.min.js')}}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{URL::to('admin/dist/js/app.min.js')}}"></script>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -54,11 +63,12 @@ desired effect
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
+
     <!-- Main Header -->
     <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="{{URL::to('/usuario')}}" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>A</b>LT</span>
             <!-- logo for regular state and mobile devices -->
@@ -87,6 +97,8 @@ desired effect
 
             </div>
 
+
+
             <!-- search form (Optional) -->
             <!-- <form action="#" method="get" class="sidebar-form">
                <div class="input-group">
@@ -110,6 +122,8 @@ desired effect
                         <li><a href="{{URL::to('/categoria')}}">Categoria</a></li>
                         {{--<li><a href="{{URL::to('/subcategoria')}}">SubCategoria</a></li>--}}
                         <li><a href="{{URL::to('/atributo')}}">Atributos</a></li>
+                        <li><a href="{{URL::to('/producto_campos')}}">Producto Campos</a></li>
+                        <li><a href="{{URL::to('/campos')}}">Campos</a></li>
                         <li><a href="{{URL::to('/producto')}}">Productos</a></li>
                     </ul>
                 </li>
@@ -122,6 +136,12 @@ desired effect
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
+
+            @include('alerts.errors')
+            @include('alerts.request')
+            @include('alerts.success')
+
+
 
 
         @yield('contenido')
@@ -225,12 +245,7 @@ desired effect
 
 <!-- REQUIRED JS SCRIPTS -->
 
-<!-- jQuery 2.1.4 -->
-<script src="{{URL::to('admin/plugins/jQuery/jQuery-2.1.4.min.js')}}"></script>
-<!-- Bootstrap 3.3.5 -->
-<script src="{{URL::to('admin/bootstrap/js/bootstrap.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{URL::to('admin/dist/js/app.min.js')}}"></script>
+
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

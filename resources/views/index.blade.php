@@ -184,8 +184,8 @@
 
                 <li><a class="anima" href="#">PRODUCTO</a></li>
                 <li><a href="#">DESCARGA</a></li>
-                <li><a href="#">EMPRESA</a></li>
-                <li><a href="#">CONTACTOS</a></li>
+                <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
+                <li><a href="{{URL::to('/contacto')}}">CONTACTOS</a></li>
 
 
                 <li class="dropdown">
@@ -210,12 +210,19 @@
                 </li>
 
                 <li>
-                    <div class="busqueda"> <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group frm_input">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
+                    <div class="busqueda">
 
-                        </form></div>
+
+
+                    @include('buscador')
+
+                        {{--<form class="navbar-form navbar-left" role="search">--}}
+                            {{--<div class="form-group frm_input">--}}
+                                {{--<input type="text" class="form-control" placeholder="Search">--}}
+                            {{--</div>--}}
+
+                        {{--</form>--}}
+                    </div>
                 </li>
 
             </ul>
@@ -233,9 +240,14 @@
 <div class="menu">
 
 
+    <style>
+      .lista{
+          color: black;
+            text-decoration: none;
 
 
-
+        }
+    </style>
 
 
 
@@ -243,6 +255,12 @@
 
     <div class="container">
         <ul class="box_cuadro">
+            <li class="cuadro">
+                <span></span>
+                <a href="{{URL::to('/comparar')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>
+                <a href="{{URL::to('/comparar')}}"><h6 class="lista">Comparar</h6></a>
+            </li>
+
 
         @foreach($cat as $cats)
             <li class="cuadro">
@@ -262,18 +280,25 @@
 
 
 
-
         </ul>
     </div>
 </div>
 <!--*****************final del menu***************-->
 
+
 <!--****************banner****************-->
 <div class="container-fluid">
+
+
 @yield('contenido')
 
 
 </div>
+
+
+
+
+
 
 
 

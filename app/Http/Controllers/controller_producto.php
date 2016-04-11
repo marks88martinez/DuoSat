@@ -14,6 +14,7 @@ use App\model_producto_atributo;
 use Illuminate\Support\Facades\Redirect;
 use Image;
 use App\model_categoria;
+use Session;
 
 class controller_producto extends Controller
 {
@@ -35,7 +36,7 @@ class controller_producto extends Controller
 
 
 
-        $producto = model_producto::with('categoria','producto_atributos.prodattr_attr','imagenes')
+        $producto = model_producto::with('producto_campos','categoria','producto_atributos.prodattr_attr','imagenes')
 
          ->where('estado','=',1)
          ->get();
@@ -136,7 +137,7 @@ class controller_producto extends Controller
 
 
 
-
+        Session::flash('message','Creado exitosamente');
         return Redirect::to('producto');
     }
 
@@ -160,7 +161,36 @@ class controller_producto extends Controller
      */
     public function edit($id)
     {
-        //
+        $producto = model_producto::with('producto_campos','categoria','producto_atributos.prodattr_attr','imagenes')
+         ->find($id);
+//        dd();
+
+        $cat = model_categoria::select('codigo_categoria','nombre')
+            ->where('estado','=',1)
+            ->get();
+       $categoria = array();
+        foreach($cat as $cats){
+            $categoria[$cats->codigo_categoria]= $cats->nombre;
+
+        }
+
+
+
+//        **********************************************************
+//        dd($producto);
+
+        $atributo = model_atributo::select('codigo_atributo','nombre_atributo','estado')
+            ->where('estado','=',1)
+            ->get();
+        $attr = array();
+        foreach($atributo as $atributos){
+            $attr[$atributos->codigo_atributo]=$atributos->nombre_atributo;
+        }
+
+
+
+
+        return view('editar.edit_producto', compact('producto','categoria','attr'));
     }
 
     /**
@@ -172,7 +202,18 @@ class controller_producto extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+
+        $productos = model_producto::find($id);
+
+        $productos->fill($request->all());
+//        dd($productos);
+        $productos->save();
+
+
+Session::flash('message','Actulizado correctamente');
+        return Redirect::to('/producto');
+
     }
 
     /**
@@ -183,6 +224,21 @@ class controller_producto extends Controller
      */
     public function destroy($id)
     {
-        //
+        model_producto::where('codigo_producto','=',$id)->update(array('estado'=>2));
+
+
+
+        Session::flash('message','Eliminado exitosamente');
+        return Redirect::to('/producto');
+    }
+    public function destroy_attr($id)
+    {
+        model_producto_atributo::find($id);
+        dd($id);
+
+
+
+        Session::flash('message','Eliminado exitosamente');
+        return Redirect::to('/producto');
     }
 }

@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
+use Session;
 
 class controller_atributo extends Controller
 {
@@ -48,6 +49,7 @@ class controller_atributo extends Controller
              'estado'=>1
 
         ]);
+        Session::flash('message','Creado exitosamente');
         return Redirect::to('atributo');
     }
 
@@ -70,7 +72,9 @@ class controller_atributo extends Controller
      */
     public function edit($id)
     {
-        //
+
+        $atributo = model_atributo::find($id);
+        return view('editar.edit_atributo',['atributo'=>$atributo]);
     }
 
     /**
@@ -82,7 +86,15 @@ class controller_atributo extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $atributo = model_atributo::find($id);
+
+        $atributo->fill($request->all());
+        $atributo->save();
+
+
+        Session::flash('message','Actulizar exitosamente');
+        return Redirect::to('atributo');
+
     }
 
     /**
@@ -94,6 +106,7 @@ class controller_atributo extends Controller
     public function destroy($id)
     {
         model_atributo::where('codigo_atributo','=',$id)->update(array('estado'=>2));
+        Session::flash('message','Eliminado exitosamente');
         return Redirect::to('atributo');
     }
 }
