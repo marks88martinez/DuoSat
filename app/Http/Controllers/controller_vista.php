@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\model_categoria;
+use App\model_imagenes_chico;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -19,11 +20,12 @@ class controller_vista extends Controller
      */
     public function index()
     {
+        $chico = model_imagenes_chico::all();
         $banner = model_imagenes_banner::all();
 
 
 
-        return view('portada',compact('banner'));
+        return view('portada',compact('banner','chico'));
     }
 
     /**

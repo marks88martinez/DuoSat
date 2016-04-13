@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\model_imagenes;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -14,15 +15,39 @@ use App\model_producto_atributo;
 use Illuminate\Support\Facades\Redirect;
 use Image;
 use App\model_categoria;
+use Intervention\Image\Exception\NotReadableException;
 use Session;
 
 class controller_producto extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public  function imagen($img)
+    {
+
+        $nombre_imagen = time() . '.png';
+        $imagen_final = 'admin/img/productos/' . $nombre_imagen;
+        $int_imagen = Image::make($img);
+        $int_imagen->resize(600, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        $int_imagen->save($imagen_final);
+
+        return $imagen_final;
+
+    }
+
+    public function add_attr($request, $producto){
+
+
+        foreach($request->codigo_atributo as $index=>$code_attr){
+            model_producto_atributo::create([
+                'descripcion'=>$request->descrip_atributos[$index],
+                'codigo_atributo'=>$code_attr,
+                'codigo_producto'=>$producto->codigo_producto,
+            ]);
+
+        }
+    }
+
     public function index()
     {
 
@@ -97,13 +122,15 @@ class controller_producto extends Controller
 
 
 
-        $nombre_imagen = time().'.png';
-        $imagen_final = 'admin/img/productos/'.$nombre_imagen;
-        $int_imagen= Image::make($request->file('url_imagen'));
-        $int_imagen->resize(600, null, function($constraint){
-            $constraint->aspectRatio();
-        });
-        $int_imagen->save($imagen_final);
+
+
+//        $nombre_imagen = time().'.png';
+//        $imagen_final = 'admin/img/productos/'.$nombre_imagen;
+//        $int_imagen= Image::make($request->file('url_imagen'));
+//        $int_imagen->resize(600, null, function($constraint){
+//            $constraint->aspectRatio();
+//        });
+//        $int_imagen->save($imagen_final);
 
 
         $producto = model_producto::create([
@@ -115,21 +142,24 @@ class controller_producto extends Controller
             'estado'=>1,
         ]);
 
+
+        try{
+
+           $image = $this->imagen($request->file(('url_imagen')));
+        }catch (NotReadableException $e){
+            $image = 'admin/img/vacio.jpg';
+
+
+        }
         model_imagenes::create([
-            'url_imagenes'=>$imagen_final,
+            'url_imagenes'=> $image,
             'codigo_producto'=>$producto->codigo_producto,
         ]);
 
+        $this->add_attr($request, $producto);
 
 
-        foreach($request->codigo_atributo as $index=>$code_attr){
-            model_producto_atributo::create([
-                'descripcion'=>$request->descrip_atributos[$index],
-                'codigo_atributo'=>$code_attr,
-                'codigo_producto'=>$producto->codigo_producto,
-            ]);
 
-        }
 
 
 
@@ -203,16 +233,57 @@ class controller_producto extends Controller
     public function update(Request $request, $id)
     {
 
+//        dd($request);
+
 
         $productos = model_producto::find($id);
-
-        $productos->fill($request->all());
 //        dd($productos);
+        $productos->fill($request->only(['nombre_producto','descripcion','codigo_categoria']));
         $productos->save();
 
+        try{
+            $imagen = $this->imagen($request->file(('url_imagen')));
+            try{
+                $imag = model_imagenes::where('codigo_producto','=',$id)->firstOrFail();
+                $imag->url_imagenes = $imagen;
+                $imag->save();
 
-Session::flash('message','Actulizado correctamente');
+            }catch(ModelNotFoundException $e){
+                model_imagenes::create([
+                    'url_imagenes'=>$imagen,
+                    'codigo_producto'=>$id
+                ]);
+            }
+
+        }catch (NotReadableException $e){
+
+        }
+
+        $this->add_attr($request , $productos);
+
+
+
+
+
+
+
+
+
+        Session::flash('message','Actulizado correctamente');
         return Redirect::to('/producto');
+
+    }
+
+    public function update_descrip(Request $request, $id)
+    {
+//        dd($request);
+        $descr = model_producto_atributo::find($id);
+
+        $descr->fill($request->all());
+        $descr->save();
+        Session::flash('message','Actulizado correctamente');
+        return redirect()->back()->with('message','actulizado correctamente');
+
 
     }
 
@@ -233,12 +304,12 @@ Session::flash('message','Actulizado correctamente');
     }
     public function destroy_attr($id)
     {
-        model_producto_atributo::find($id);
-        dd($id);
+        $destroy = model_producto_atributo::find($id);
+        $destroy->delete();
 
 
 
-        Session::flash('message','Eliminado exitosamente');
-        return Redirect::to('/producto');
+
+        return redirect()->back()->with('message','Eliminado exitosamente');
     }
 }

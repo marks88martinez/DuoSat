@@ -35,7 +35,7 @@
         </div><!-- /.box-header -->
         <!-- form start -->
         {{--<form role="form">--}}
-        {!!Form::model($producto,['route'=>['producto.update',$producto->codigo_producto], 'method'=>'PUT'])!!}
+        {!!Form::model($producto,['route'=>['producto.update',$producto->codigo_producto], 'method'=>'PUT', 'files' => true])!!}
         {{--{!!Form::model($producto->codigo_categoria,['route'=>['atributo.update',$atributo->codigo_atributo], 'method'=>'PUT'])!!}--}}
 
 
@@ -132,14 +132,19 @@
 
                 @foreach($producto->producto_atributos as $sub_cats)
                 <tr>
-                    <td>{{$sub_cats->prodattr_attr->codigo_atributo}} </td>
+                    <td>{{$sub_cats->codigo}} </td>
                     <td> {{$sub_cats->prodattr_attr->nombre_atributo}} </td>
 
 
-                    <td>{!!Form::textarea('descrip_atributos',$sub_cats->descripcion,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}</td>
-                    <td></td>
+                    {!!Form::model($sub_cats,['route'=>['producto.update_descrip',$sub_cats->codigo], 'method'=>'PUT','files' => true])!!}
+
+                    <td>{!!Form::textarea('descripcion',$sub_cats->descripcion,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}</td>
+                    <td>{!! Form::submit('Guardar ',['class'=>'fa fa-trash-o btn btn-warning btn-xs']) !!}</td>
+                    {!!Form::close()!!}
+
+
                     <td>
-                        {!!Form::open(['route'=>['producto.destroy_attr',$sub_cats->prodattr_attr->codigo_atributo]])!!}
+                        {!!Form::open(['route'=>['producto.destroy_attr',$sub_cats->codigo]])!!}
 
                         {!! Form::submit('Eliminar ',['class'=>'fa fa-trash-o btn btn-danger btn-xs']) !!}
                         {!!Form::close()!!}

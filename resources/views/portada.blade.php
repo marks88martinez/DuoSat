@@ -33,10 +33,12 @@
 
 <!--***************banner pequeño*****************-->
 <div class="row">
-    <div class="col-md-3  bann"><img src="{{URL::to('vista/img/banner1.jpg')}}"></div>
-    <div class="col-md-3  bann"><img src="{{URL::to('vista/img/banner2.jpg')}}"></div>
-    <div class="col-md-3  bann"><img src="{{URL::to('vista/img/banner1.jpg')}}"></div>
-    <div class="col-md-3  bann"><img src="{{URL::to('vista/img/banner2.jpg')}}"></div>
+    @foreach($chico as $chicos)
+
+        <div class="col-md-3  bann"><img src="{{$chicos->url_banner}}"></div>
+
+    @endforeach
+
 
 </div>
 

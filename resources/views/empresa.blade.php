@@ -18,6 +18,7 @@
 
 
             </div>
+            <br>
 
             <h4 class="media-heading fonte">•  Visión <small></small></h4>
             <p>
@@ -27,12 +28,16 @@
 
             </p>
             {{--******************************--}}
+            <br>
+
 
             <h4 class="media-heading fonte">•  Por Duosat ®? <small></small></h4>
             <p>
                 Duosat ® es lo más innovador en cuanto a decodificadores digitales en definición estándar o alta definición.
 
             </p>
+            <br>
+
             {{--******************************--}}
             <h4 class="media-heading fonte">•  Conectividad a Internet <small></small></h4>
             <p>
@@ -42,6 +47,8 @@
 
             </p>
             {{--******************************--}}
+            <br>
+
 
             <h4 class="media-heading fonte">•  Sintonizador Dual <small></small></h4>
             <p>

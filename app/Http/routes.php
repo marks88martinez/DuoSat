@@ -32,6 +32,8 @@ Route::resource('imagenes_banner', 'controller_imagenes_banner');
 // vistas
 Route::resource('/','controller_vista');
 Route::post('producto/destroy_attr/{id}',['as'=>'producto.destroy_attr','uses'=>'controller_producto@destroy_attr']);
+Route::PUT('producto/update_descrip/{id}',['as'=>'producto.update_descrip','uses'=>'controller_producto@update_descrip']);
+
 
 Route::get('productos/{id}',['as'=>'prodsuctos.id','uses'=>'controller_prod_detalle@index']);
 Route::resource('empresa','controller_empresa');
@@ -46,6 +48,7 @@ Route::get('contacto','controller_empresa@contacto');
 //     return view('buscador');
 ////     return View::make('buscador');
 //});
+Route::resource('banner_chico', 'controller_imagenes_chico');
 Route::resource('queries', 'controller_busca');
 
 Route::resource('comparar','controller_comparar');
