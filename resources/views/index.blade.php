@@ -205,7 +205,7 @@
 
 
 
-                <li class='search' ><a href="#"><img src="{{URL::to('vista/img/search.png')}}"></a>
+                <li class='search' ><a href="#"><img src="{{URL::to('vista/img/busca.png')}}"></a>
 
                 </li>
 

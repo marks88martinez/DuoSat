@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller_producto.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller_producto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/controller_producto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44189602">
+            <state vertical-scroll-proportion="-11.115385">
               <caret line="280" column="34" selection-start-line="280" selection-start-column="20" selection-end-line="280" selection-end-column="34" />
               <folding />
             </state>
@@ -37,6 +37,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-28.423077">
               <caret line="71" column="53" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25993884">
+              <caret line="207" column="84" selection-start-line="207" selection-start-column="84" selection-end-line="207" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -69,7 +79,6 @@
         <option value="$PROJECT_DIR$/app/model_producto_campos.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/producto_campos.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/compare.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_productos_campos.php" />
         <option value="$PROJECT_DIR$/resources/views/compare/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/producto.blade.php" />
@@ -98,6 +107,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_comparar.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_producto.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -408,7 +418,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -683,14 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="27" selection-start-line="159" selection-start-column="27" selection-end-line="159" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58409786">
@@ -843,8 +845,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/controller_producto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44189602">
+        <state vertical-scroll-proportion="-11.115385">
           <caret line="280" column="34" selection-start-line="280" selection-start-column="20" selection-end-line="280" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25993884">
+          <caret line="207" column="84" selection-start-line="207" selection-start-column="84" selection-end-line="207" selection-end-column="84" />
           <folding />
         </state>
       </provider>
