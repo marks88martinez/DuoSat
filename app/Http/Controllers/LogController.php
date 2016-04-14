@@ -2,26 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\model_campos;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Auth;
+use Session;
+use  Redirect;
+use App\Http\Requests\LoginRequest;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Facades\Session;
 
-class controller_campos extends Controller
+class LogController extends Controller
 {
-    public function  __construct(){
-        $this->middleware('auth');
-    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $campos = model_campos::select('codigo_campo','nombre','estado')
-            ->where('estado','=',1)
-            ->get();
-
-       return view('admin.campos',compact('campos'));
+        return view('login.index');
     }
 
     /**
@@ -31,7 +30,7 @@ class controller_campos extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -40,14 +39,18 @@ class controller_campos extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LoginRequest $request)
     {
-       model_campos::create([
-           'nombre'=>$request['nombre'],
-           'estado'=>1
-       ]);
-        Session::flash('message','Creado exitosamente');
-        return Redirect::to('/campos');
+        if(Auth::attempt(['email'=> $request['email'], 'password'=>$request['password']])){
+            return Redirect::to('usuario');
+        }
+        Session::flash('message-error', 'Datos incorrectos');
+        return Redirect::to('log');
+    }
+    public function logout(){
+        Auth::logout();
+        return Redirect::to('log');
+
     }
 
     /**
@@ -69,8 +72,7 @@ class controller_campos extends Controller
      */
     public function edit($id)
     {
-       $campos = model_campos::find($id);
-        return view('editar.edit_campos', compact('campos'));
+        //
     }
 
     /**
@@ -82,10 +84,7 @@ class controller_campos extends Controller
      */
     public function update(Request $request, $id)
     {
-        $campos = model_campos::find($id);
-        $campos->fill($request->all());
-        $campos->save();
-        return Redirect::to('campos');
+        //
     }
 
     /**
@@ -96,13 +95,6 @@ class controller_campos extends Controller
      */
     public function destroy($id)
     {
-
-
-
-        model_campos::where('codigo_campo','=',$id)->update(array('estado'=>2));
-
-        Session::flash('message','Eliminado exitosamente');
-        return Redirect::to('campos');
-
+        //
     }
 }

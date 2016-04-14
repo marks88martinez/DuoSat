@@ -14,6 +14,9 @@ use Intervention\Image\Exception\NotReadableException;
 
 class controller_imagenes_chico extends Controller
 {
+    public function  __construct(){
+        $this->middleware('auth');
+    }
     public  function imagen($img)
     {
 

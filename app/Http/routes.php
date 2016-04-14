@@ -19,7 +19,7 @@
 
 Route::get('/banner','controller_inicio@banner');
 
-Route::get('usuario','controller_inicio@store');
+Route::resource('usuario','create_user_controller');
 
 Route::resource('categoria', 'controller_categoria');
 //Route::resource('subcategoria', 'controller_subcategoria');
@@ -28,6 +28,8 @@ Route::resource('producto', 'controller_producto');
 Route::resource('campos', 'controller_campos');
 Route::resource('producto_campos', 'controller_productos_campos');
 Route::resource('imagenes_banner', 'controller_imagenes_banner');
+Route::resource('log', 'LogController');
+Route::resource('logout', 'LogController@logout');
 
 // vistas
 Route::resource('/','controller_vista');

@@ -7,7 +7,7 @@
         </div><!-- /.box-header -->
         <!-- form start -->
         {{--<form role="form">--}}
-            {!!Form::open()!!}
+            {!!Form::open(['route'=>'usuario.store', 'method'=>'POST'])!!}
             <div class="box-body">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nombre</label>
@@ -17,11 +17,15 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    {!! Form::email('email',null,['class'=>'form-control', 'id'=>'exampleInputEmail1','placeholder'=>'Email']) !!}
+
+
+
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    {!! Form::password('password',['class'=>'form-control','id'=>'exampleInputPassword1', 'placeholder'=>'password']) !!}
+
                 </div>
 
                 <div class="checkbox">
@@ -30,10 +34,10 @@
             </div><!-- /.box-body -->
 
             <div class="box-footer">
-                {!! Form::submit('Registrar',['class'=>'btn btn-primary']) !!}
+                {!! Form::submit('Iniciar',['class'=>'btn btn-primary ']) !!}
 
-            </div>
-        {!! Form::close() !!}
+             </div>
+         {!! Form::close() !!}
         {{--</form>--}}
     </div>
 
@@ -56,31 +60,20 @@
                     <th>Email</th>
                     <th style="width: 40px">Label</th>
                 </tr>
+                @foreach($user as $users)
                 <tr>
-                    <td>1.</td>
-                    <td>Update software</td>
-                    <td>Update software</td>
+                    <td>{{ $users->id }}</td>
+                    <td>{{ $users->name }}</td>
+                    <td>{{$users->email}}</td>
 
                     <td><span class="badge bg-red">55%</span></td>
                 </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>Clean database</td>
-                    <td>Update software</td>
-                    <td><span class="badge bg-yellow">70%</span></td>
-                </tr>
-
+               @endforeach
 
                 </tbody></table>
         </div><!-- /.box-body -->
         <div class="box-footer clearfix">
-            <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">«</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">»</a></li>
-            </ul>
+
         </div>
     </div>
 @stop

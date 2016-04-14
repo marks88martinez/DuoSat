@@ -2,26 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\model_campos;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Facades\Session;
 
-class controller_campos extends Controller
+class create_user_controller extends Controller
 {
-    public function  __construct(){
-        $this->middleware('auth');
-    }
+   public function  __construct(){
+       $this->middleware('auth');
+   }
     public function index()
     {
-        $campos = model_campos::select('codigo_campo','nombre','estado')
-            ->where('estado','=',1)
-            ->get();
-
-       return view('admin.campos',compact('campos'));
+        $user = User::all();
+        return view('admin.user', compact('user'));
     }
 
     /**
@@ -42,12 +37,12 @@ class controller_campos extends Controller
      */
     public function store(Request $request)
     {
-       model_campos::create([
-           'nombre'=>$request['nombre'],
-           'estado'=>1
-       ]);
-        Session::flash('message','Creado exitosamente');
-        return Redirect::to('/campos');
+        User::create([
+            'name'=>$request['name'],
+            'email'=>$request['email'],
+            'password'=> bcrypt($request['password'])
+        ]);
+        return redirect()->back()->with('message','cadastrado correctamente');
     }
 
     /**
@@ -69,8 +64,7 @@ class controller_campos extends Controller
      */
     public function edit($id)
     {
-       $campos = model_campos::find($id);
-        return view('editar.edit_campos', compact('campos'));
+        //
     }
 
     /**
@@ -82,10 +76,7 @@ class controller_campos extends Controller
      */
     public function update(Request $request, $id)
     {
-        $campos = model_campos::find($id);
-        $campos->fill($request->all());
-        $campos->save();
-        return Redirect::to('campos');
+        //
     }
 
     /**
@@ -96,13 +87,6 @@ class controller_campos extends Controller
      */
     public function destroy($id)
     {
-
-
-
-        model_campos::where('codigo_campo','=',$id)->update(array('estado'=>2));
-
-        Session::flash('message','Eliminado exitosamente');
-        return Redirect::to('campos');
-
+        //
     }
 }
