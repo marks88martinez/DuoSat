@@ -259,7 +259,11 @@ class controller_producto extends Controller
 
         }
 
-        $this->add_attr($request , $productos);
+        if($request->has('codigo_atributo')){
+            $this->add_attr($request , $productos);
+        }
+
+
 
 
 
