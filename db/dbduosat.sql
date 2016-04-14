@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-04-2016 a las 18:01:54
+-- Tiempo de generación: 14-04-2016 a las 14:32:11
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.5.19
 
@@ -379,7 +379,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `remember_token` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'marcos', 'marks88martinez@gmail.com', '$2y$10$2vVFkLPvs4tiLEPe5PAaaubo9z0x5hOJuZawAgyUEZAdbNn8Q73IW', 'E7ouonwhKgcmaalx0cAeFqIuL5nuxExgwvwNI3qAy2l00JwYosSRj69QtboR', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 --
 -- Índices para tablas volcadas
@@ -515,7 +522,7 @@ MODIFY `codigo_sub_categorias` int(10) unsigned NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- Restricciones para tablas volcadas
 --
