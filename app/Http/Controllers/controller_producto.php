@@ -118,7 +118,8 @@ class controller_producto extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request->all());
+//        dd($request);
+
 
 
 
@@ -132,14 +133,20 @@ class controller_producto extends Controller
 //        });
 //        $int_imagen->save($imagen_final);
 
+        if($request->descontinuado == true){
+            $valor1 = 1;
+        }else{
+            $valor1 = 0;
+        }
 
         $producto = model_producto::create([
             'nombre_producto'=>$request['nombre_producto'],
             'descripcion'=>$request['descripcion'],
             'codigo_categoria'=>$request['codigo_categoria'],
-
-
             'estado'=>1,
+            'descontinuado'=>$valor1
+
+
         ]);
 
 
@@ -233,13 +240,15 @@ class controller_producto extends Controller
     public function update(Request $request, $id)
     {
 
-//        dd($request);
+//        dd($request->all());
 
 
         $productos = model_producto::find($id);
 //        dd($productos);
         $productos->fill($request->only(['nombre_producto','descripcion','codigo_categoria']));
+        $productos->descontinuado = $request->has("descontinuado")? 1 : 0;
         $productos->save();
+
 
         try{
             $imagen = $this->imagen($request->file(('url_imagen')));

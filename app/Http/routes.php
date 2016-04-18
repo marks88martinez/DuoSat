@@ -52,6 +52,7 @@ Route::get('contacto','controller_empresa@contacto');
 //});
 Route::resource('banner_chico', 'controller_imagenes_chico');
 Route::resource('queries', 'controller_busca');
+Route::resource('all_producto', 'controller_all_product');
 
 Route::resource('comparar','controller_comparar');
 //Route::get('/compare', function () {

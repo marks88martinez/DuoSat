@@ -90,8 +90,9 @@
                 {!! Form::file('url_imagen') !!}
             </div>
 
-            <div class="checkbox">
-
+            <div class="icheckbox_minimal-blue disabled">
+                <label for="exampleInputEmail1">Descontinuado   </label>
+                {!! Form::checkbox('descontinuado',1,$producto->descontinuado ) !!}
             </div>
         </div><!-- /.box-body -->
 

@@ -57,6 +57,35 @@
 
             </div>
 
+
+            {{--********************************************--}}
+            {{--<section class="content">--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-12">--}}
+                        {{--<div class="box box-info">--}}
+                            {{--<div class="box-header">--}}
+                                {{--<h3 class="box-title">CK Editor <small>Advanced and full of features</small></h3>--}}
+                                {{--<!-- tools box -->--}}
+                                {{--<div class="pull-right box-tools">--}}
+                                    {{--<button class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>--}}
+                                    {{--<button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>--}}
+                                {{--</div><!-- /. tools -->--}}
+                            {{--</div><!-- /.box-header -->--}}
+                            {{--<div class="box-body pad">--}}
+                                {{--<form>--}}
+                    {{--<textarea  id="editor1" name="descripcion" rows="10" cols="80">--}}
+
+                    {{--</textarea>--}}
+                                {{--</form>--}}
+                            {{--</div>--}}
+                        {{--</div><!-- /.box -->--}}
+
+
+                    {{--</div><!-- /.col-->--}}
+                {{--</div><!-- ./row -->--}}
+            {{--</section><!-- /.content -->--}}
+            {{--********************************************--}}
+
             <div class="form-group">
                 <label for="exampleInputEmail1">Descripcion  del Producto</label>
                 {!!Form::textarea('descripcion',null,['class'=>'form-control','id'=>'exampleInputEmail1','rows'=>'3', 'placeholder'=>'Ingrese su nombre'])  !!}
@@ -86,12 +115,14 @@
                 {!! Form::file('url_imagen') !!}
             </div>
 
-            <div class="checkbox">
-
+            <div class="form-group">
+                <label for="exampleInputEmail1">Descontinuado  </label>
+                {!! Form::checkbox('descontinuado',1,true,['class'=>'form-control', ]) !!}
             </div>
         </div><!-- /.box-body -->
 
         <div class="box-footer">
+
             {!! Form::submit('Registrar',['class'=>'btn btn-primary']) !!}
 
         </div>
@@ -179,5 +210,28 @@
             </ul>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+    {{--**************************************--}}
+
+
+    <script>
+        $(function () {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor1');
+            //bootstrap WYSIHTML5 - text editor
+            $(".textarea").wysihtml5();
+        });
+    </script>
 
 @stop

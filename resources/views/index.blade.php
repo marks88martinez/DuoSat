@@ -13,6 +13,9 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
+
+
+
 <body>
 
 <script type="text/javascript">
@@ -260,6 +263,11 @@
                 <a href="{{URL::to('/comparar')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>
                 <a href="{{URL::to('/comparar')}}"><h6 class="lista">Comparar</h6></a>
             </li>
+            {{--<li class="cuadro">--}}
+                {{--<span></span>--}}
+                {{--<a href="{{URL::to('/comparar')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>--}}
+                {{--<a href="{{URL::to('/comparar')}}"><h6 class="lista">All Product</h6></a>--}}
+            {{--</li>--}}
 
 
         @foreach($cat as $cats)
@@ -268,7 +276,8 @@
                 <ul class="menu-sub">
                     <span></span>
                     @foreach($cats->productos as $sub_cats)
-                    <li><a href="{{URL::to('productos/'.$sub_cats->codigo_producto)}}">{{$sub_cats->nombre_producto}}</a></li>
+                    <li><a class="tog"  data-toggle="tooltip" data-placement="left" {{$sub_cats->descontinuado ? "title=Discontinue" :" "}}  href="{{URL::to('productos/'.$sub_cats->codigo_producto)}}">{{$sub_cats->nombre_producto}}</a></li>
+                        {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                     @endforeach
 
                 </ul>
@@ -276,6 +285,11 @@
 
             </li>
         @endforeach
+            <script>
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
 
 
 
