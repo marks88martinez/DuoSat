@@ -18,7 +18,9 @@ class controller_all_product extends Controller
      */
     public function index()
     {
-        $categoria = model_categoria::all();
+        $categoria = model_categoria::select('codigo_categoria','nombre','descripcion','estado')
+            ->where('estado','=',1)
+        ->get();
         $producto = model_producto::with('producto_campos','categoria','producto_atributos.prodattr_attr','imagenes')
 
             ->where('estado','=',1)
