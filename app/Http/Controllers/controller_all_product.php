@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\model_categoria;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -17,13 +18,14 @@ class controller_all_product extends Controller
      */
     public function index()
     {
+        $categoria = model_categoria::all();
         $producto = model_producto::with('producto_campos','categoria','producto_atributos.prodattr_attr','imagenes')
 
             ->where('estado','=',1)
             ->get();
 
 
-        return view('all_producto',compact('producto'));
+        return view('all_producto',compact('producto','categoria'));
     }
 
     /**

@@ -263,11 +263,11 @@
                 <a href="{{URL::to('/comparar')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>
                 <a href="{{URL::to('/comparar')}}"><h6 class="lista">Comparar</h6></a>
             </li>
-            {{--<li class="cuadro">--}}
-                {{--<span></span>--}}
-                {{--<a href="{{URL::to('/comparar')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>--}}
-                {{--<a href="{{URL::to('/comparar')}}"><h6 class="lista">All Product</h6></a>--}}
-            {{--</li>--}}
+            <li class="cuadro">
+                <span></span>
+                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>
+                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">All Product</h6></a>
+            </li>
 
 
         @foreach($cat as $cats)
