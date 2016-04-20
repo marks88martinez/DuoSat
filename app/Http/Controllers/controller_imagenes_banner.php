@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
 use Image;
+use Intervention\Image\Exception\NotReadableException;
 use Session;
 
 class controller_imagenes_banner extends Controller
@@ -24,7 +25,7 @@ class controller_imagenes_banner extends Controller
         $nombre_imagen = time().'.png';
         $imagen_final = 'admin/img/img_banner/'.$nombre_imagen;
         $int_imagen= Image::make($img);
-        $int_imagen->resize(2500, null, function($constraint){
+        $int_imagen->resize(1700, null, function($constraint){
             $constraint->aspectRatio();
         });
         $int_imagen->save($imagen_final);
@@ -62,7 +63,8 @@ class controller_imagenes_banner extends Controller
 
         model_imagenes_banner::create([
             'nombre_banner'=>$request['nombre_banner'],
-            'url_banner'=>$this->imagen($request->file('url_banner'))
+            'url_banner'=>$this->imagen($request->file('url_banner')),
+            'link'=>$request['link']
         ]);
         Session::flash('message','Creado exitosamente');
         return Redirect::to('imagenes_banner');
@@ -103,10 +105,39 @@ class controller_imagenes_banner extends Controller
     {
 //        dd($request);
 
-        $banner = model_imagenes_banner::find($id);
-        $banner->fill($request->all());
-        $banner->url_banner = $this->imagen($request->file('url_banner'));
-        $banner->save();
+//        $banner = model_imagenes_banner::find($id);
+//        $banner->fill($request->all());
+//        $banner->url_banner = $this->imagen($request->file('url_banner'));
+//        $banner->save();
+
+        $chico =  model_imagenes_banner::find($id);
+        $chico->fill($request->only('nombre_banner','link'));
+        $chico->save();
+
+
+
+        try{
+            $imagen = $this->imagen($request->file(('url_banner')));
+            try{
+                $imag = model_imagenes_banner::find($id)->firstOrFail();
+                $imag->url_banner = $imagen;
+                $imag->save();
+
+            }catch(ModelNotFoundException $e){
+                model_imagenes::create([
+                    'url_banner'=>$imagen
+
+                ]);
+            }
+
+        }catch (NotReadableException $e){
+
+        }
+
+
+
+
+
         Session::flash('message','Actulizado exitosamente');
         return Redirect::to('imagenes_banner');
     }

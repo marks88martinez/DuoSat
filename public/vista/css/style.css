@@ -111,6 +111,7 @@ display: none;
 		height: auto;
 	}
 	.menu-sub>li{
+		z-index: 500;
 		list-style: none;
 		margin-bottom: 2px;
 		margin: 10px;
@@ -126,6 +127,7 @@ display: none;
 		
 	}
 	ul .menu-sub {
+		z-index: 500;
 		
 		margin: 0 auto;
 		padding:0;
@@ -260,11 +262,11 @@ display: none;
     background-color: #428bca;
 }
 	.bann{
-		z-index: -500;
+		/*z-index: -500;*/
 	}	
 
 	.bann img {
-		z-index: -500;
+		/*z-index: -500;*/
 		width: 100%;
 		height: auto;
 	}

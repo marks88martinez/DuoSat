@@ -62,7 +62,7 @@ class controller_imagenes_chico extends Controller
 
         $chico = model_imagenes_chico::get()->count();
 
-        if($chico < 4){
+        if($chico < 3){
 
             try{
 
@@ -74,7 +74,8 @@ class controller_imagenes_chico extends Controller
             }
             model_imagenes_chico::create([
                 'nombre'=>$request['nombre'],
-                'url_banner'=> $image
+                'url_banner'=> $image,
+                'link'=>$request['nombre']
             ]);
 
 
@@ -133,7 +134,7 @@ class controller_imagenes_chico extends Controller
     public function update(Request $request, $id)
     {
       $chico = model_imagenes_chico::find($id);
-        $chico->fill($request->only('nombre'));
+        $chico->fill($request->only('nombre','link'));
         $chico->save();
 
         try{

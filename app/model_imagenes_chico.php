@@ -8,6 +8,6 @@ class model_imagenes_chico extends Model
 {
     protected $table = 'banner_chico';
     protected $primaryKey = 'codigo';
-    protected $fillable = ['nombre','url_banner'];
+    protected $fillable = ['nombre','url_banner','link'];
     public  $timestamps = false;
 }

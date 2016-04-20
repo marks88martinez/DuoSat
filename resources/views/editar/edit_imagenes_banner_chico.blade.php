@@ -29,6 +29,13 @@
 
             </div>
 
+            <div class="form-group">
+                <label for="exampleInputEmail1">link Banner</label>
+                {!!Form::text('link',$b_chico->link,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}
+
+
+            </div>
+
 
 
             <div class="checkbox">
