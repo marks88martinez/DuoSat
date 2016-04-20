@@ -88,8 +88,15 @@
 
     @endforeach
         <div class="col-md-3  ">
+            <style>
+                .video{
+                    width: 100%;
+                    height: 328px;
+                }
+            </style>
 
-            <object width="432" height="300"
+            <object class="video"
+
                     data="https://www.youtube.com/embed/sSBXsPIxtkE">
             </object>
 
