@@ -24,7 +24,7 @@
             var full_size_class = "gallery-content-center-full";
             var $container = $('#gallery-content-center');
 
-            $container.isotope({itemSelector : 'img'});
+            $container.isotope({itemSelector : 'a'});
 
 
             function check_button(){
@@ -104,6 +104,26 @@
                 </div>
             </div>
         </div>
+        <style>
+            .nombre{
+                z-index: 500;
+                position: absolute;
+                text-decoration: none;
+                padding: 20px;
+                margin-top: 150px;
+                font-size: 15px;
+                font-family: 'Oswald', sans-serif;
+
+            }
+            .foto{
+                z-index: -500;
+            }
+            #gallery-content-center a{
+                display: block;
+                transition: all 0.5s ease;
+                text-decoration: none;
+            }
+        </style>
 
         <div id="gallery-content">
             <div id="gallery-content-center">
@@ -111,7 +131,7 @@
                 @foreach( $producto as $productos)
 
 
-                           <a href="{{URL::to('productos/'.$productos->codigo_producto)}}"><img src="{{$productos->imagenes->url_imagenes}}" class="all {{$productos->categoria->codigo_categoria}}"> </a>
+                           <a class="all {{$productos->categoria->codigo_categoria}}" href="{{URL::to('productos/'.$productos->codigo_producto)}}">    <p class="nombre">{{$productos->nombre_producto}}</p><img src="{{$productos->imagenes->url_imagenes}}" class=""> </a>
 
                     {{--<img src="{{$productos->imagenes->url_imagenes}}" class="all landscape"/>--}}
                 @endforeach
