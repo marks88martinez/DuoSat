@@ -85,10 +85,10 @@
     <div class="row">
         @foreach($chico as $chicos)
 
-            <div class="col-xs-6 col-sm-3  bann"><a href="{{$chicos->link}}">  <img src="{{$chicos->url_banner}}"></a></div>
+            <div class="col-sm-3  bann"><a href="{{$chicos->link}}">  <img src="{{$chicos->url_banner}}"></a></div>
 
         @endforeach
-        <div class="col-xs-6 col-sm-3 ">
+        <div class=" col-sm-3 ">
             <style>
                 .video{
                     width: 100%;
@@ -98,6 +98,12 @@
                     .video{
                         width: 100%;
                         height: 194px
+                    }
+                }
+                @media screen and (max-width: 943px) {
+                    .video{
+                        width: 100%;
+                        height: 116px
                     }
                 }
 
