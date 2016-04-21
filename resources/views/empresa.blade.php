@@ -1,13 +1,18 @@
 @extends('index')
 @section('contenido')
     <br>
-
+    <style>
+        .pull-left img{
+            width: 450px;
+            height: auto;
+        }
+    </style>
     <div class="container">
         <h4 class=" gris fonte">•  Empresa</h4>
 
         <div class="media">
             <a href="#" class="pull-left">
-                <img src="http://www.engranajesjuaristi.com/images/empresa_engranajes_juaristi.jpg" class="media-object" alt="imagen">
+                <img src="{{URL::to('admin/img/quinesomos.png')}}" class="media-object" alt="imagen">
             </a>
             <div class="media-body">
                 <h4 class="media-heading fonte">•  Quiénes somos? <small></small></h4>
