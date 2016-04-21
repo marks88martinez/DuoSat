@@ -81,18 +81,26 @@
 <br><br>
 
 <!--***************banner pequeño*****************-->
-<div class="row">
-    @foreach($chico as $chicos)
+<div class="container">
+    <div class="row">
+        @foreach($chico as $chicos)
 
-        <div class="col-md-3  bann"><a href="{{$chicos->link}}">  <img src="{{$chicos->url_banner}}"></a></div>
+            <div class="col-xs-6 col-sm-3  bann"><a href="{{$chicos->link}}">  <img src="{{$chicos->url_banner}}"></a></div>
 
-    @endforeach
-        <div class="col-md-3  ">
+        @endforeach
+        <div class="col-xs-6 col-sm-3 ">
             <style>
                 .video{
                     width: 100%;
-                    height: 328px;
+                    height: 156px;
                 }
+                @media screen and (min-width: 1185px) {
+                    .video{
+                        width: 100%;
+                        height: 194px
+                    }
+                }
+
             </style>
 
             <object class="video"
@@ -100,9 +108,10 @@
                     data="https://www.youtube.com/embed/sSBXsPIxtkE">
             </object>
 
-        {{--<iframe width="432" height="300" src="https://www.youtube.com/embed/sSBXsPIxtkE" frameborder="0" allowfullscreen></iframe>--}}
+            {{--<iframe width="432" height="300" src="https://www.youtube.com/embed/sSBXsPIxtkE" frameborder="0" allowfullscreen></iframe>--}}
         </div>
 
+    </div>
 </div>
 
 

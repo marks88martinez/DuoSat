@@ -55,6 +55,7 @@ Route::resource('queries', 'controller_busca');
 Route::resource('all_producto', 'controller_all_product');
 
 Route::resource('comparar','controller_comparar');
+Route::resource('link','controller_link_youtube');
 //Route::get('/compare', function () {
 //    return'ok';
 //});

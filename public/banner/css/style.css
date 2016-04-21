@@ -44,7 +44,7 @@
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
-	background: #fff;
+	/*background: #fff;*/
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-o-backface-visibility: hidden;
@@ -113,10 +113,10 @@
 
 /* Default styles for background colors */
 .sl-slide-horizontal .sl-slide-inner {
-	background: #ddd;
+	/*background: #ddd;*/
 }
 
 .sl-slide-vertical .sl-slide-inner {
-	background: #ccc;
+	/*background: #ccc;*/
 }
 

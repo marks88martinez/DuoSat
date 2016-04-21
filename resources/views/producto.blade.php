@@ -46,17 +46,17 @@
 
             <h3 class="fonte"> <strong>• {{$producto->nombre_producto}}</strong><hr></h3>
             <div><p>
-                    {{$producto->descripcion}}
+                    {!! nl2br($producto->descripcion) !!}
                 </p>
             </div>
 
             @foreach($producto->producto_atributos as  $data )
 
                 <h3 class="fonte2"> <strong>• {{$data->prodattr_attr->nombre_atributo}}</strong><hr></h3>
-                <div>
-                    <p>{{$data->descripcion}}</p>
+                <br>
+                    <p>{!! nl2br($data->descripcion) !!}</p>
 
-                </div>
+
 
             @endforeach
 
