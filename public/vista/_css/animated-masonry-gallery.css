@@ -161,6 +161,7 @@ body {
 .gallery-header-center-right-links-current {
 	color: #FFFFFF;
 	background-color: rgba(63,141,191,1);
+	background-color: rgb(119, 121, 128);
 }
 .gallery-header-center-right-links-current:hover {
 	background-color: rgba(63,141,191,0.5);

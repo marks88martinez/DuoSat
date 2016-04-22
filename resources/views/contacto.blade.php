@@ -1,6 +1,6 @@
 @extends('index')
 @section('contenido')
-    <br>
+    <br><br><br>
 
 
     <div class="container altura">

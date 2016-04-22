@@ -159,7 +159,8 @@
 
 
 <!--**********************-->
-<nav class="azul navbar navbar-default">
+
+<nav class="azul navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -217,12 +218,12 @@
 
 
 
-                    @include('buscador')
+                        @include('buscador')
 
                         {{--<form class="navbar-form navbar-left" role="search">--}}
-                            {{--<div class="form-group frm_input">--}}
-                                {{--<input type="text" class="form-control" placeholder="Search">--}}
-                            {{--</div>--}}
+                        {{--<div class="form-group frm_input">--}}
+                        {{--<input type="text" class="form-control" placeholder="Search">--}}
+                        {{--</div>--}}
 
                         {{--</form>--}}
                     </div>
@@ -235,28 +236,19 @@
 
 
 
-
 <!--***********final menu***********-->
-<br><br>
-<br>
+
 <!--********************************-->
 <div class="menu">
 
 
-    <style>
-      .lista{
-          color: black;
-            text-decoration: none;
-
-
-        }
-    </style>
 
 
 
 
 
     <div class="container">
+        <br>  <br>  <br>
         <ul class="box_cuadro">
             <li class="cuadro">
                 <span></span>
@@ -301,7 +293,7 @@
 
 
 <!--****************banner****************-->
-<div class="container-fluid">
+<div class="">
 
 
 @yield('contenido')

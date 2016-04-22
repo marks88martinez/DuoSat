@@ -1,6 +1,7 @@
 @extends('index')
 @section('contenido')
    <div class="container">
+       <br>  <br>  <br>
        <style>
            .ima{
                width: 180px;

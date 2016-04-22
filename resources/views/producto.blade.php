@@ -1,7 +1,7 @@
 @extends('index')
 @section('contenido')
 
-
+    <br>   <br>  <br>
     <div class="banner">
         <!--**************************************************-->
 

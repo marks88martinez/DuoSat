@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="{{URL::to('banner/css/custom.css')}}" />
     <script type="text/javascript" src="{{URL::to('banner/js/modernizr.custom.79639.js')}}"></script>
 
-    <br>
-    <div class=" demo-2">
+
+    <div id="cont" class="container-fluid demo-2">
 
         <!-- Codrops top bar -->
 
@@ -78,7 +78,7 @@
 
     {{--<!--**************************************************-->--}}
 {{--</div>--}}
-<br><br>
+<br>
 
 <!--***************banner pequeño*****************-->
 <div class="container">
@@ -97,7 +97,7 @@
                 @media screen and (min-width: 1185px) {
                     .video{
                         width: 100%;
-                        height: 194px
+                        height: 170px
                     }
                 }
                 @media screen and (max-width: 943px) {
@@ -120,7 +120,7 @@
     </div>
 </div>
 
-
+    <br>
 <!--****************final banner pequeño****************-->
 
 

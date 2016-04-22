@@ -1,6 +1,6 @@
 @extends('index')
 @section('contenido')
-    <br>
+    <br><br><br>
     <style>
         .pull-left img{
             width: 450px;

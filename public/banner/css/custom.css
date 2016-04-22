@@ -1,3 +1,11 @@
+#cont {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+
 .demo-1 .sl-slider-wrapper {
 	position: absolute;
 	width: 100%;
@@ -16,7 +24,7 @@
 .demo-2 .sl-slider h2,
 .demo-2 .sl-slider blockquote {
 	padding: 100px 30px 10px 30px;
-	width: 80%;
+	width: 100%;
 	max-width: 960px;
 	color: #fff;
 	margin: 0 auto;
