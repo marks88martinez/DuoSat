@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
+            <state vertical-scroll-proportion="-3.4285715">
               <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="empresa.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="empresa.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/empresa.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="16" />
+            <state vertical-scroll-proportion="-3.0641248">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,8 +115,8 @@
       <file leaf-file-name="portada.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6923077">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="4" />
+            <state vertical-scroll-proportion="-2.3846154">
+              <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -169,15 +169,15 @@
         <option value="$PROJECT_DIR$/app/model_link_youtube.php" />
         <option value="$PROJECT_DIR$/public/banner/css/style.css" />
         <option value="$PROJECT_DIR$/public/banner/css/custom.css" />
-        <option value="$PROJECT_DIR$/resources/views/empresa.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/contacto.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/all_producto.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/producto.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/buscado.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/public/vista/_css/animated-masonry-gallery.css" />
-        <option value="$PROJECT_DIR$/resources/views/portada.blade.php" />
         <option value="$PROJECT_DIR$/public/vista/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/portada.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/empresa.blade.php" />
       </list>
     </option>
   </component>
@@ -552,7 +552,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -936,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/empresa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/contacto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
@@ -992,18 +984,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6923077">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="4" />
+        <state vertical-scroll-proportion="-3.4285715">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
+    <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        <state vertical-scroll-proportion="-2.3846154">
+          <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/empresa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0641248">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>

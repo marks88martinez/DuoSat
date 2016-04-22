@@ -175,7 +175,7 @@
 //                            console.log(actual);
                             $nav[actual].click();
                             actual = actual >= $nav.length-1? 0 : actual +1;
-                        }, 3000);
+                        }, 5000);
 
                 return { init : init };
 
