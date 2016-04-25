@@ -17,7 +17,7 @@
             <div class="media-body">
                 <h4 class="media-heading fonte">•  Quiénes somos? <small></small></h4>
                 <p>
-                    En respuesta a la demanda de receptores de alto rendimiento por parte de los consumidores, Duo Laboratorios para su marca Duosat  ha trabajado en el desarrollo de la evolución de los receptores de definición estándar y alta definición (HD), para ser capaz de proporcionar los recursos y dispositivos multimedia de altos rendimientos con conectividad total y la más moderna tecnología, combinada con un diseño único.
+                    En respuesta a la demanda de receptores de alto rendimiento por parte de los consumidores, Duo Laboratorios para su marca Duosat  ha trabajado en el desarrollo de la evolución de los receptores de definición estándar y alta definición (HD), para ser capaz de proporcionar los recursos y dispositivos multimedia de alto rendimiento  con conectividad total y la más moderna tecnología, combinada con un diseño único.
 
                     Duo Laboratorios es el fabricante de receptores de satélite al aire libre de la marca Duosat . En Duosat , la satisfacción del cliente es nuestra máxima prioridad, a través del uso de tecnología innovadora, somos capaces de ofrecer un producto superior, rico en recursos y funcionalidades a un precio justo. Con la alianza estratégica con empresas asociadas que ofrecen productos de alta calidad con precios compatibles, garantizamos la sucesión continua y la satisfacción del cliente en el futuro.
 
@@ -81,71 +81,11 @@
                 La configuración puede ser DVB-S, DVB-S2, esto ya depende del modelo.
 
             </p>
-            {{--******************************--}}
-            {{--******************************--}}
-            <br>
 
 
-            <h4 class="media-heading fonte">• Time Machine  <small></small></h4>
-            <p>
-                Esta función permite rebobinar o avanzar programas en vivo, basta conectar un dispositivo USB Flash, y Usted podrá pausar y reanudar sus programas a cualquier hora!
-
-            </p>
-            {{--******************************--}}
-            {{--******************************--}}
-            <br>
-
-
-            <h4 class="media-heading fonte">•  Sistema de Género Exclusivo de la Marca <small></small></h4>
-            <p>
-                Género: con esta función ya no es necesario separar la lista de favoritos, no pierda su tiempo, nosotros lo hacemos por Usted! Todos los canales están automáticamente separados por género para facilitar la navegación entre los canales.
-
-            </p>
-            {{--******************************--}}
-            {{--******************************--}}
-            <br>
-
-
-            <h4 class="media-heading fonte">• Control automático exclusivo para padres <small></small></h4>
-            <p>
-                No se preocupe con los canales de adultos o canales violentos, el control exclusivo de los programas para padres de los receptores Duosat, cuenta con un sensor automático para la categoría mayores de 18 años (puede ser desactivado)
-
-            </p>
-            {{--******************************--}}
-            {{--******************************--}}
-            <br>
-
-
-            <h4 class="media-heading fonte">•  Canal exclusivo de actualización <small></small></h4>
-            <p>
-                El canal cambió al transpondedor original? No se preocupe, la IA (inteligencia artificial) de todos los productos Duosat busca automáticamente el canal que fue trasladado al otro transpondedor!
-
-            </p>
-            {{--******************************--}}
-            {{--******************************--}}
-            <br>
-
-
-            <h4 class="media-heading fonte">•  Soporte durante el tiempo de vida útil <small></small></h4>
-            <p>
-                Duo laboratorios asegura el soporte durante la vida útil de todos los productos Duosat, que a diferencia de los demás, nunca dejará de proporcionar soporte a los usuarios!
-
-            </p>
             {{--******************************--}}
 
-            {{--******************************--}}
-            <br>
 
-
-            <h4 class="media-heading fonte">•  Nosotros lo escuchamos!   <small></small></h4>
-            <p>
-                Duo laboratorios siempre lo oye!, Denos su opinión!
-                Tenemos un equipo preparado para acompañar sus necesidades, usted puede sugerir nuevas funcionalidades, y nosotros analizaremos la posibilidad a modo de conceder nuevos softwares.
-
-            </p>
-            {{--******************************--}}
-
-            <h4 class="media-heading fonte"> Usted es el más importante para nosotros!<small></small></h4>
 
 
 
@@ -196,6 +136,7 @@
             Tenemos un equipo preparado para acompañar sus necesidades, usted puede sugerir nuevas funcionalidades, y nosotros analizaremos la posibilidad a modo de conceder nuevos softwares.         </p>
 
         </p>
+        <h4 class="fonte3">• Usted es el más importante para nosotros!<small></small></h4>
     </div>
 
 

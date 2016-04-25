@@ -96,7 +96,7 @@
                     <div class="btn btn-default" id="filter-all">All</div>
                     @foreach($categoria as $categorias)
 
-                    <div class="btn btn-default" id="filter-{{$categorias->codigo_categoria}}">{{$categorias->nombre}}</div>
+                    <div class="btn btn-default " id="filter-{{$categorias->codigo_categoria}}">{{$categorias->nombre}}</div>
                     @endforeach
                     {{--<div class="gallery-header-center-right-links" id="filter-all">All</div>--}}
                     {{--<div class="gallery-header-center-right-links" id="filter-studio">Studio</div>--}}
