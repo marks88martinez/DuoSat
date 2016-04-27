@@ -741,7 +741,7 @@
             <section class="page2"  style="background: url(' {{URL::to('vista/next/fondo13.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
                 <div class="page_container">
                    <div class="wow zoomInUp"> <h1>Memoria Expandible</h1>
-                    <h2>El funcionamiento de memoria no debería ser una cosa . Así que, si 16GB aún es insuficiente, puedes añadir una tarjeta de 64 GB microSD adicional. Sin nubes, sin unidades de disco duro.</h2></div>
+                    <h2>El funcionamiento de la  memoria no debería ser una cosa. Así que, si 16GB aún no son suficientes, puedes añadir una tarjeta microSD adicional de 64 GB. De modo que, no se necesitarán nubes ni unidades de disco duro.</h2></div>
                     <img  class="wow bounceInUp"  src="{{URL::to('vista/next/64.png')}}" alt="phones" >
 
                 </div>
@@ -786,7 +786,7 @@
                 <div class="page_container">
                     <br> <br>
                     <h1>HEVC (H.265) Codec</h1>
-                    <h2>Con el más nuevo Códec H.265, las imágenes ganaron una considerable mejora en relación con los dispositivos tecnológicos actuales, impulsado con un exclusivo procesador de video de gran alcance, que permite realzar verdaderamente tu experiencia de imagen colorida</h2>
+                    <h2>Con el más nuevo Códec H.265, las imágenes ganaron una considerable mejora en relación con los dispositivos tecnológicos actuales, impulsado con un exclusivo procesador de video de gran alcance, que permite realzar verdaderamente tu experiencia de imagen colorida.</h2>
                     <img  class="wow bounce" src="{{URL::to('vista/next/h2645.png')}}" alt="phones">
 
                 </div>
@@ -798,7 +798,7 @@
                 <div class="page_container">
                     <br> <br>
                   <div class="wow fadeIn">  <h1>WI-FI más veloz</h1>
-                    <h2  >El Next UHD es  impulsado por la última tecnología en dispositivos WI-FI. Lo que significa que la velocidad ha sido mejorada para soportar la transmisión multimedia a través de Internet, conforme a las más nuevas tendencias de entretenimiento. </h2>
+                    <h2  >El Next UHD es  impulsado por la última tecnología en dispositivos WI-FI. Lo que significa que la velocidad ha sido mejorada para soportar la transmisión multimedia a través de Internet, conforme a las más nuevas tendencias del entretenimiento. </h2>
                   </div>
                     <img  class="wow bounceIn" src="{{URL::to('vista/next/07.jpg')}}" alt="phones">
 
@@ -811,7 +811,7 @@
 
                     <h1>Transformador Diseño Modular
                     </h1>
-                    <h2>El Nuevo Duosat Next UHD fue diseñado para ayudarte quitar el máximo provecho al entretenimiento. Una visión a futuro es que el diseño modular te deja usar un sintonizador  compañero para mejorar las funcionalidades del entretenimiento. El deslizamiento para fuera del sintonizador puede ser realizado en un instante para la personalización de tu Sistema de Televisión, soportando diferentes opciones de sintonización, ya sea ISDBT, Cable, Satélite, su personalización es muy sencilla!</h2>
+                    <h2>El Nuevo Duosat Next UHD fue diseñado para ayudarte quitar el máximo provecho al entretenimiento. Una visión a futuro es que el diseño modular te deja usar un sintonizador  compañero para mejorar las funcionalidades del entretenimiento. El deslizamiento para fuera del sintonizador puede ser realizado en un instante para la personalización de tu Sistema de Televisión, soportando diferentes opciones de sintonización, ya sea ISDBT, Cable, Satélite, la personalización del mismo es muy sencilla!</h2>
 
 
                 </div>
@@ -837,7 +837,7 @@
                 <div class="page_container">
                     <br> <br>
                     <h1>Calidad de Audio</h1>
-                    <h2>El Duosat Next UHD es equipado con salida de audio óptico (SPDIF),soportando Dolby, AC3 DTS, 5.1 y 7.1, con alta fidelidad<p style="font-size:15px">función disponible con conexión del Sistema Home Theater</p> </h2>
+                    <h2>El Duosat Next UHD está equipado con salida de audio óptico (SPDIF),soportando Dolby, AC3 DTS, 5.1 y 7.1, con alta fidelidad  ²<p style="font-size:15px">función disponible con conexión del Sistema Home Theater</p> </h2>
 
                     <img  class="wow bounce" src="{{URL::to('vista/next/homet.png')}}" >
 
@@ -866,7 +866,7 @@
 
                     <h1> Conectividad
                     </h1>
-                    <h2>Disfruta más sencilla y rápidamente del acceso a tu entretenimiento favorito, conectando vía wi-fi tu Next UHD con otros dispositivos multimedia. Visualiza tu programa de TV favorito desde tu dispositivo móvil o vicecersa. Disfruta de una experiencia de navegación más rápida simplemente como si fuera una computadora.</h2>
+                    <h2>La experiencia más envolvente con UHD 4K es que convierte el entretenimiento ordinario a algo extraordinario. Vea imágenes increíblemente nítidas, una amplia expresión de color y detalles muy dramáticos - todo en una clara y nítida resolución 4K UHD. Disfrute de una imagen más realista en nuestra UHD TV 4K y eleve su experiencia de entretenimiento al siguiente nivel.</h2>
 
 
                 </div>
@@ -893,7 +893,7 @@
                 <div class="page_container">
                     <br> <br>
                     <h1>Juegos</h1>
-                    <h2>Disfruta de los juegos más populares listados en Google Play, con air mouse o Joystick²  </h2>
+                    <h2>Disfruta de los juegos más populares listados en Google Play, con air mouse o Joystick² </h2>
                     <img  class="wow bounce" src="{{URL::to('vista/next/game.png')}}" >
                     <p>Función disponible con conexión al Sistema Home Theater</p>
 

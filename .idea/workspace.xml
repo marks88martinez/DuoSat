@@ -82,22 +82,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4545455">
-              <caret line="789" column="81" selection-start-line="789" selection-start-column="81" selection-end-line="789" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.48473284">
+              <caret line="902" column="0" selection-start-line="902" selection-start-column="0" selection-end-line="902" selection-end-column="0" />
               <folding>
                 <element signature="e#20553#20685#0#HTML" expanded="true" />
-                <element signature="e#21231#21271#0#HTML" expanded="true" />
-                <element signature="e#24147#24187#0#HTML" expanded="true" />
-                <element signature="e#25045#25177#0#HTML" expanded="true" />
-                <element signature="e#26074#26096#0#HTML" expanded="true" />
-                <element signature="e#26354#26394#0#HTML" expanded="true" />
-                <element signature="e#27763#27803#0#HTML" expanded="true" />
-                <element signature="e#28721#28761#0#HTML" expanded="true" />
-                <element signature="e#29239#29279#0#HTML" expanded="true" />
-                <element signature="e#30639#30687#0#HTML" expanded="true" />
+                <element signature="e#21262#21302#0#HTML" expanded="true" />
+                <element signature="e#24180#24220#0#HTML" expanded="true" />
+                <element signature="e#25088#25220#0#HTML" expanded="true" />
+                <element signature="e#26122#26144#0#HTML" expanded="true" />
+                <element signature="e#26402#26442#0#HTML" expanded="true" />
+                <element signature="e#27862#27902#0#HTML" expanded="true" />
+                <element signature="e#28819#28859#0#HTML" expanded="true" />
+                <element signature="e#29337#29377#0#HTML" expanded="true" />
+                <element signature="e#30737#30785#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="producto.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="producto.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/producto.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.020858895">
-              <caret line="92" column="10" selection-start-line="54" selection-start-column="4" selection-end-line="92" selection-end-column="10" />
+            <state vertical-scroll-proportion="-34.653847">
+              <caret line="105" column="129" selection-start-line="105" selection-start-column="129" selection-end-line="105" selection-end-column="129" />
               <folding />
             </state>
           </provider>
@@ -1000,30 +1000,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/producto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4545455">
-          <caret line="789" column="81" selection-start-line="789" selection-start-column="81" selection-end-line="789" selection-end-column="81" />
-          <folding>
-            <element signature="e#20553#20685#0#HTML" expanded="true" />
-            <element signature="e#21231#21271#0#HTML" expanded="true" />
-            <element signature="e#24147#24187#0#HTML" expanded="true" />
-            <element signature="e#25045#25177#0#HTML" expanded="true" />
-            <element signature="e#26074#26096#0#HTML" expanded="true" />
-            <element signature="e#26354#26394#0#HTML" expanded="true" />
-            <element signature="e#27763#27803#0#HTML" expanded="true" />
-            <element signature="e#28721#28761#0#HTML" expanded="true" />
-            <element signature="e#29239#29279#0#HTML" expanded="true" />
-            <element signature="e#30639#30687#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-34.653847">
+          <caret line="105" column="129" selection-start-line="105" selection-start-column="129" selection-end-line="105" selection-end-column="129" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/producto.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.020858895">
-          <caret line="92" column="10" selection-start-line="54" selection-start-column="4" selection-end-line="92" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="0.48473284">
+          <caret line="902" column="0" selection-start-line="902" selection-start-column="0" selection-end-line="902" selection-end-column="0" />
+          <folding>
+            <element signature="e#20553#20685#0#HTML" expanded="true" />
+            <element signature="e#21262#21302#0#HTML" expanded="true" />
+            <element signature="e#24180#24220#0#HTML" expanded="true" />
+            <element signature="e#25088#25220#0#HTML" expanded="true" />
+            <element signature="e#26122#26144#0#HTML" expanded="true" />
+            <element signature="e#26402#26442#0#HTML" expanded="true" />
+            <element signature="e#27862#27902#0#HTML" expanded="true" />
+            <element signature="e#28819#28859#0#HTML" expanded="true" />
+            <element signature="e#29337#29377#0#HTML" expanded="true" />
+            <element signature="e#30737#30785#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
