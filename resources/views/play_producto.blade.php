@@ -786,7 +786,7 @@
                 <div class="page_container">
                     <br> <br>
                     <h1>HEVC (H.265) Codec</h1>
-                    <h2>Con el más nuevo Códec H.265, las imágenes ganaron una considerable mejora en relación con los dispositivos tecnológicos a ctuales, impulsado con un exclusivo procesador de video de gran alcance, que permite realzar verdaderamente tu experiencia de imagen colorida.</h2>
+                    <h2>Con el más nuevo Códec H.265, las imágenes ganaron una considerable mejora en relación con los dispositivos tecnológicos actuales, impulsado con un exclusivo procesador de video de gran alcance, que permite realzar verdaderamente tu experiencia de imagen colorida.</h2>
                     <img  class="wow bounce" src="{{URL::to('vista/next/h2645.png')}}" alt="phones">
 
                 </div>

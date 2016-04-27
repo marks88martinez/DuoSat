@@ -266,7 +266,7 @@
 
                 <ul class="menu-sub">
                     <span></span>
-                        <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/next">NEXT</a></li>
+                        <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next">NEXT</a></li>
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
                 <a href="{{URL::to('/all_producto')}}"><h6 class="lista">4K</h6></a>
@@ -280,7 +280,7 @@
                     <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/next">PLAY</a></li>
                     {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
-                <a href="{{URL::to('/next')}}"><h6 class="lista">
+                <a href="{{URL::to('/play')}}"><h6 class="lista">
                         Media Players</h6></a>
             </li>
 
