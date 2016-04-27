@@ -733,7 +733,7 @@
                     </div>
                 </div>
 
-                <img class="wow bounceInRight" src="{{URL::to('vista/next/89.png')}}" alt="phones">
+                <img class="wow bounceInRight" src="{{URL::to('vista/play/play.png')}}" alt="phones">
             </section>
 
 

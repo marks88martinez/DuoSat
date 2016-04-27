@@ -96,8 +96,8 @@
       <file leaf-file-name="play_producto.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/play_producto.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28004956">
-              <caret line="718" column="0" selection-start-line="718" selection-start-column="0" selection-end-line="718" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.63816607">
+              <caret line="735" column="78" selection-start-line="735" selection-start-column="78" selection-end-line="735" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -140,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2016_04_12_191324_banner_chico.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_vista.php" />
         <option value="$PROJECT_DIR$/resources/views/login/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
@@ -191,6 +190,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_banner.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_chico.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/play_producto.blade.php" />
       </list>
     </option>
   </component>
@@ -631,7 +631,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="31" width="1813" height="1048" extended-state="0" />
+    <frame x="24" y="31" width="1813" height="1048" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1058,8 +1058,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/play_producto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28004956">
-          <caret line="718" column="0" selection-start-line="718" selection-start-column="0" selection-end-line="718" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.63816607">
+          <caret line="735" column="78" selection-start-line="735" selection-start-column="78" selection-end-line="735" selection-end-column="78" />
           <folding />
         </state>
       </provider>
