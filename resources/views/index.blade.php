@@ -257,8 +257,31 @@
             </li>
             <li class="cuadro">
                 <span></span>
-                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/4.png')}}"></a>
+                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
                 <a href="{{URL::to('/all_producto')}}"><h6 class="lista">All Product</h6></a>
+            </li>
+            <li class="cuadro">
+                <span></span>
+                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>
+
+                <ul class="menu-sub">
+                    <span></span>
+                        <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/next">NEXT</a></li>
+                        {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
+                </ul>
+                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">4K</h6></a>
+            </li>
+            <li class="cuadro">
+                <span></span>
+                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
+
+                <ul class="menu-sub">
+                    <span></span>
+                    <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/next">PLAY</a></li>
+                    {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
+                </ul>
+                <a href="{{URL::to('/next')}}"><h6 class="lista">
+                        Media Players</h6></a>
             </li>
 
 
