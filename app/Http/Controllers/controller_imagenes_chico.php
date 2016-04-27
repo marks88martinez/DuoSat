@@ -133,6 +133,8 @@ class controller_imagenes_chico extends Controller
      */
     public function update(Request $request, $id)
     {
+
+
       $chico = model_imagenes_chico::find($id);
         $chico->fill($request->only('nombre','link'));
         $chico->save();
@@ -140,13 +142,14 @@ class controller_imagenes_chico extends Controller
         try{
             $imagen = $this->imagen($request->file(('url_imagen')));
             try{
-                $imag = model_imagenes_chico::find($id)->firstOrFail();
+                $imag = model_imagenes_chico::findOrFail($id);
                 $imag->url_banner = $imagen;
+//                dd($imag);
                 $imag->save();
 
             }catch(ModelNotFoundException $e){
-                model_imagenes::create([
-                    'url_banner'=>$imagen
+                model_imagenes_chico::create([
+                    'url_imagen'=>$imagen
 
                 ]);
             }

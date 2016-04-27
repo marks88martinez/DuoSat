@@ -119,7 +119,7 @@ class controller_imagenes_banner extends Controller
         try{
             $imagen = $this->imagen($request->file(('url_banner')));
             try{
-                $imag = model_imagenes_banner::find($id)->firstOrFail();
+                $imag = model_imagenes_banner::findOrFail($id);
                 $imag->url_banner = $imagen;
                 $imag->save();
 

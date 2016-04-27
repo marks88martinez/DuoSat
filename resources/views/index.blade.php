@@ -277,7 +277,7 @@
 
                 <ul class="menu-sub">
                     <span></span>
-                    <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/next">PLAY</a></li>
+                    <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/play">PLAY</a></li>
                     {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
                 <a href="{{URL::to('/play')}}"><h6 class="lista">
