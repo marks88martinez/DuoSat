@@ -64,7 +64,7 @@
             text-transform: capitalize;
             background: rgba(0,0,0,0.85);
             display: inline-block;
-            color: #6D461D;
+            color: #84848b;
             border-radius: 5px 5px;
             -webkit-border-radius: 5px 5px;
             -moz-border-radius: 5px 5px;
@@ -72,7 +72,7 @@
             padding: 3px 10px;
         }
         h2 {
-            color: #6D461D;
+            color: #84848b;
             font-weight: 100;
             margin-top: 0;
             margin-bottom: 10px;
@@ -187,13 +187,13 @@
         }
         .credit {
             text-align: center;
-            color: rgba(0,0,0,0.5);
+            color: rgba(132, 132, 139, 0.5);
             padding: 10px;
             width: 410px;
             clear: both;
         }
         .credit a {
-            color: rgba(0,0,0,0.85);
+            color: rgba(132, 132, 139, 0.85);
             text-decoration: none;
             font-weight: bold;
             text-align: center;
@@ -213,14 +213,14 @@
             background: rgba(255, 255, 255, 0.25);
             font-weight: bold;
             font-size: 13px;
-            color: #000;
+            color: #84848b;
             -webkit-transition: all 500ms ease-in-out;
             -moz-transition: all 500ms ease-in-out;
             -o-transition: all 500ms ease-in-out;
             transition: all 500ms ease-in-out;
         }
         .back:hover {
-            color: black;
+            color: #84848b;
             background: rgba(255, 255, 255, 0.5);
         }
 
@@ -244,8 +244,13 @@
             max-width: 100%;
             z-index: 1;
         }
-
+        section{
+            height: 100vh !important;
+        }
         .main section.page1 {
+            width: 100%;
+
+
             background: rgb(224, 226, 230);
         }
 
@@ -255,7 +260,7 @@
             padding: 0;
             margin-bottom: 15px;
             font-size: 30px;
-            color: black;
+            color: #84848b;
             margin-top: 32px;
             margin-left: 160px;
         }
@@ -264,10 +269,10 @@
             padding: 0;
             margin-bottom: 15px;
             font-size: 70px;
-            color: black;
+            color: #84848b;
         }
         .main section.page1 h2 {
-            color: rgba(0,0,0,0.85);
+            color: rgba(132, 132, 139, 0.85);
             text-align: center;
             width: 435px;
             line-height: 160%;
@@ -281,6 +286,11 @@
         .main section .page_container .btns a{
             text-align: center;
         }
+
+
+        /**************************/
+
+        /**************************/
         .main section.page2 {
 
             /*background-image: url('http://www.samsung.com/hk_en/consumer-images/article/2014/large-tv/MainKV_without-title-0.jpg');*/
@@ -289,12 +299,12 @@
         }
         .main section.page2 > img {
             position: absolute;
-            top: -300px;
+            /*top: -300px;*/
             left: 50%;
             margin-left: -1095px;
         }
         .main section.page2 .page_container {
-            margin-top: 240px;
+            /*margin-top: 240px;*/
             overflow: hidden;
         }
         .main section.page2 h1 {
@@ -337,10 +347,10 @@
             margin-bottom: 0;
             font-size: 70px;
             letter-spacing: -1px;
-            color: black;
+            color: #84848b;
         }
         .main section.page3 h2 {
-            color: rgba(0,0,0,0.85);
+            color: rgba(132, 132, 139, 0.85);
             text-align: left;
             line-height: 160%;
             font-weight: 100;
@@ -349,16 +359,16 @@
 
         /************************/
         .main section.page4 {
-            background: #a7c836;
+            background: #2082ec;
         }
         .main section.page4 > img {
             position: absolute;
-            top: -300px;
+            top: -100px;
             left: 50%;
             margin-left: -1095px;
         }
         .main section.page4 .page_container {
-            margin-top: 50px;
+
             overflow: hidden;
         }
         .main section.page4 h1 {
@@ -393,7 +403,7 @@
             padding: 0;
             margin-bottom: 15px;
             font-size: 20px;
-            color: black;
+            color: #84848b;
             margin-top: 32px;
             margin-left: 160px;
         }
@@ -402,11 +412,47 @@
             padding: 0;
             margin-bottom: 15px;
             font-size: 50px;
-            color: black;
+            color: #84848b;
         }
         .main section.page5 h2 {
             font-size: 25px;
-            color: rgba(0, 0, 0, 0.85);
+            color:
+            text-align: center;
+            width: 435px;
+            line-height: 160%;
+        }
+        /********************/
+
+        /*********************/
+
+        .main section.page051 {
+
+            background: rgb(253, 253, 254);
+        }
+        .main section.page051 img{
+            margin-top: 200px;
+        }
+        .main section.page051 .TEXT {
+
+            position: absolute;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #84848b;
+            margin-top: 32px;
+            margin-left: 160px;
+        }
+        .main section.page051 h1 {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 15px;
+            font-size: 50px;
+            color: #84848b;
+        }
+        .main section.page051 h2 {
+            font-size: 25px;
+
             text-align: center;
             width: 435px;
             line-height: 160%;
@@ -415,16 +461,17 @@
 
         /************************/
         .main section.page6 {
-            background: #2b2b2d;
+            background: rgba(226, 226, 227, 0.85);
         }
         .main section.page6 > img {
             position: absolute;
-            top: -300px;
+            top: -100px;
             left: 50%;
             margin-left: -1095px;
         }
         .main section.page6 .page_container {
-            margin-top:10px;
+            margin-top: -100px;
+
             overflow: hidden;
         }
         .main section.page6 h1 {
@@ -433,10 +480,10 @@
             margin-bottom: 15px;
             font-size: 50px;
             letter-spacing: -1px;
-            color: white;
+            color: #84848b;
         }
         .main section.page6 h2 {
-            color: rgba(255,255,255,0.85);
+            color: rgba(132, 132, 139, 0.85);
             text-align: center;
             line-height: 160%;
             font-weight: 100;
@@ -462,16 +509,18 @@
             margin-bottom: 0;
             font-size: 70px;
             letter-spacing: -1px;
-            color: black;
+            color: #84848b;
         }
         .main section.page7 h2 {
-            color: rgba(0,0,0,0.85);
+            color: rgba(132, 132, 139, 0.85);
             text-align: left;
             line-height: 160%;
             font-weight: 100;
             font-size: 21px;
         }
         /*********************************/
+
+
 
 
         /************************/
@@ -559,6 +608,43 @@
         /*************************************/
 
 
+        /*********************/
+
+        .main section.page05 {
+
+            background: rgb(253, 253, 254);
+        }
+        .main section.page05 img{
+            margin-top: -170px;
+        }
+        .main section.page05 .TEXT {
+
+            position: absolute;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #84848b;
+            margin-top: 32px;
+            margin-left: 160px;
+        }
+        .main section.page05 h1 {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 15px;
+            font-size: 50px;
+            color: #84848b;
+        }
+        .main section.page05 h2 {
+            font-size: 25px;
+            color:
+            text-align: center;
+            width: 435px;
+            line-height: 160%;
+        }
+        /********************/
+
+
         body.disabled-onepage-scroll .onepage-wrapper  section {
             min-height: 100%;
             height: auto;
@@ -608,7 +694,7 @@
          .modelo{
              z-index: -1000;
             position: absolute;
-            margin-top: -365px;
+            margin-top: -190px;
             margin-left: -700px;
         }
 
@@ -618,6 +704,7 @@
             margin-top: -250px;
             margin-left: -600px;
         }
+
 
     </style>
 
@@ -633,11 +720,13 @@
     <div class="wrapper">
         <div class="main">
 
+
             <section class="page1">
                 <div class="page_container">
                     <br> <br> <br> <br>
                     <div class="wow fadeInDown"><h1>NEXT</h1> <p CLASS="TEXT">UHD</p></div>
-                    <h2 class="wow bounceInUp">Forget about a conventional multimedia devices, because The next is now</h2>
+                    {{--<div class="wow fadeInDown"><img src="{{URL::to('vista/next/logo.png')}}" alt=""></div>--}}
+                    <h2 class="wow bounceInUp">Olvídate de los dispositivos multimedia convencionales, porque ahora existe</h2>
                     <p class="credit"></p>
                     <div class="btns">
                         {{--<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>--}}
@@ -647,40 +736,40 @@
                 <img class="wow bounceInRight" src="{{URL::to('vista/next/89.png')}}" alt="phones">
             </section>
 
-            <section class="page2"  style="background: url(' {{URL::to('vista/next/fondo13.jpg')}}') ; width: 100%";>
+
+
+            <section class="page2"  style="background: url(' {{URL::to('vista/next/fondo13.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
                 <div class="page_container">
-                   <div class="wow zoomInUp"> <h1>Expandable memory</h1>
-                    <h2>Running out of memory shouldn’t be a thing. So if 16GB isn’t already enough, you can add an additional 64GB with a microSD card. No clouds, no hard drives.</h2></div>
-                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/memory.png')}}" alt="phones" >
-
-
-
-
+                   <div class="wow zoomInUp"> <h1>Memoria Expandible</h1>
+                    <h2>El funcionamiento de memoria no debería ser una cosa . Así que, si 16GB aún es insuficiente, puedes añadir una tarjeta de 64 GB microSD adicional. Sin nubes, sin unidades de disco duro.</h2></div>
+                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/64.png')}}" alt="phones" >
 
                 </div>
 
             </section>
 
-            <section class="page3">
+            <section class="page3"  class="page9" style="background:#000000 ; width: 100%"; >
                 <div class="page_container">
 
-                    <h1>Smart Design</h1>
-                    <h2>The Next UHD feature screens in a front panel, to customize the look in accord of your decoration, many options as clock skins and channel icon, or your own picture can be  loaded to be shown in a display. We’ve perfected the Next UHD design, to meet an minimalist trending for media device, with fully recyclable materials, making eco-friendly craft.</h2>
-
+                    <div class=" wow fadeIn"><h1 >Diseño Inteligente</h1>
+                    <h2>El Next UHD tiene una pantalla de funciones en el panel frontal, para personalizar el visual  conforme a tu decoración, con diversas opciones como el reloj, los íconos del canal o puedes cargar tu propia imagen para poder visualizar en la pantalla. Hemos perfeccionado el diseño del Next UHD para cumplir con una tendencia minimalista para el dispositivo, con materiales totalmente reciclables lo que lo convierte en un arte ecológico.</h2>
+                    </div>
 
 
 
                 </div>
-                <img class="modelo wow fadeInLeft" src="{{URL::to('vista/next/mm.png')}}" alt="phones">
+                <img class="modelo wow fadeInLeft" src="{{URL::to('vista/next/du.png')}}" alt="phones">
                 <br>
             </section>
 
 
             <section class="page4">
                 <div class="page_container">
-                    <h1>The unique Android OS
+                    <h1>Único
+                        Sistema Operacional Android
+
                     </h1>
-                    <h2>Things just got sweeter. The Next UHD powered by the unique Android KITKAT OS. We have choice the most stable OS to rework, making the global unique android OS for media players, and new features developed specially to meet the use for media players,  that anticipates your next move.</h2>
+                    <h2>Las cosas simplemente se volvieron más dulces. El Next UHD es impulsado por un único Sistema Operacional Android, que es el  KITKAT. Hemos elegido el Sistema Operacional más estable para configurarlo, creando un Sistema Operacional Android  global único para reproductores multimedia y nuevas funcionalidades desarrolladas especialmente conforme al uso de los reproductores multimedia, lo que permite anticipar tu próximo movimiento.</h2>
                     <img  class="wow bounceInUp" src="{{URL::to('vista/next/android.png')}}" alt="phones">
 
 
@@ -697,8 +786,8 @@
                 <div class="page_container">
                     <br> <br>
                     <h1>HEVC (H.265) Codec</h1>
-                    <h2>With the newest H.265 codec, the image earn considerable improvement in relation to current technology's devices, powered with powerful exclusive video processor, enhancing your true colorful image experience.</h2>
-                    <img  class="wow bounce" src="{{URL::to('vista/next/HEVC.jpg')}}" alt="phones">
+                    <h2>Con el más nuevo Códec H.265, las imágenes ganaron una considerable mejora en relación con los dispositivos tecnológicos actuales, impulsado con un exclusivo procesador de video de gran alcance, que permite realzar verdaderamente tu experiencia de imagen colorida</h2>
+                    <img  class="wow bounce" src="{{URL::to('vista/next/h2645.png')}}" alt="phones">
 
                 </div>
 
@@ -708,22 +797,21 @@
             <section class="page6">
                 <div class="page_container">
                     <br> <br>
-                  <div class="wow fadeIn">  <h1>Fastest WI-FI</h1>
-                    <h2  >The Next UHD  powered by the latest technology on wifi devices. That means the speed is enhanced to support the streaming media through internet, to meet newest trending of entertainment.</h2>
+                  <div class="wow fadeIn">  <h1>WI-FI más veloz</h1>
+                    <h2  >El Next UHD es  impulsado por la última tecnología en dispositivos WI-FI. Lo que significa que la velocidad ha sido mejorada para soportar la transmisión multimedia a través de Internet, conforme a las más nuevas tendencias de entretenimiento. </h2>
                   </div>
-                    <img  class="wow tada" src="{{URL::to('vista/next/wifi.png')}}" alt="phones">
+                    <img  class="wow bounceIn" src="{{URL::to('vista/next/07.jpg')}}" alt="phones">
 
                 </div>
 
             </section>
 
-            <section class="page7">
+            <section class="page7"  style="background:#000000 ; width: 100%"; >
                 <div class="page_container">
 
-                    <h1>Transformative
-                        modular design
+                    <h1>Transformador Diseño Modular
                     </h1>
-                    <h2>The new Duosat Next UHD is designed  to help you get the most out of entertainment. A forward-thinking modular design let's you use companion tuner to enhanced entertainment capabilities. The slide out tuner can be swapped in a flash to customize your television system, supporting different tuner options as ISDBT, Cable, Satellite, it's customization made easy!</h2>
+                    <h2>El Nuevo Duosat Next UHD fue diseñado para ayudarte quitar el máximo provecho al entretenimiento. Una visión a futuro es que el diseño modular te deja usar un sintonizador  compañero para mejorar las funcionalidades del entretenimiento. El deslizamiento para fuera del sintonizador puede ser realizado en un instante para la personalización de tu Sistema de Televisión, soportando diferentes opciones de sintonización, ya sea ISDBT, Cable, Satélite, su personalización es muy sencilla!</h2>
 
 
                 </div>
@@ -732,14 +820,14 @@
             </section>
 
 
-            <section class="page8">
+            <section class="page8"  style="background: url(' {{URL::to('vista/next/capture.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
                 <div class="page_container">
 
-                    <div class="wow pulse">  <h1>Capture more of every moment</h1>
-                        <h2  >Take pictures  or use IP camera for surveillance, also able to use with Snapchat, skype or other applications that you need with camera compatibilities.</h2>
-                        <p>function available with the purchase of extra accessory</p>
+                    <div class="wow pulse">  <h1>Captura más de cada momento</h1>
+                        <h2  >Toma fotos o utiliza tu Cámara IP para seguridad, además se puede usar con  Snapchat™, Skype™ u otras aplicaciones que necesiten compatibilidad de cámara.</h2>
+                        <p>Función disponible con la compra de un accesorio extra </p>
                     </div>
-                    <img  class="wow wobble" src="{{URL::to('vista/next/cam.png')}}" alt="phones">
+                    {{--<img  class="wow wobble" src="{{URL::to('vista/next/cam.png')}}" alt="phones">--}}
 
                 </div>
 
@@ -748,9 +836,10 @@
             <section class="page5">
                 <div class="page_container">
                     <br> <br>
-                    <h1>Audio performance</h1>
-                    <h2>The Duosat Next UHD is equiped with optical audio output (SPDIF), supporting Dolby, AC3 DTS, 5.1 and 7.1, with high fidelity ² </h2>
-                    <img  class="wow bounce" src="{{URL::to('vista/next/sonido.png')}}" >
+                    <h1>Calidad de Audio</h1>
+                    <h2>El Duosat Next UHD es equipado con salida de audio óptico (SPDIF),soportando Dolby, AC3 DTS, 5.1 y 7.1, con alta fidelidad<p style="font-size:15px">función disponible con conexión del Sistema Home Theater</p> </h2>
+
+                    <img  class="wow bounce" src="{{URL::to('vista/next/homet.png')}}" >
 
                 </div>
 
@@ -760,8 +849,8 @@
             <section class="page9"  class="page9" style="background:#63d7a4 ; width: 100%"; >
                 <div class="page_container">
                     <div class="wow zoomInUp"> <h1>4K UHD</h1>
-                        <h2>The ultimate immersive experience with 4K UHD technology, turns ordinary home entertainment into extraordinary. See incredibly sharp picture, a wide color expression and remarkably dramatic detail – all in crisp, clear 4K UHD resolution. Enjoy a more lifelike picture on our 4K UHD TVs and take your entertainment experience to the next level.</h2></div>
-                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/4KUHD-Banner.png')}}"  >
+                        <h2>La experiencia más envolvente con UHD 4K es que convierte el entretenimiento ordinario a algo extraordinario. Vea imágenes increíblemente nítidas, una amplia expresión de color y detalles muy dramáticos - todo en una clara y nítida resolución 4K UHD. Disfrute de una imagen más realista en nuestra UHD TV 4K y eleve su experiencia de entretenimiento al siguiente nivel.</h2></div>
+                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/4k2.png')}}"  >
 
 
 
@@ -772,18 +861,18 @@
             </section>
 
 
-            <section class="page7">
+            <section class="page051">
                 <div class="page_container">
 
-                    <h1>Connectivity
+                    <h1> Conectividad
                     </h1>
-                    <h2>Enjoy easier and faster access to your favourite media and entertainment, connecting your Next UHD via wi-fi with other media devices.Watch your TV entertainment on your mobile device or vice versa.Enjoy a faster fluid browsing experience just like a computer.</h2>
+                    <h2>Disfruta más sencilla y rápidamente del acceso a tu entretenimiento favorito, conectando vía wi-fi tu Next UHD con otros dispositivos multimedia. Visualiza tu programa de TV favorito desde tu dispositivo móvil o vicecersa. Disfruta de una experiencia de navegación más rápida simplemente como si fuera una computadora.</h2>
 
 
                 </div>
                 <br>
 
-                <img class=" modelo2 wow fadeInLeft" src="{{URL::to('vista/next/acceso.jpg')}}" >
+                <img class=" modelo2 wow fadeInLeft" src="{{URL::to('vista/next/conec.jpg')}}" >
 
             </section>
 
@@ -791,7 +880,7 @@
             <section class="page9" style="background:#d72702 ; width: 100%"; >
                 <div class="page_container">
                     <div class="wow zoomInUp"> <h1>3D</h1>
-                        <h2>Experience truily immersive experience with 3D capatibility on your Next UHD</h2></div>
+                        <h2>Experiencia realmente envolvente con las funcionalidades 3D en tu Next UHD</h2></div>
                     <img  class="wow wobble"  src="{{URL::to('vista/next/3d.png')}}"  >
 
 
@@ -800,13 +889,13 @@
 
             </section>
 
-            <section class="page5">
+            <section class="page05">
                 <div class="page_container">
                     <br> <br>
-                    <h1>Gaming</h1>
-                    <h2>Enjoy the most popular games listed in google play, with air mouse or Joystick² </h2>
+                    <h1>Juegos</h1>
+                    <h2>Disfruta de los juegos más populares listados en Google Play, con air mouse o Joystick²  </h2>
                     <img  class="wow bounce" src="{{URL::to('vista/next/game.png')}}" >
-                    <p>function available with connection  of home theater system</p>
+                    <p>Función disponible con conexión al Sistema Home Theater</p>
 
                 </div>
 
@@ -815,7 +904,7 @@
             <section class="page9"  class="page9" style="background:#48474e ; width: 100%"; >
                 <div class="page_container">
                     <div class="wow zoomInUp"> <h1>Streaming</h1>
-                        <h2>Try XBMC, netflix, hulu, Kodi dailimotion, youtube  every streaming app's supported by your android system</h2></div>
+                        <h2>Try XBMC, netflix, hulu, Kodi dailimotion, youtube, todas las aplicaciones de Streaming que son soportadas por el Sistema Android</h2></div>
                     <img  class="wow bounceInUp"  src="{{URL::to('vista/next/str.png')}}"  >
 
 
@@ -826,9 +915,9 @@
 
             <section class="page9"  class="page9" style="background:#d0d79a ; width: 100%"; >
                 <div class="page_container">
-                    <div class="wow bounceInUp"> <h1>QWERT RCU</h1>
-                        <h2>Enjoy your browsing experience, chatting, with the exclusive QWERTY keyboard thats coming as standard remote control in the Duosat Next UHD</h2></div>
-                    <img  class="wow bounceIn"  src="{{URL::to('vista/next/control.png')}}"  >
+                    <div class="wow bounceInUp"> <h1>QWERTY RCU</h1>
+                        <h2>Disfruta de tu experiencia de navegacion, en el chat, con teclado QWERTY exclusivo que viene como un contro remote estándar con el Duosat Next UHD</h2></div>
+                    <img  class=" contro wow bounceIn"  src="{{URL::to('vista/next/control.png')}}"  >
 
 
 
@@ -842,7 +931,7 @@
                 <div class="page_container">
                     <br> <br>
                     <h1>USB 3.0 </h1>
-                    <h2>USB 3.0 is the third major version of the universal serial bus (USB) standard for interfacing computers and electronic devices. Among other improvements, USB 3.0 adds the new transfer rate referred to as SuperSpeed USB (SS) that can transfer data at up to 5 Gbit/s (625 MB/s), to enjoy blueray encode4d movies or UHD 4K movies from your flash memory device</h2>
+                    <h2>USB 3.0  es la tercera mayor versión del universal serial bus (USB) estándar para la interface de computadoras y dispositivos electrónicos. Entre otras mejoras, USB 3.0 añade la nueva tasa de transferencia denominada SuperSpeed USB (SS) que es capaz de transferir datos a velocidades de hasta to 5 Gbit/s (625 MB/s), para disfrutar las películas codificadas o películas del Blu-Ray o películas en UHD 4K desde tu dispositivo de Memoria Flash</h2>
                     <img  class="wow bounce" src="{{URL::to('vista/next/use.jpg')}}" >
                     {{--<p>function available with connection  of home theater system</p>--}}
 
