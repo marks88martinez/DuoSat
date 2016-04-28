@@ -749,6 +749,8 @@
         }
 
 
+
+
     </style>
 
     {{--************************--}}
@@ -761,22 +763,23 @@
 
 
     <div class="wrapper">
+
         <div class="main">
-
-
             <section class="page1">
                 <div class="page_container">
                     <br> <br> <br> <br>
                     <div class="wow fadeInDown"><h1>PLAY</h1></div>
                     {{--<div class="wow fadeInDown"><img src="{{URL::to('vista/next/logo.png')}}" alt=""></div>--}}
-                    <h2 class="wow bounceInUp" style="text-align: left">Olvídate de los dispositivos multimedia convencionales, porque ahora existe</h2>
+                    <h2 class="wow bounceInUp" style="text-align: left">Aprecie a portabilidade porque tamanho não é sinônimo de potência!
+                    </h2>
                     <p class="credit"></p>
                     <div class="btns">
                         {{--<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>--}}
                     </div>
+
                 </div>
 
-                <img class="wow bounceInRight" src="{{URL::to('vista/play/play.png')}}" alt="phones">
+               <div class="re"> <img class="wow bounceInRight " src="{{URL::to('vista/play/playjuntos.png')}}" alt="phones"></div>
             </section>
 
 

@@ -745,9 +745,10 @@
             line-height: 160%;
             font-weight: 100;
 
-
-
         }
+
+
+
 
 
 
@@ -771,7 +772,7 @@
                     <br> <br> <br> <br>
                     <div class="wow fadeInDown"><h1>NEXT</h1> <p CLASS="TEXT">UHD</p></div>
                     {{--<div class="wow fadeInDown"><img src="{{URL::to('vista/next/logo.png')}}" alt=""></div>--}}
-                    <h2 class="wow bounceInUp">Olvídate de los dispositivos multimedia convencionales, porque ahora existe</h2>
+                    <h2 class="wow bounceInUp">Esqueça o entretenimento convencional, porque com NEXT UHD o futuro é agora</h2>
                     <p class="credit"></p>
                     <div class="btns">
                         {{--<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>--}}
@@ -924,7 +925,7 @@
                 </div>
                 <br>
 
-                <img class=" modelo2 wow fadeInLeft" src="{{URL::to('vista/next/conec.jpg')}}" >
+                <img class=" modelo2 wow fadeInLeft" src="{{URL::to('vista/play/conec.jpg')}}" >
 
             </section>
 
@@ -935,7 +936,7 @@
                         <h2>Experiência realmente envolvente com as funcionalidades 3D no seu Next UHD</h2></div>
 
 
-                    <img  class="wow wobble"  src="{{URL::to('vista/next/3d.png')}}"  >
+                    <img  class="wow wobble"  src="{{URL::to('vista/play/3d.png')}}"  >
 
 
                 </div>
@@ -1005,13 +1006,14 @@
                     <div class="spec">
                         <img src="{{URL::to('vista/next/ico/tuner.png')}}" alt="" class="spec-img">
                         <p class="spec-title">Tuner</p>
-                        <p class="spec-text">Sintonizador duplo DVB+S2 <br><span class="spec-bold">Tuner Modular transformável</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">microSD de 64Gb;</span> &nbsp;</p>
+                        <p class="spec-text">Sintonizador duplo DVB+S2 <br><span class="spec-bold">Tuner Modular transformável</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span> &nbsp;</p>
                     </div>
 
                     <div class="spec">
                         <img src="{{URL::to('vista/next/ico/4k.png')}}" alt="" class="spec-img">
                         <p class="spec-title">Video</p>
-                        <p class="spec-text">Ultra HD 4k X 2k<br><span class="spec-bold">Suporta formatos de vídeo como </span><br class="spec-mobile-break">avi, divx, mkv, xvid, mp4  <br class="spec-mobile-break"> <span class="spec-bold">entre outros Vídeos 3D</span> 5.1”</p>
+                        <p class="spec-text">Ultra HD 4k X 2k<br><span class="spec-bold">Resolução </span><br class="spec-mobile-break">1080p, 1080i, 720p, 480p, 576p, 480i, 576i, 4096x2160, 3840x2160
+                            <br class="spec-mobile-break"> <span class="spec-bold">entre outros Vídeos 3D</span> </p>
                     </div>
 
 
@@ -1036,7 +1038,7 @@
                         <img src="{{URL::to('vista/next/ico/display.png')}}" alt="" class="spec-img">
                         <p class="spec-title">Display </p>
                         <p class="spec-text">Display LCD, LED Dual
-                            <br><span class="spec-bold">Resolution</span><br class="spec-mobile-break">&nbsp;<br class="spec-mobile-break"><span class="spec-bold">&nbsp;</span> &nbsp;</p>
+                            <br><span class="spec-bold">Cores OSD (32bit)</span><br class="spec-mobile-break">&nbsp;<br class="spec-mobile-break"><span class="spec-bold">&nbsp;</span> &nbsp;</p>
                     </div>
 
 
@@ -1049,10 +1051,11 @@
                             <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span> &nbsp;</p>
                     </div>
                     <div class="spec">
-                        <img src="{{URL::to('vista/next/ico/wifi.png')}}" alt="" class="spec-img">
-                        <p class="spec-title">Conectividade
+                        <img src="{{URL::to('vista/next/ico/MEMO.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">Memória RAM
                         </p>
-                        <p class="spec-text">Wi-Fi embutido<br><span class="spec-bold">&nbsp;</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span>&nbsp;</p>
+                        <p class="spec-text">DDR3 SDRAM 1Gb
+                            <br><span class="spec-bold">&nbsp;</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span>&nbsp;</p>
                     </div>
 
                     <div class="spec">

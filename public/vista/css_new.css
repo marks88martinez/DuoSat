@@ -36,3 +36,10 @@
 .spec-text{
     color: white;
 }
+
+@media only screen and (max-width: 1187px) {
+    .re img {
+        width: 150px;
+
+    }
+}

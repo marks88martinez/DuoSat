@@ -32,31 +32,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_imagenes_banner_chico.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/editar/edit_imagenes_banner_chico.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller_imagenes_banner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_banner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.3778626">
+              <caret line="1014" column="98" selection-start-line="1014" selection-start-column="98" selection-end-line="1014" selection-end-column="98" />
+              <folding>
+                <element signature="e#27792#27832#0#HTML" expanded="true" />
+                <element signature="e#36961#37009#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -66,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/public/vista/css_new.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -76,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/public/vista/360/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,20 +79,31 @@
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play_producto.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="play_producto.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/play_producto.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7659033">
-              <caret line="880" column="47" selection-start-line="880" selection-start-column="47" selection-end-line="880" selection-end-column="47" />
+            <state vertical-scroll-proportion="-5.3818183">
+              <caret line="949" column="59" selection-start-line="949" selection-start-column="46" selection-end-line="949" selection-end-column="59" />
               <folding>
-                <element signature="e#26286#26310#0#HTML" expanded="true" />
+                <element signature="e#23666#23722#0#HTML" expanded="true" />
+                <element signature="e#26329#26353#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portada.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/login/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_inicio.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user.blade.php" />
@@ -173,15 +176,16 @@
         <option value="$PROJECT_DIR$/public/vista/tab/css/tabs.css" />
         <option value="$PROJECT_DIR$/public/vista/tab/css/demo.css" />
         <option value="$PROJECT_DIR$/public/vista/tab/css/tabstyles.css" />
-        <option value="$PROJECT_DIR$/resources/views/portada.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/producto.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_banner.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_chico.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/next_producto.blade.php" />
+        <option value="$PROJECT_DIR$/public/vista/360/css/style.css" />
         <option value="$PROJECT_DIR$/public/vista/css_new.css" />
+        <option value="$PROJECT_DIR$/resources/views/portada.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/play_producto.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/next_producto.blade.php" />
       </list>
     </option>
   </component>
@@ -354,6 +358,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vista" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DUOSAT_WEB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DUOSAT_WEB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vista" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,7 +582,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -857,24 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.310345">
-          <caret line="245" column="31" selection-start-line="245" selection-start-column="28" selection-end-line="245" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/producto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-68.65385">
           <caret line="105" column="129" selection-start-line="105" selection-start-column="129" selection-end-line="105" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.961538">
-          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -907,7 +919,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -938,7 +950,15 @@
     <entry file="file://$PROJECT_DIR$/public/vista/360/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -946,25 +966,37 @@
     <entry file="file://$PROJECT_DIR$/public/vista/css_new.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="83" />
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/play_producto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7659033">
-          <caret line="880" column="47" selection-start-line="880" selection-start-column="47" selection-end-line="880" selection-end-column="47" />
+        <state vertical-scroll-proportion="-5.3818183">
+          <caret line="949" column="59" selection-start-line="949" selection-start-column="46" selection-end-line="949" selection-end-column="59" />
           <folding>
-            <element signature="e#26286#26310#0#HTML" expanded="true" />
+            <element signature="e#23666#23722#0#HTML" expanded="true" />
+            <element signature="e#26329#26353#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3778626">
+          <caret line="1014" column="98" selection-start-line="1014" selection-start-column="98" selection-end-line="1014" selection-end-column="98" />
+          <folding>
+            <element signature="e#27792#27832#0#HTML" expanded="true" />
+            <element signature="e#36961#37009#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
