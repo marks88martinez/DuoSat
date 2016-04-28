@@ -341,9 +341,9 @@
 
     <nav class="nave">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a  href="#" >DESCARGAS</a></li>
-            <li><a  href="#" >CONTACTOS</a></li>
+            <li><a href="{{ url('/') }}">HOME</a></li>
+            <li><a  href="{{ route('descargas.index') }}" >DESCARGAS</a></li>
+            <li><a  href="{{ url('contacto') }}" >CONTACTOS</a></li>
 
 
         </ul>
