@@ -11,6 +11,10 @@ class model_producto extends Model
     protected $fillable = ['nombre_producto','descripcion','codigo_categoria','codigo_atributo','codigo_imagen', 'estado','descontinuado'];
     public $timestamps = false;
 
+    public function descargas()
+    {
+        return $this->hasMany('App\model_producto_descarga', 'codigo_producto', 'codigo_producto');
+    }
 
     public function imagenes(){
 

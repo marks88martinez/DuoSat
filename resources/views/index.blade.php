@@ -187,7 +187,7 @@
             <ul class="  nav navbar-nav navbar-right">
 
                 <li><a class="anima" href="#">PRODUCTO</a></li>
-                <li><a href="#">DESCARGA</a></li>
+                <li><a href="{{ route('descargas.index') }}">DESCARGA</a></li>
                 <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
                 <li><a href="{{URL::to('/contacto')}}">CONTACTOS</a></li>
 

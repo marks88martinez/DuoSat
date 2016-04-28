@@ -27,15 +27,19 @@ Route::get('/play', function () {
 
 Route::get('/banner','controller_inicio@banner');
 
-Route::resource('usuario','create_user_controller');
-
-Route::resource('categoria', 'controller_categoria');
+Route::group(['middlewares' => ['auth']], function(){
+    Route::resource('usuario','create_user_controller');
+    Route::resource('categoria', 'controller_categoria');
 //Route::resource('subcategoria', 'controller_subcategoria');
-Route::resource('atributo', 'controller_atributo');
-Route::resource('producto', 'controller_producto');
-Route::resource('campos', 'controller_campos');
-Route::resource('producto_campos', 'controller_productos_campos');
-Route::resource('imagenes_banner', 'controller_imagenes_banner');
+    Route::resource('atributo', 'controller_atributo');
+    Route::resource('producto', 'controller_producto');
+    Route::resource('campos', 'controller_campos');
+    Route::resource('producto_campos', 'controller_productos_campos');
+    Route::resource('imagenes_banner', 'controller_imagenes_banner');
+    Route::resource('adm_descargas', 'controller_adm_descargas', ['only' => ['index', 'store', 'update']]);
+    Route::resource('adm_descargas.archivos','controller_descargas_archivos');
+});
+
 Route::resource('log', 'LogController');
 Route::resource('logout', 'LogController@logout');
 
@@ -44,6 +48,12 @@ Route::resource('/','controller_vista');
 Route::post('producto/destroy_attr/{id}',['as'=>'producto.destroy_attr','uses'=>'controller_producto@destroy_attr']);
 Route::PUT('producto/update_descrip/{id}',['as'=>'producto.update_descrip','uses'=>'controller_producto@update_descrip']);
 
+// Descargas
+Route::group(['prefix' => 'descargas'], function() {
+    Route::get('/', ['as' => 'descargas.index', 'uses' => 'controller_descargas@index']);
+    Route::get('modelo/{modeloId}', ['as' => 'descargas.modelo', 'uses' => 'controller_descargas@modelo']);
+    Route::get('{descargaId}', ['as' => 'descargas.show', 'uses' => 'controller_descargas@show']);
+});
 
 Route::get('productos/{id}',['as'=>'prodsuctos.id','uses'=>'controller_prod_detalle@index']);
 Route::resource('empresa','controller_empresa');

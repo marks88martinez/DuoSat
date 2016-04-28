@@ -162,13 +162,12 @@ desired effect
                 {{--<li class="header"> </li>--}}
                 <!-- Optionally, you can add icons to the links -->
                 <li class="active"><a href="{{URL::to('/usuario')}}"><i class="fa fa-link"></i> <span>User</span></a></li>
-
+                <li><a href="{{route('adm_descargas.index')}}"><i class="fa fa-link"></i> <span>Descargas</span></a></li>
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>Banners</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
                         <li><a href="{{URL::to('imagenes_banner')}}">Banner principal</a></li>
                         <li><a href="{{URL::to('/banner_chico')}}">Banner pequeño</a></li>
-
                     </ul>
                 </li>
 
