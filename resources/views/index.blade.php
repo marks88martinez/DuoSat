@@ -258,7 +258,7 @@
             <li class="cuadro">
                 <span></span>
                 <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
-                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">All Product</h6></a>
+                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">Todos os Produtos</h6></a>
             </li>
             <li class="cuadro">
                 <span></span>

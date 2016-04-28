@@ -4,12 +4,12 @@
 
 
     <div class="container altura">
-        <h4 class=" gris fonte">•  Contacto</h4>
+        <h4 class=" gris fonte">•  Contato</h4>
         <br>
 
         <form class="form-horizontal" role="form" method="post" action="index.php">
             <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Name</label>
+                <label for="name" class="col-sm-2 control-label">Nome</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
                 </div>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="message" class="col-sm-2 control-label">Message</label>
+                <label for="message" class="col-sm-2 control-label">Mensagem</label>
                 <div class="col-sm-10">
                     <textarea class="form-control" rows="4" name="message"></textarea>
                 </div>
