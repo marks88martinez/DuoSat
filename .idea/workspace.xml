@@ -22,20 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="181" column="79" selection-start-line="181" selection-start-column="79" selection-end-line="181" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.610687">
+              <caret line="345" column="35" selection-start-line="345" selection-start-column="35" selection-end-line="345" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3778626">
+            <state vertical-scroll-proportion="-5.4">
               <caret line="1014" column="98" selection-start-line="1014" selection-start-column="98" selection-end-line="1014" selection-end-column="98" />
               <folding>
                 <element signature="e#27792#27832#0#HTML" expanded="true" />
@@ -180,12 +180,12 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_banner.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/controller_imagenes_chico.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/public/vista/360/css/style.css" />
         <option value="$PROJECT_DIR$/public/vista/css_new.css" />
         <option value="$PROJECT_DIR$/resources/views/portada.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/play_producto.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/next_producto.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -939,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="79" selection-start-line="181" selection-start-column="79" selection-end-line="181" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/vista/360/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -992,12 +984,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3778626">
+        <state vertical-scroll-proportion="-5.4">
           <caret line="1014" column="98" selection-start-line="1014" selection-start-column="98" selection-end-line="1014" selection-end-column="98" />
           <folding>
             <element signature="e#27792#27832#0#HTML" expanded="true" />
             <element signature="e#36961#37009#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.610687">
+          <caret line="345" column="35" selection-start-line="345" selection-start-column="35" selection-end-line="345" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

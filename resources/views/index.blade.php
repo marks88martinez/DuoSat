@@ -186,23 +186,23 @@
 
             <ul class="  nav navbar-nav navbar-right">
 
-                <li><a class="anima" href="#">PRODUCTO</a></li>
+                <li><a class="anima" href="#">PRODUTO</a></li>
                 <li><a href="{{ route('descargas.index') }}">DESCARGA</a></li>
                 <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
-                <li><a href="{{URL::to('/contacto')}}">CONTACTOS</a></li>
+                <li><a href="{{URL::to('/contacto')}}">CONTATO</a></li>
 
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IDIOMAS<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">• English</a></li>
+                {{--<li class="dropdown">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IDIOMAS<span class="caret"></span></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="#">• English</a></li>--}}
 
-                        <li><a href="#">• Portugues</a></li>
+                        {{--<li><a href="#">• Portugues</a></li>--}}
 
-                        <li><a href="#">• Español</a></li>
+                        {{--<li><a href="#">• Español</a></li>--}}
 
-                    </ul>
-                </li>
+                    {{--</ul>--}}
+                {{--</li>--}}
 
 
 
@@ -341,9 +341,9 @@
 
     <nav class="nave">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a  href="#" >DESCARGAS</a></li>
-            <li><a  href="#" >CONTACTOS</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a  href="/descargas" >DESCARGAS</a></li>
+            <li><a  href="/contacto" >CONTACTOS</a></li>
 
 
         </ul>
