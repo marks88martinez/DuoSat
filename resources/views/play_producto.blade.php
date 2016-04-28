@@ -9,6 +9,7 @@
     {{--<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />--}}
     <link rel="shortcut icon" id="favicon" href="favicon.png">
     <link href='{{URL::to('vista/next/css/animate.css')}}' rel='stylesheet' type='text/css'>
+    <link href='{{URL::to('vista/css_new.css')}}' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="{{URL::to('vista/next/js/wow.js')}}"></script>
     {{--<meta name="author" content="Pete R.">--}}
     <link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
@@ -427,7 +428,7 @@
 
         .main section.page051 {
 
-            background: rgb(253, 253, 254);
+            background: rgb(198, 222, 249);
         }
         .main section.page051 img{
             margin-top: 200px;
@@ -694,7 +695,7 @@
          .modelo{
              z-index: -1000;
             position: absolute;
-            margin-top: -190px;
+            margin-top: -30px;
             margin-left: -700px;
         }
 
@@ -703,6 +704,48 @@
             position: absolute;
             margin-top: -250px;
             margin-left: -600px;
+        }
+
+
+       /*******************************************************************/
+
+
+        .main section.page19 {
+
+            /*background-image: url('http://www.samsung.com/hk_en/consumer-images/article/2014/large-tv/MainKV_without-title-0.jpg');*/
+            /*background-repeat: no-repeat;*/
+            /*background: #3496d9;*/
+        }
+        .main section.page19 > img {
+            position: absolute;
+            top: -300px;
+            left: 50%;
+            margin-left: -1095px;
+        }
+        .main section.page19 .page_container {
+            /*margin-top: -200px;*/
+            overflow: hidden;
+        }
+        .main section.page19 h1 {
+            text-align: center;
+            padding: 0;
+            margin-bottom: 15px;
+            font-size: 50px;
+            letter-spacing: -1px;
+            color: white;
+
+
+
+        }
+
+        .main section.page19 h2 {
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            line-height: 160%;
+            font-weight: 100;
+
+
+
         }
 
 
@@ -724,9 +767,9 @@
             <section class="page1">
                 <div class="page_container">
                     <br> <br> <br> <br>
-                    <div class="wow fadeInDown"><h1>NEXT</h1> <p CLASS="TEXT">UHD</p></div>
+                    <div class="wow fadeInDown"><h1>PLAY</h1></div>
                     {{--<div class="wow fadeInDown"><img src="{{URL::to('vista/next/logo.png')}}" alt=""></div>--}}
-                    <h2 class="wow bounceInUp">Olvídate de los dispositivos multimedia convencionales, porque ahora existe</h2>
+                    <h2 class="wow bounceInUp" style="text-align: left">Olvídate de los dispositivos multimedia convencionales, porque ahora existe</h2>
                     <p class="credit"></p>
                     <div class="btns">
                         {{--<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>--}}
@@ -738,55 +781,21 @@
 
 
 
-            <section class="page2"  style="background: url(' {{URL::to('vista/next/fondo13.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
+            <section class="page5"  style="background: url(' {{URL::to('vista/play/duo.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
                 <div class="page_container">
-                   <div class="wow zoomInUp"> <h1>Memoria Expandible</h1>
-                    <h2>El funcionamiento de la  memoria no debería ser una cosa. Así que, si 16GB aún no son suficientes, puedes añadir una tarjeta microSD adicional de 64 GB. De modo que, no se necesitarán nubes ni unidades de disco duro.</h2></div>
-                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/64.png')}}" alt="phones" >
+                   <div class="wow zoomInUp"> <h1 style="color: white"> Design Compacto</h1>
+                    <h2 style="color: white; text-align: left;">O Duosat Play foi projetado para promover a portabilidade, leve o seu Sistema de Streaming para qualquer lugar, nas viagens, na casa dos amigos ou onde seja que você quiser para poder apreciar com os seus amigos uma experiência única em entretenimento.</h2></div>
+                    {{--<img  class="wow bounceInUp"  src="{{URL::to('vista/next/64.png')}}" alt="phones" >--}}
 
                 </div>
 
             </section>
-
-            <section class="page3"  class="page9" style="background:#000000 ; width: 100%"; >
-                <div class="page_container">
-
-                    <div class=" wow fadeIn"><h1 >Diseño Inteligente</h1>
-                    <h2>El Next UHD tiene una pantalla de funciones en el panel frontal, para personalizar el visual  conforme a tu decoración, con diversas opciones como el reloj, los íconos del canal o puedes cargar tu propia imagen para poder visualizar en la pantalla. Hemos perfeccionado el diseño del Next UHD para cumplir con una tendencia minimalista para el dispositivo, con materiales totalmente reciclables lo que lo convierte en un arte ecológico.</h2>
-                    </div>
-
-
-
-                </div>
-                <img class="modelo wow fadeInLeft" src="{{URL::to('vista/next/du.png')}}" alt="phones">
-                <br>
-            </section>
-
-
-            <section class="page4">
-                <div class="page_container">
-                    <h1>Único
-                        Sistema Operacional Android
-
-                    </h1>
-                    <h2>Las cosas simplemente se volvieron más dulces. El Next UHD es impulsado por un único Sistema Operacional Android, que es el  KITKAT. Hemos elegido el Sistema Operacional más estable para configurarlo, creando un Sistema Operacional Android  global único para reproductores multimedia y nuevas funcionalidades desarrolladas especialmente conforme al uso de los reproductores multimedia, lo que permite anticipar tu próximo movimiento.</h2>
-                    <img  class="wow bounceInUp" src="{{URL::to('vista/next/android.png')}}" alt="phones">
-
-
-
-
-
-                </div>
-
-            </section>
-
-
-
             <section class="page5">
                 <div class="page_container">
                     <br> <br>
                     <h1>HEVC (H.265) Codec</h1>
-                    <h2>Con el más nuevo Códec H.265, las imágenes ganaron una considerable mejora en relación con los dispositivos tecnológicos actuales, impulsado con un exclusivo procesador de video de gran alcance, que permite realzar verdaderamente tu experiencia de imagen colorida.</h2>
+                    <h2 style="text-align: left">  Com o novo codec H.265, as imagens ganham uma melhoria considerável quando comparadas a equipamentos eletrônicos atuais. Aproveitando o seu exclusivo processador de vídeo, que permite uma experiência de imagens com cores realistas </h2>
+
                     <img  class="wow bounce" src="{{URL::to('vista/next/h2645.png')}}" alt="phones">
 
                 </div>
@@ -794,28 +803,60 @@
             </section>
 
 
-            <section class="page6">
+            <section class="page051">
                 <div class="page_container">
-                    <br> <br>
-                  <div class="wow fadeIn">  <h1>WI-FI más veloz</h1>
-                    <h2  >El Next UHD es  impulsado por la última tecnología en dispositivos WI-FI. Lo que significa que la velocidad ha sido mejorada para soportar la transmisión multimedia a través de Internet, conforme a las más nuevas tendencias del entretenimiento. </h2>
-                  </div>
-                    <img  class="wow bounceIn" src="{{URL::to('vista/next/07.jpg')}}" alt="phones">
+
+                    <h1> Conectividade
+                    </h1>
+                    <h2 style="text-align: left">Aproveite um acesso fácil e rápido a seus conteúdos favoritos de entretenimento, conectando seu Duosat Play com o Wi-Fi de outros dispositivos. O processo de Streaming foi melhorado para atingir uma experiência única de Streaming em Full HD.</h2>
+
 
                 </div>
+                <br>
+
+                <img class="modelo2 wow fadeInLeft" src="http://localhost:8000/vista/next/conec.jpg" style="visibility: visible; animation-name: fadeInLeft;">
 
             </section>
+
+
+            <section class="page9" style="background:#d72702 ; width: 100%";>
+                <div class="page_container">
+                    <div class="wow zoomInUp" style="visibility: visible; animation-name: zoomInUp;"> <h1>3D</h1>
+                        <h2>Experiência imersiva única, graças à capacidade de reproduzir conteúdo 3D do Duosat Play</h2></div>
+
+
+                    <img class="wow wobble" src="http://localhost:8000/vista/next/3d.png" style="visibility: visible; animation-name: wobble;">
+
+
+                </div>
+                <br>
+
+            </section>
+
+
+
+            {{--<section class="page6">--}}
+                {{--<div class="page_container">--}}
+                    {{--<br> <br>--}}
+                  {{--<div class="wow fadeIn">  <h1>Acesso Fácil</h1>--}}
+                    {{--<h2>Desfrute do menu amigável ao usuário, especialmente projetado para dar conforto e facilidade na navegação. </h2>--}}
+                  {{--</div>--}}
+                    {{--<img  class="wow bounceIn" src="{{URL::to('vista/next/07.jpg')}}" alt="phones">--}}
+
+                {{--</div>--}}
+
+            {{--</section>--}}
 
             <section class="page7"  style="background:#000000 ; width: 100%"; >
                 <div class="page_container">
 
-                    <h1>Transformador Diseño Modular
+                    <h1>Pendure-o atrás da sua TV
                     </h1>
-                    <h2>El Nuevo Duosat Next UHD fue diseñado para ayudarte quitar el máximo provecho al entretenimiento. Una visión a futuro es que el diseño modular te deja usar un sintonizador  compañero para mejorar las funcionalidades del entretenimiento. El deslizamiento para fuera del sintonizador puede ser realizado en un instante para la personalización de tu Sistema de Televisión, soportando diferentes opciones de sintonización, ya sea ISDBT, Cable, Satélite, la personalización del mismo es muy sencilla!</h2>
+                    <h2>Especialmente desenhado com uma tela de sete polegadas com acesso ao controle remoto, para surpreender seus amigos com sua TV</h2>
 
 
                 </div>
-                <img class="modelo wow fadeInLeft" src="{{URL::to('vista/next/tuner.jpg')}}" alt="phones">
+                <img class="modelo wow fadeInLeft" src="{{URL::to('vista/play/tv.png')}}" alt="phones">
                 <br>
             </section>
 
@@ -823,9 +864,9 @@
             <section class="page8"  style="background: url(' {{URL::to('vista/next/capture.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
                 <div class="page_container">
 
-                    <div class="wow pulse">  <h1>Captura más de cada momento</h1>
-                        <h2  >Toma fotos o utiliza tu Cámara IP para seguridad, además se puede usar con  Snapchat™, Skype™ u otras aplicaciones que necesiten compatibilidad de cámara.</h2>
-                        <p>Función disponible con la compra de un accesorio extra </p>
+                    <div class="wow pulse">  <h1>Faça da sua TV um dispositivo inteligente</h1>
+                        <h2>Transforme sua TV normal num dispositivo inteligente, somente conectando seu Duosat Play em tempo recorde!</h2>
+                        {{--<p>Função disponível com a compra de um acessório extra </p>--}}
                     </div>
                     {{--<img  class="wow wobble" src="{{URL::to('vista/next/cam.png')}}" alt="phones">--}}
 
@@ -836,8 +877,8 @@
             <section class="page5">
                 <div class="page_container">
                     <br> <br>
-                    <h1>Calidad de Audio</h1>
-                    <h2>El Duosat Next UHD está equipado con salida de audio óptico (SPDIF),soportando Dolby, AC3 DTS, 5.1 y 7.1, con alta fidelidad  ²<p style="font-size:15px">función disponible con conexión del Sistema Home Theater</p> </h2>
+                    <h1>Streaming</h1>
+                    <h2 style="text-align: left">Reproduza conteúdo de aplicativos de streaming como YouTube, Dailymotion e muitos mais, presentes no seu Duosat Play, realçando sua experiência multimídia online.</h2>
 
                     <img  class="wow bounce" src="{{URL::to('vista/next/homet.png')}}" >
 
@@ -846,11 +887,77 @@
             </section>
 
 
-            <section class="page9"  class="page9" style="background:#63d7a4 ; width: 100%"; >
-                <div class="page_container">
-                    <div class="wow zoomInUp"> <h1>4K UHD</h1>
-                        <h2>La experiencia más envolvente con UHD 4K es que convierte el entretenimiento ordinario a algo extraordinario. Vea imágenes increíblemente nítidas, una amplia expresión de color y detalles muy dramáticos - todo en una clara y nítida resolución 4K UHD. Disfrute de una imagen más realista en nuestra UHD TV 4K y eleve su experiencia de entretenimiento al siguiente nivel.</h2></div>
-                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/4k2.png')}}"  >
+
+            <section   class="page19" style="background:#2b2b2d ;width: 100%"; >
+                <div class="page_container contenedor">
+
+
+                    {{--<div class="spec">--}}
+                        {{--<img src="{{URL::to('vista/next/ico/android.png')}}" alt="" class="spec-img">--}}
+                        {{--<p class="spec-title">Android</p>--}}
+                        {{--<p class="spec-text">Sistema Operacional Android 4.4 kitkat<br><span class="spec-bold">&nbsp;</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span> &nbsp;</p>--}}
+                    {{--</div>--}}
+                    {{--<div class="spec">--}}
+                        {{--<img src="{{URL::to('vista/next/ico/tuner.png')}}" alt="" class="spec-img">--}}
+                        {{--<p class="spec-title">Tuner</p>--}}
+                        {{--<p class="spec-text">Sintonizador duplo DVB+S2 <br><span class="spec-bold">Tuner Modular transformável</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">microSD de 64Gb;</span> &nbsp;</p>--}}
+                    {{--</div>--}}
+
+                    {{--<div class="spec">--}}
+                        {{--<img src="{{URL::to('vista/next/ico/4k.png')}}" alt="" class="spec-img">--}}
+                        {{--<p class="spec-title">Video</p>--}}
+                        {{--<p class="spec-text">Ultra HD 4k X 2k<br><span class="spec-bold">Suporta formatos de vídeo como </span><br class="spec-mobile-break">avi, divx, mkv, xvid, mp4  <br class="spec-mobile-break"> <span class="spec-bold">entre outros Vídeos 3D</span> 5.1”</p>--}}
+                    {{--</div>--}}
+
+
+
+                    <div class="spec">
+                        <img src="{{URL::to('vista/next/ico/procesador.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">Processador
+                        </p>
+                        <p class="spec-text">Processador Dual-Core, 730 MHZ<br><span class="spec-bold"> Memória Flash 16Gb </span><br class="spec-mobile-break">Sistema DRAM 256MB <br class="spec-mobile-break"> <span class="spec-bold"> &nbsp; </span>&nbsp;</p>
+                    </div>
+                    <div class="spec">
+                        <img src="{{URL::to('vista/next/ico/usb.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">
+                            Entrada/Saída
+                        </p>
+                        <p class="spec-text">Suporta USB 2.0
+                            <br><span class="spec-bold">Internet (LAN) 1 x RJ45</span><br class="spec-mobile-break"> &nbsp;<br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span> &nbsp;</p>
+                    </div>
+
+                    <div class="spec">
+                        <img src="{{URL::to('vista/next/ico/display.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">Display </p>
+                        <p class="spec-text">Display Externo de 7 polegadas
+                            <br><span class="spec-bold">Cores OSD</span><br class="spec-mobile-break">&nbsp;<br class="spec-mobile-break"><span class="spec-bold">&nbsp;</span> &nbsp;</p>
+                    </div>
+
+
+                    <div class="spec">
+                        <img src="{{URL::to('vista/next/ico/sound.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">Áudio
+                        </p>
+                        <p class="spec-text">Dolby e Dolby Digital
+                            <br><span class="spec-bold">Controle de volume inteligente</span><br class="spec-mobile-break">Efeitos de som SRS, Dolby e MS11
+                            <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span> &nbsp;</p>
+                    </div>
+                    <div class="spec">
+                        <img src="{{URL::to('vista/next/ico/wifi.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">Conectividade
+                        </p>
+                        <p class="spec-text">Suporta Wi Fi Externo<br><span class="spec-bold">&nbsp;</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span>&nbsp;</p>
+                    </div>
+
+                    <div class="spec">
+                        <img src="{{URL::to('vista/next/ico/dimensiones.png')}}" alt="" class="spec-img">
+                        <p class="spec-title">Especificações Físicas
+                        </p>
+                        <p class="spec-text">Tamanho Compacto<br><span class="spec-bold">Dimensões: 118.8 x 21 x 78.8 mm
+</span><br class="spec-mobile-break"> &nbsp; <br class="spec-mobile-break"> <span class="spec-bold">&nbsp;</span> &nbsp;</p>
+                    </div>
+
+
 
 
 
@@ -858,94 +965,24 @@
 
                 </div>
 
-            </section>
-
-
-            <section class="page051">
-                <div class="page_container">
-
-                    <h1> Conectividad
-                    </h1>
-                    <h2>La experiencia más envolvente con UHD 4K es que convierte el entretenimiento ordinario a algo extraordinario. Vea imágenes increíblemente nítidas, una amplia expresión de color y detalles muy dramáticos - todo en una clara y nítida resolución 4K UHD. Disfrute de una imagen más realista en nuestra UHD TV 4K y eleve su experiencia de entretenimiento al siguiente nivel.</h2>
-
-
-                </div>
-                <br>
-
-                <img class=" modelo2 wow fadeInLeft" src="{{URL::to('vista/next/conec.jpg')}}" >
 
             </section>
 
 
-            <section class="page9" style="background:#d72702 ; width: 100%"; >
-                <div class="page_container">
-                    <div class="wow zoomInUp"> <h1>3D</h1>
-                        <h2>Experiencia realmente envolvente con las funcionalidades 3D en tu Next UHD</h2></div>
-                    <img  class="wow wobble"  src="{{URL::to('vista/next/3d.png')}}"  >
-
-
-                </div>
-                <br>
-
-            </section>
-
-            <section class="page05">
-                <div class="page_container">
-                    <br> <br>
-                    <h1>Juegos</h1>
-                    <h2>Disfruta de los juegos más populares listados en Google Play, con air mouse o Joystick² </h2>
-                    <img  class="wow bounce" src="{{URL::to('vista/next/game.png')}}" >
-                    <p>Función disponible con conexión al Sistema Home Theater</p>
-
-                </div>
-
-            </section>
-
-            <section class="page9"  class="page9" style="background:#48474e ; width: 100%"; >
-                <div class="page_container">
-                    <div class="wow zoomInUp"> <h1>Streaming</h1>
-                        <h2>Try XBMC, netflix, hulu, Kodi dailimotion, youtube, todas las aplicaciones de Streaming que son soportadas por el Sistema Android</h2></div>
-                    <img  class="wow bounceInUp"  src="{{URL::to('vista/next/str.png')}}"  >
-
-
-                </div>
-
-            </section>
-
-
-            <section class="page9"  class="page9" style="background:#d0d79a ; width: 100%"; >
-                <div class="page_container">
-                    <div class="wow bounceInUp"> <h1>QWERTY RCU</h1>
-                        <h2>Disfruta de tu experiencia de navegacion, en el chat, con teclado QWERTY exclusivo que viene como un contro remote estándar con el Duosat Next UHD</h2></div>
-                    <img  class=" contro wow bounceIn"  src="{{URL::to('vista/next/control.png')}}"  >
 
 
 
 
 
-                </div>
 
-            </section>
 
-            <section class="page5" >
-                <div class="page_container">
-                    <br> <br>
-                    <h1>USB 3.0 </h1>
-                    <h2>USB 3.0  es la tercera mayor versión del universal serial bus (USB) estándar para la interface de computadoras y dispositivos electrónicos. Entre otras mejoras, USB 3.0 añade la nueva tasa de transferencia denominada SuperSpeed USB (SS) que es capaz de transferir datos a velocidades de hasta to 5 Gbit/s (625 MB/s), para disfrutar las películas codificadas o películas del Blu-Ray o películas en UHD 4K desde tu dispositivo de Memoria Flash</h2>
-                    <img  class="wow bounce" src="{{URL::to('vista/next/use.jpg')}}" >
-                    {{--<p>function available with connection  of home theater system</p>--}}
 
-                </div>
 
-            </section>
-            <section class="page5"  class="page9" style="background:#d3d3df ;top: 5px;width: 100%"; >
-                <div class="page_container">
-                    <br>
-                    <iframe width="700" height="400" src="https://www.youtube.com/embed/g3BV1kMvgSI" frameborder="0" allowfullscreen></iframe>
 
-                </div>
 
-            </section>
+
+
+
 
 
 
