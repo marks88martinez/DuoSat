@@ -1,0 +1,38 @@
+.contenedor{
+    width: 100%;
+    height: auto;
+    /*border: 1px solid white;*/
+
+}
+.spec{
+
+
+    display: inline-block;
+    width: 33%;
+    height: auto;
+    border-left: 1px solid gray;
+    height: 100%;
+    /*background: grey;*/
+}
+.spec img{
+    margin-top: 30px;
+
+}
+
+.spec-title{
+    font-size: 22px;
+    color: white;
+}
+.spec-btn{
+    padding: 5px;
+    /*border: 1px solid white;*/
+    font-size: 22px;
+    color: white;
+}
+.spec-btn:hover{
+
+    color: white;
+}
+.spec-text{
+    color: white;
+}
