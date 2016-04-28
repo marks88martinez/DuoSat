@@ -27,6 +27,11 @@ class model_archivo_descarga extends Model
         return url($val);
     }
 
+    public function getUpdatedAtAttribute($date)
+    {
+        return Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('Y-m-d');
+    }
+
     public function setLinkAttribute($file)
     {
         $timestamp = Carbon::now();

@@ -17,10 +17,11 @@
                                 @foreach($descarga->descarga->archivos as $archivo)
                                     <li>
                                         <p>
-                                            <b>Titulo:</b> {{ $archivo->titulo }}<br>
-                                            <b>Descripción:</b> {{ $archivo->descripcion }}<br>
-                                            <b>Versión:</b> {{ $archivo->version }}<br>
-                                            <b>Tamaño:</b> {{ $archivo->size }} bytes <br>
+                                            <b>Title:</b> {{ $archivo->titulo }}<br>
+                                            <b>Description:</b> {{ $archivo->descripcion }}<br>
+                                            <b>Version:</b> {{ $archivo->version }}<br>
+                                            <b>File size:</b> {{ $archivo->size }} bytes <br>
+                                            <b>Date/Time:</b> {{ $archivo->updated_at }}<br>
                                             {!! link_to($archivo->link, 'Descargar archivo') !!}
                                         </p>
                                     </li>

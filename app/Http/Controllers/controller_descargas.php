@@ -42,7 +42,7 @@ class controller_descargas extends Controller
                 }, 'descargas.descarga' => function($q) {
                     $q->select('codigo_descarga', 'titulo')->activo();
                 }, 'descargas.descarga.archivos' => function($q) {
-                    $q->select('titulo', 'descripcion', 'version', 'size', 'link', 'estado', 'codigo_descarga')->activo();
+                    $q->select('titulo', 'descripcion', 'version', 'size', 'link', 'estado', 'codigo_descarga', 'updated_at')->activo()->orderBy('updated_at', 'DESC');
                 }])
                 ->findOrFail($modeloId);
         } catch(ModelNotFoundException $e) {
