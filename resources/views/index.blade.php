@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>inicio</title>
+    <title>Duosat</title>
     <meta charset="UTF-8">
 </head>
 
@@ -186,23 +186,23 @@
 
             <ul class="  nav navbar-nav navbar-right">
 
-                <li><a class="anima" href="#">PRODUTO</a></li>
-                <li><a href="{{ route('descargas.index') }}">DESCARGAS</a></li>
+                <li><a class="anima" href="#">PRODUCTO</a></li>
+                <li><a href="{{ route('descargas.index') }}">DESCARGA</a></li>
                 <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
-                <li><a href="{{URL::to('/contacto')}}">CONTATO</a></li>
+                <li><a href="{{URL::to('/contacto')}}">CONTACTOS</a></li>
 
 
-                {{--<li class="dropdown">--}}
-                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IDIOMAS<span class="caret"></span></a>--}}
-                    {{--<ul class="dropdown-menu">--}}
-                        {{--<li><a href="#">• English</a></li>--}}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IDIOMAS<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">• English</a></li>
 
-                        {{--<li><a href="#">• Portugues</a></li>--}}
+                        <li><a href="#">• Portugues</a></li>
 
-                        {{--<li><a href="#">• Español</a></li>--}}
+                        <li><a href="#">• Español</a></li>
 
-                    {{--</ul>--}}
-                {{--</li>--}}
+                    </ul>
+                </li>
 
 
 
@@ -258,7 +258,7 @@
             <li class="cuadro">
                 <span></span>
                 <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
-                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">Todos os Produtos</h6></a>
+                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">All Product</h6></a>
             </li>
             <li class="cuadro">
                 <span></span>
@@ -341,9 +341,9 @@
 
     <nav class="nave">
         <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a  href="/descargas" >DESCARGAS</a></li>
-            <li><a  href="/contacto" >CONTACTOS</a></li>
+            <li><a href="{{ url('/') }}">HOME</a></li>
+            <li><a  href="{{ route('descargas.index') }}" >DESCARGAS</a></li>
+            <li><a  href="{{ url('contacto') }}" >CONTACTOS</a></li>
 
 
         </ul>

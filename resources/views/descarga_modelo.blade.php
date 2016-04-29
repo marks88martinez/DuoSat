@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h2>Downloads for {{ $producto->nombre_producto }}</h2>
+                <h2>Descargas para {{ $producto->nombre_producto }}</h2>
                 <img src="{{ url($producto->imagenes->url_imagenes) }}" alt="{{ $producto->nombre_producto }}" width="300px">
             </div>
             <div class="col-md-8">
@@ -18,9 +18,10 @@
                                     <li>
                                         <p>
                                             <b>Titulo:</b> {{ $archivo->titulo }}<br>
-                                            <b>Descripción:</b> {{ $archivo->descripcion }}<br>
-                                            <b>Versión:</b> {{ $archivo->version }}<br>
-                                            <b>Tamaño:</b> {{ $archivo->size }} bytes <br>
+                                            <b>Descrição:</b> {{ $archivo->descripcion }}<br>
+                                            <b>Versão:</b> {{ $archivo->version }}<br>
+                                            <b>Tamanho do arquivo:</b> {{ $archivo->size }} bytes <br>
+                                            <b>Date do upload:</b> {{ $archivo->updated_at }}<br>
                                             {!! link_to($archivo->link, 'Descargar archivo') !!}
                                         </p>
                                     </li>
@@ -30,7 +31,7 @@
                     @endforeach
                 </ul>
                 @else
-                    <h3 style="color: #AAA; font-style: italic">There aren't downloads available for this product right now.</h3>
+                    <h3 style="color: #AAA; font-style: italic">Esse produto não tem arquivos disponíveis por enquanto.</h3>
                 @endif
             </div>
         </div>
