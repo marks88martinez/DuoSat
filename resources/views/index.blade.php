@@ -186,10 +186,10 @@
 
             <ul class="  nav navbar-nav navbar-right">
 
-                <li><a class="anima" href="#">PRODUCTO</a></li>
+                <li><a class="anima" href="#">PRODUTO</a></li>
                 <li><a href="{{ route('descargas.index') }}">DESCARGA</a></li>
                 <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
-                <li><a href="{{URL::to('/contacto')}}">CONTACTOS</a></li>
+                <li><a href="{{URL::to('/contacto')}}">CONTATO</a></li>
 
 
                 <li class="dropdown">
@@ -258,7 +258,7 @@
             <li class="cuadro">
                 <span></span>
                 <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
-                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">All Product</h6></a>
+                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">Todos</h6></a>
             </li>
             <li class="cuadro">
                 <span></span>
@@ -343,7 +343,7 @@
         <ul>
             <li><a href="{{ url('/') }}">HOME</a></li>
             <li><a  href="{{ route('descargas.index') }}" >DESCARGAS</a></li>
-            <li><a  href="{{ url('contacto') }}" >CONTACTOS</a></li>
+            <li><a  href="{{ url('contacto') }}" >CONTATO</a></li>
 
 
         </ul>
