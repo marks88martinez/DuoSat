@@ -695,3 +695,27 @@ margin-left: -550px;
 	padding-right:5px;
 	padding-left: 2px;
 }
+.contenedor_letras{
+	position: relative;
+}
+.flotar h4{
+
+	top: 40%;
+	left: 30%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	font-size:  5rem;
+
+	position: absolute;
+
+
+}
+
+.fuente p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	box-shadow: 0 0 0 ;
+	font-size: 70px;
+}

@@ -11,13 +11,15 @@
 
 
     <div class="">
+        <style>
 
+        </style>
 
         <div id="main-slideshow" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 @for($i = 0; $i < count($banner); $i++)
-                    <li data-target="#main-slideshow" data-slide-to="{{ $i }}" {!! $i === 0 ? 'class="active"' : '' !!}></li>
+                    <li style="background: silver" data-target="#main-slideshow" data-slide-to="{{ $i }}" {!! $i === 0 ? 'class="active"' : '' !!}></li>
                 @endfor
             </ol>
 
@@ -29,13 +31,19 @@
 
                 @foreach($banner as $banners)
 
-                <div class="item{{ $primero ? ' active' : '' }}">
+                <div class=" contenedor_letras item{{ $primero ? ' active' : '' }}">
                 <?php $primero = false; ?>
                     <img style="width: 100%" src="{{$banners->url_banner}}" alt="...">
-
+                    <div class="flotar">
+                        <h4>Flotante</h4>
+                    </div>
 
                     <div class="carousel-caption">
 
+
+
+                      {{--<div class="fuente"> <p>NEXT</p></div>--}}
+                        {{--<p> Esqueça o entretenimento convencional, porque com NEXT UHD o futuro é agora</p>--}}
 
                     </div>
                 </div>

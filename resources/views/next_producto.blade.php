@@ -793,7 +793,7 @@
             <section class="page2"  style="background: url(' {{URL::to('vista/next/fondo13.jpg')}}') ;  background-repeat:no-repeat; background-size:cover; width: 100%";>
                 <div class="page_container">
                     <div class="wow zoomInUp"> <h1>Memória Expansível</h1>
-                        <h2>O armazenamento da memória não deveria ser um problema. Então, se 16GB ainda não são suficientes, você pode acrescentar um cartão de memoria adicional de 64GB. Assim, você não precisará de nuvens nem unidades de disco rígido</h2></div>
+                        <h2>O armazenamento da memória não deveria ser um problema. Então, se 16GB ainda não são suficientes, você pode acrescentar um cartão de memória adicional de 128GB. Assim, você não precisará de nuvens nem unidades de disco rígido</h2></div>
                     <img  class="wow bounceInUp"  src="{{URL::to('vista/next/64.png')}}" alt="phones" >
 
                 </div>
@@ -818,8 +818,7 @@
 
             <section class="page4">
                 <div class="page_container">
-                    <h1>Único
-                        Sistema Operacional Android
+                    <h1>Único Sistema Operacional Android para Media Player
 
                     </h1>
                     <h2>As coisas simplesmente se tornaram mais doces. O Next UHD é impulsado por um único Sistema Operacional Android, o KITKAT. Optámos pelo Sistema Operacional mais estável para configurá-lo, criando um Sistema Operacional em Android mundialmente único para reprodutores multimídia e as novas funcionalidades são desenvolvidas especialmente segundo o padrão de uso dos reprodutores multimídia, o que permitirá antecipar o seu próximo movimento.</h2>
