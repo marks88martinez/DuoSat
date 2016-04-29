@@ -17,7 +17,7 @@
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 @for($i = 0; $i < count($banner); $i++)
-                    <li data-target="#main-slideshow" data-slide-to="0" {!! $i === 0 ? 'class="active"' : '' !!}></li>
+                    <li data-target="#main-slideshow" data-slide-to="{{ $i }}" {!! $i === 0 ? 'class="active"' : '' !!}></li>
                 @endfor
             </ol>
 
