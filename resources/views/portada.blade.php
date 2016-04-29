@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="{{URL::to('banner/css/custom.css')}}" />
     <script type="text/javascript" src="{{URL::to('banner/js/modernizr.custom.79639.js')}}"></script>
 
-
+    <link href='{{URL::to('vista/next/css/animate.css')}}' rel='stylesheet' type='text/css'>
+    <link href='{{URL::to('vista/css_new.css')}}' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{{URL::to('vista/next/js/wow.js')}}"></script>
 
 
     <div class="">
@@ -25,7 +27,7 @@
 
             <!-- Wrapper for slides -->
 
-            <div class="carousel-inner" role="listbox">
+            <div style="background: white; width: 100%; " class="carousel-inner" role="listbox">
 
                 <?php $primero = true; ?>
 
@@ -33,10 +35,37 @@
 
                 <div class=" contenedor_letras item{{ $primero ? ' active' : '' }}">
                 <?php $primero = false; ?>
-                    <img style="width: 100%" src="{{$banners->url_banner}}" alt="...">
-                    <div class="flotar">
-                        <h4>Flotante</h4>
+                  <div class="row">
+                   {{--<div class="col-md-4 col-md-offset-3" style="margin-top: 300px; position: absolute"> cualquiera</div>--}}
+
+                  </div>
+
+                    <div class="ba"><img  src="{{$banners->url_banner}}" alt="..."></div>
+<div class="container">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+                    <div   class="flotar wow bounceInDown">
+                        <h4>The Next is Now</h4>
+                        <h5>Meet the new</h5>
+                        <h6><a href="{{$banners->link}}">Learn more ></a></h6>
+                        <h6>Stunning 4k picture plus enhanced</h6>
+
                     </div>
+
+
+
+
 
                     <div class="carousel-caption">
 
@@ -267,5 +296,9 @@
 
         });
     </script>
+    <script>
+        new WOW().init();
+    </script>
 
-    @stop
+
+@stop

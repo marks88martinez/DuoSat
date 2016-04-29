@@ -72,7 +72,7 @@
 		background: black;
 		/*box-shadow: 2px 2px 20px #999999;*/
 		border: 0;
-		position: fixed;
+		/*position: fixed;*/
 
 
 
@@ -597,8 +597,6 @@ margin-left: -550px;
 
 
 }
-	}
-}
 
 /******************zoom***************************/
 	/************************/
@@ -698,24 +696,101 @@ margin-left: -550px;
 .contenedor_letras{
 	position: relative;
 }
-.flotar h4{
-
-	top: 40%;
-	left: 30%;
+.flotar{
+	text-align: center;
+		/*width: 300px;*/
+	/*height: 300px;*/
+	background: none;
+	top: 30%;
+	left: 25%;
 	font-family: 'Open Sans Condensed', sans-serif;
-	color: black;
-	font-size:  5rem;
+
 
 	position: absolute;
+	font-weight: inherit;
+
+}
+
+.flotar h4{
+	color: #56565a;
+	font-size: 50px;
+
+}
+.flotar h5{
+
+	color: #56565a;
+	font-size:35px;
+
+}
+
+.flotar h6{
+	text-decoration: none;
+	color: #2082ec;
+	font-size:25px;
+
+}
+.flotar h6 a{
+	text-decoration: none;
 
 
 }
 
-.fuente p{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: black;
-	box-shadow: 0 0 0 ;
-	font-size: 70px;
+
+.ba img{
+	width: auto;
+	height: 700px;
+	margin-left: 60%
+}
+
+
+@media  (max-width: 768px) {
+	.ba img{
+		width: auto;
+		height: 300px;
+
+	}
+
+
+	.navbar-fixed-bottom, .navbar-fixed-top{
+		position: relative;
+	}
+
+
+	.flotar{
+		text-align: center;
+		/*width: 300px;*/
+		/*height: 300px;*/
+		background: none;
+		top: 15%;
+		left: 10%;
+		font-family: 'Open Sans Condensed', sans-serif;
+
+
+		position: absolute;
+		font-weight: inherit;
+
+	}
+
+	.flotar h4{
+		color: #56565a;
+		font-size: 30px;
+
+	}
+	.flotar h5{
+		color: #56565a;
+		font-size:15px;
+
+	}
+
+	.flotar h6{
+		color: #2082ec;
+		font-size:15px;
+
+	}
+
+}
+
+
+
+
 }
