@@ -8,22 +8,33 @@
     <script type="text/javascript" src="{{URL::to('banner/js/modernizr.custom.79639.js')}}"></script>
 
 
-    <div id="cont" class="container-fluid demo-2">
-
-        <!-- Codrops top bar -->
 
 
+    <div class="">
 
-        <div id="slider" class="sl-slider-wrapper">
 
-            <div class="sl-slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+
+            <div class="carousel-inner" role="listbox">
+
+                <?php $primero = true; ?>
 
                 @foreach($banner as $banners)
 
-                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                    <div class="sl-slide-inner">
-                        <div class=""><a href="{{$banners->link}}"><img src="{{$banners->url_banner}}"></a></div>
+                <div class="item{{ $primero ? ' active' : '' }}">
+                <?php $primero = false; ?>
+                    <img style="width: 100%" src="{{$banners->url_banner}}" alt="...">
+
+
+                    <div class="carousel-caption">
 
 
                     </div>
@@ -31,24 +42,71 @@
 
                 @endforeach
 
+                {{--<div class="item">--}}
+                    {{--<img style="width: 100%"  src="...." alt="...">--}}
+                    {{--<div class="carousel-caption">--}}
+                        {{--...--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
-            </div><!-- /sl-slider -->
+            </div>
 
-            <nav id="nav-dots" class="nav-dots">
-                <span class="nav-dot-current"></span>
-                <span></span>
-                <span></span>
-                <span></span>
 
-            </nav>
 
-        </div><!-- /slider-wrapper -->
-
-        <div class="content-wrapper">
-
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
     </div>
+
+
+    {{--<div id="cont" class="container-fluid demo-2">--}}
+
+        {{--<!-- Codrops top bar -->--}}
+
+
+
+        {{--<div id="slider" class="sl-slider-wrapper">--}}
+
+            {{--<div class="sl-slider">--}}
+
+
+                {{--@foreach($banner as $banners)--}}
+
+                {{--<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">--}}
+                    {{--<div class="sl-slide-inner">--}}
+                        {{--<div class=""><a href="{{$banners->link}}"><img src="{{$banners->url_banner}}"></a></div>--}}
+
+
+                    {{--</div>--}}
+                {{--</div>--}}
+
+                {{--@endforeach--}}
+
+
+            {{--</div><!-- /sl-slider -->--}}
+
+            {{--<nav id="nav-dots" class="nav-dots">--}}
+                {{--<span class="nav-dot-current"></span>--}}
+                {{--<span></span>--}}
+                {{--<span></span>--}}
+                {{--<span></span>--}}
+
+            {{--</nav>--}}
+
+        {{--</div><!-- /slider-wrapper -->--}}
+
+        {{--<div class="content-wrapper">--}}
+
+        {{--</div>--}}
+
+    {{--</div>--}}
 
 {{--****************************************************--}}
 
