@@ -21,6 +21,11 @@
             </div>
 
             <div class="form-group">
+                <label for="input_style_font_size">Tamaño de fuente</label>
+                {!!Form::text('style_font_size',$b_chico->style_font_size,['class'=>'form-control','id'=>'input_style_font_size', 'placeholder'=>'Ingrese tamaño del texto'])  !!}
+            </div>
+
+            <div class="form-group">
                 <label for="exampleInputEmail1">Icono</label>
 
             {!! Form::file('url_imagen') !!}
