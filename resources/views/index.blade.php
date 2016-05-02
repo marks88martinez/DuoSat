@@ -174,7 +174,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="padd navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('vista/img/logo.png')}}"></a>
+            <a class="padd navbar-brand" href="{{url('/')}}"><img src="{{URL::to('vista/img/logo.png')}}"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -192,8 +192,8 @@
 
                 <li><a class="anima" href="#">PRODUTO</a></li>
                 <li><a href="{{ route('descargas.index') }}">DESCARGA</a></li>
-                <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
-                <li><a href="{{URL::to('/contacto')}}">CONTATO</a></li>
+                <li><a href="{{route('empresa')}}">EMPRESA</a></li>
+                <li><a href="{{route('contacto')}}">CONTATO</a></li>
 
 
                 {{--<li class="dropdown">--}}
@@ -347,7 +347,7 @@
         <ul>
             <li><a href="{{ url('/') }}">HOME</a></li>
             <li><a  href="{{ route('descargas.index') }}" >DESCARGAS</a></li>
-            <li><a  href="{{ url('contacto') }}" >CONTATO</a></li>
+            <li><a  href="{{ route('contacto') }}" >CONTATO</a></li>
 
 
         </ul>
