@@ -14,6 +14,9 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+Route::get('/next_prod', function () {
+    return view('next');
+});
 Route::get('/next', function () {
     return view('next_producto');
 });

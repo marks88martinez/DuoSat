@@ -337,18 +337,21 @@
             /*background:url(tilted-phone.png) no-repeat 156px -150px ;*/
         }
         .main section.page3 .page_container {
-            margin-top: 50px;
+            margin-top: -40px;
             overflow: hidden;
             width: 500px;
-            right: -170px;
+            left: 230px;
+
+
         }
         .main section.page3 h1 {
-            text-align: left;
+            /*text-align: left;*/
             padding: 0;
             margin-bottom: 0;
             font-size: 70px;
             letter-spacing: -1px;
             color: #84848b;
+            text-align: left;
         }
         .main section.page3 h2 {
             color: rgba(132, 132, 139, 0.85);
@@ -356,6 +359,22 @@
             line-height: 160%;
             font-weight: 100;
             font-size: 21px;
+
+        }
+        .main section.page3 > img {
+
+            margin-bottom: 50px;
+            ma
+            position: absolute;
+            width: 100%;
+            height: auto;
+            /*top: -100px;*/
+            /*left: 50%;*/
+            /*margin-left: -1095px;*/
+        }
+        .imgen2{
+
+
         }
 
         /************************/
@@ -690,7 +709,7 @@
             width: 90%;
             margin-left: auto;
             margin-right: auto;
-            right: 0;
+            /*right: 0;*/
         }
         .modelo{
             z-index: -1000;
@@ -748,6 +767,11 @@
         }
 
 
+    .imgen{
+        width: 100%;
+        height: auto;
+    }
+
 
 
 
@@ -772,7 +796,7 @@
                     <br> <br> <br> <br>
                     <div class="wow fadeInDown"><h1>NEXT</h1> <p CLASS="TEXT">UHD</p></div>
                     {{--<div class="wow fadeInDown"><img src="{{URL::to('vista/next/logo.png')}}" alt=""></div>--}}
-                    <h2 class="wow bounceInUp">Esqueça o entretenimento convencional, porque com NEXT UHD o futuro é agora</h2>
+                    <h2 class="wow bounceInUp"  >Esqueça o entretenimento convencional, porque com NEXT UHD o futuro é agora</h2>
                     <p class="credit"></p>
                     <div class="btns">
                         {{--<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>--}}
@@ -785,7 +809,7 @@
 
                 {{--*********************************--}}
 
-                <img class="wow bounceInRight" src="{{URL::to('vista/next/89.png')}}" alt="phones">
+                <img class="imgen wow bounceInRight" style="width: 600px; height: auto" src="{{URL::to('vista/next/89.png')}}" alt="phones">
             </section>
 
 
@@ -800,18 +824,18 @@
 
             </section>
 
-            <section class="page3"  class="page9" style="background:#000000 ; width: 100%"; >
+            <section class="page3"  style="background:#000000 ; width: 100%"; >
                 <div class="page_container">
 
                     <div class=" wow fadeIn"><h1>Design Inteligente</h1>
                         <h2>O Next UHD tem uma tela de funções no painel frontal, para poder personalizar o visual segundo a sua decoração, com varias opções como o relógio, ícones de canais ou você pode carregar a sua própria imagem para poder visualizar na tela. Fomos aperfeiçoando o design do Next UHD para cumprir com a tendência minimalista, com materiais totalmente recicláveis o que o torna uma arte ecológica.    </h2>
                         <p>Dependendo da  região de compra as telas poderão ser AMOLED, OLED, LED o TFT</p>
                     </div>
-
+                    <br>
 
 
                 </div>
-                <img class="modelo wow fadeInLeft" src="{{URL::to('vista/next/du.png')}}" alt="phones">
+                <img class="imgen2 modelo wow fadeInLeft"  style="width: 500px; height: auto;" src="{{URL::to('vista/next/du.png')}}" alt="phones">
                 <br>
             </section>
 
