@@ -17,6 +17,9 @@
 Route::get('/next_prod', function () {
     return view('next');
 });
+Route::get('/play_prod', function () {
+    return view('play');
+});
 Route::get('/next', function () {
     return view('next_producto');
 });
