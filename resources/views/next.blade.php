@@ -1,5 +1,5 @@
-{{--@extends('index')--}}
-{{--@section('contenido')--}}
+@extends('index')
+@section('contenido')
 
 
     {{--*******************************--}}
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{URL::to('vista/new_prod/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{URL::to('vista/new_prod/css/jquery.fancybox.css')}}" />
     <link rel="stylesheet" href="{{URL::to('vista/new_prod/css/jquery.fancybox-thumbs.css')}}" />
-    <link rel="stylesheet" href="{{URL::to('vists/new_prod/css/jquery.fullPage.css')}}" />
+    <link rel="stylesheet" href="{{URL::to('vista/new_prod/css/jquery.fullPage.css')}}" />
     <link rel="stylesheet" href="{{URL::to('vista/new_prod/css/animate.css')}}" />
     <link rel="stylesheet" href="{{URL::to('vista/new_prod/style.css')}}">
     <link rel="stylesheet" href="{{URL::to('vista/new_prod/responsive.css')}}">
@@ -261,37 +261,37 @@
                     <ul class="list-inline">
                         <li>
                             <a href="#">
-                                <img src="img/icons/facebook.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/facebook.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/icons/twitter.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/twitter.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/icons/google-plus.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/google-plus.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/icons/skype.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/skype.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/icons/behance.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/behance.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/icons/flicker.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/flicker.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/icons/instragram.png" alt="">
+                                <img src="{{URL::to('vista/new_prod/img/icons/instragram.png')}}" alt="">
                             </a>
                         </li>
                     </ul>
@@ -310,8 +310,8 @@
 
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{URL::to('vista/new_prod/js/jquery-1.10.2.min.js')}}"><\/script>')</script>
+{{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>--}}
+{{--<script>window.jQuery || document.write('<script src="{{URL::to('vista/new_prod/js/jquery-1.10.2.min.js')}}"><\/script>')</script>--}}
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="{{URL::to('vista/new_prod/js/bootstrap.min.js')}}"></script>
 <script src="{{URL::to('vista/new_prod/js/jquery.slimscroll.min.js')}}"></script>
@@ -331,4 +331,4 @@
 
 
 
-{{--@stop--}}
+@stop
