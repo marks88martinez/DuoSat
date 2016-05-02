@@ -122,7 +122,7 @@
             <div class="col-sm-3 bann imagen">
                 <a href="{{$chicos->link}}">
                     <img src="{{$chicos->url_banner}}">
-                    <p>
+                    <p style="font-size: {{ $chicos->style_font_size }};">
                         {!! $chicos->texto !!}
                     </p>
                 </a>
