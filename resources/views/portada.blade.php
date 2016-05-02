@@ -11,12 +11,12 @@
     <link href='{{URL::to('vista/css_new.css')}}' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="{{URL::to('vista/next/js/wow.js')}}"></script>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="main-slideshow" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            @for($i = 0; $i < count($banner); $i++)
+                <li data-target="#main-slideshow" data-slide-to="{{ $i }}"></li>
+            @endfor
         </ol>
 
         <!-- Wrapper for slides -->
@@ -32,11 +32,11 @@
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#main-slideshow" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <a class="right carousel-control" href="#main-slideshow" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -116,15 +116,58 @@
 <br>
 
 <!--***************banner pequeño*****************-->
-<div class="container">
+<div class="container" id="small_banners">
     <div class="row">
         @foreach($chico as $chicos)
-
-            <div class="col-sm-3  bann"><a href="{{$chicos->link}}">  <img src="{{$chicos->url_banner}}"></a></div>
-
+            <div class="col-sm-3 bann imagen">
+                <a href="{{$chicos->link}}">
+                    <img src="{{$chicos->url_banner}}">
+                    <p>
+                        {!! $chicos->texto !!}
+                    </p>
+                </a>
+            </div>
         @endforeach
         <div class=" col-sm-3 ">
             <style>
+                #small_banners .imagen {
+                    position: relative;
+                }
+                #small_banners a {
+                    position: relative;
+                    display: block;
+                }
+                #small_banners a p {
+                    display: block;
+                    position: absolute;
+                    top: 80%;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-family: "Open Sans Condensed",sans-serif;
+                }
+                #small_banners .imagen a:after {
+                    position: absolute;
+                    content: '';
+                    background-color: rgba(0,0,0,0.1);
+                    opacity: 0;
+                    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -ms-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                #small_banners .imagen a:hover:after{
+                    opacity: 1;
+                }
                 .carousel-caption {
                     font-family: "Open Sans Condensed",sans-serif;
                 }
@@ -180,6 +223,7 @@
     <script>
         $(document).ready(function() {
             $('.carousel-inner > .item:first').addClass('active');
+            $('.carousel-indicators li:first').addClass('active');
         });
         new WOW().init();
     </script>

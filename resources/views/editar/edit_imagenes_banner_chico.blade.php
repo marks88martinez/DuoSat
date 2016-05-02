@@ -16,10 +16,8 @@
 
             </div>
             <div class="form-group">
-                {{--<label for="exampleInputEmail1">Link</label>--}}
-
-
-                {{--{!!Form::text('url_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}--}}
+                <label for="input_texto">Texto</label>
+                {!!Form::text('texto',$b_chico->texto,['class'=>'form-control','id'=>'input_texto', 'placeholder'=>'Ingrese su nombre'])  !!}
             </div>
 
             <div class="form-group">

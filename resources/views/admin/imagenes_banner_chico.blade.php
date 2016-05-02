@@ -16,10 +16,8 @@
 
             </div>
             <div class="form-group">
-                {{--<label for="exampleInputEmail1">Link</label>--}}
-
-
-                {{--{!!Form::text('url_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}--}}
+                <label for="input_texto">Texto</label>
+                {!!Form::text('texto',null,['class'=>'form-control','id'=>'input_texto', 'placeholder'=>'Ingrese texto para banner'])  !!}
             </div>
 
             <div class="form-group">
@@ -82,17 +80,10 @@
                 <tr>
                     <td>{{$cat->codigo}}</td>
                     <td>{{$cat->nombre}}</td>
-
                     <td><img class="imagen_icon" src="{{$cat->url_banner}}" alt=""></td>
-
                     <td align="center"> {!! link_to_route('banner_chico.edit', $title = 'Editar', $parameters = $cat->codigo, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>
-
-
-
-
                     <td>
                         {!!Form::open(['route'=>['banner_chico.destroy',$cat->codigo], 'method'=>'DELETE'])!!}
-
                         {!! Form::submit('Eliminar ',['class'=>'fa fa-trash-o btn btn-danger btn-xs']) !!}
                         {!!Form::close()!!}
                     </td>

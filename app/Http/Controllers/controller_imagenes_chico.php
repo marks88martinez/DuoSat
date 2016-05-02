@@ -56,30 +56,19 @@ class controller_imagenes_chico extends Controller
      */
     public function store(Request $request)
     {
-
-
-
-
         $chico = model_imagenes_chico::get()->count();
-
         if($chico < 3){
-
             try{
-
                 $image = $this->imagen($request->file(('url_imagen')));
             }catch (NotReadableException $e){
                 $image = 'admin/img/vacio.jpg';
-
-
             }
             model_imagenes_chico::create([
                 'nombre'=>$request['nombre'],
                 'url_banner'=> $image,
-                'link'=>$request['nombre']
+                'link'=>$request['nombre'],
+                'texto' => $request['texto']
             ]);
-
-
-
             Session::flash('message','exitosamente ');
             return Redirect::to('banner_chico');
         }else{
@@ -87,17 +76,6 @@ class controller_imagenes_chico extends Controller
             return Redirect::to('banner_chico');
 
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 
     /**
@@ -136,7 +114,7 @@ class controller_imagenes_chico extends Controller
 
 
       $chico = model_imagenes_chico::find($id);
-        $chico->fill($request->only('nombre','link'));
+        $chico->fill($request->only('nombre','link', 'texto'));
         $chico->save();
 
         try{

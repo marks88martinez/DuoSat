@@ -114,12 +114,11 @@
 	.menu{
 		margin: 0;
 		padding:0;
-	z-index: -500;
+		z-index: -500;
 		width: 100%;
-		height:185px;
-
-background: #d8d8d9;
-display: none;
+		/*height:185px;*/
+		background: #d8d8d9;
+		display: none;
 	}
 		.navbar{
 	    margin-bottom: 0px;	
@@ -128,7 +127,7 @@ display: none;
 		
 		margin-top: 15px;
 		width: 100%;
-		height: 100px;
+		/*height: 100px;*/
 	
 		float: right;
 
@@ -177,8 +176,6 @@ display: none;
 
 
 	}
-
-
 	.cuadro img{
 		margin-top: 6px;
 		width: 80px;
@@ -189,7 +186,7 @@ display: none;
 		list-style: none;
 		margin-bottom: 2px;
 		margin: 10px;
-		transition: background 1s;	
+		transition: background 1s;
 	}
 	.menu-sub>li>a{
 		left: 5px;
@@ -273,14 +270,7 @@ display: none;
 		background: #f2f2f2;
 	}
 
-
-
-
-
-
 	.menu-sub{
-
-
 		margin: 0 auto;
 		text-align: center;
 		width: auto;
@@ -291,10 +281,7 @@ display: none;
 		 margin-top: 15px;
 		 border-radius: 0 0 4px 4px  ;
 		box-shadow: 2px 2px 20px #999999;
-
-
 	}
-
 
 	.banner img{
 		width: 100%;
@@ -310,25 +297,20 @@ display: none;
 	}
 	@media (max-width: 767px){
 		.navbar-nav .open .dropdown-menu{
-	    position: static;
-	    float: none;
-	    width: auto;
-	    margin-top: 0;
-	   background: black;
-	    border: 0;
-	    -webkit-box-shadow: none;
-	    box-shadow: none;
-
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background: black;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
 		}
 
 		.navbar-nav .open .dropdown-menu>li>a{
 			color: white !important;
-
-
 		}
 	}
-
-
 
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
 		color: gray
@@ -337,10 +319,10 @@ display: none;
 		color: silver
 	}
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	    color: white; 
-    background-color: black;
-}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+		color: white;
+		background-color: black;
+	}
 	.bann{
 		/*z-index: -500;*/
 	}	
@@ -362,15 +344,10 @@ display: none;
 		background:#2B2B2C;
 	}
 
-		.nave{
-		
+	.nave{
 		width: 100%;
 		height: 30px;
 		text-align: center;
-
-		
-
-
 	}
 	.cent{
 		text-align: center;
@@ -385,22 +362,19 @@ display: none;
 		font-weight: bold;
 		color: #777980;
 		text-decoration: none;
-	
 	}
 	 p{
 		color: #777980;
-
-
 	}
 	.busqueda{
-	margin-top: 5px;
+		margin-top: 5px;
 		width: 500px;
 		height: 50px;
 		background:#1C1C1D;
 		display: none;
-margin-left: -550px;
-	position: absolute;
-}
+		margin-left: -550px;
+		position: absolute;
+	}
 
 
 /*******************************************************************/

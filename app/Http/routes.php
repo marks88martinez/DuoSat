@@ -38,6 +38,7 @@ Route::group(['middlewares' => ['auth']], function(){
     Route::resource('producto', 'controller_producto');
     Route::resource('campos', 'controller_campos');
     Route::resource('producto_campos', 'controller_productos_campos');
+    Route::resource('banner_chico', 'controller_imagenes_chico');
     Route::resource('imagenes_banner', 'controller_imagenes_banner');
     Route::resource('adm_descargas', 'controller_adm_descargas', ['only' => ['index', 'store', 'update']]);
     Route::resource('adm_descargas.archivos','controller_descargas_archivos');
@@ -71,7 +72,6 @@ Route::get('contacto','controller_empresa@contacto');
 //     return view('buscador');
 ////     return View::make('buscador');
 //});
-Route::resource('banner_chico', 'controller_imagenes_chico');
 Route::resource('queries', 'controller_busca');
 Route::resource('all_producto', 'controller_all_product');
 
