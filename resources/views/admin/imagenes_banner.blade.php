@@ -44,6 +44,10 @@
                 <label for="input_style_right">Right</label>
                 {!!Form::text('style_right','20%',['class'=>'form-control','id'=>'input_style_right', 'placeholder'=>'Right para caption del banner'])  !!}
             </div>
+            <div class="form-group">
+                <label for="input_style_color">Color</label>
+                {!!Form::text('style_color','#FFF',['class'=>'form-control','id'=>'input_style_color', 'placeholder'=>'Color para caption del banner'])  !!}
+            </div>
         </div><!-- /.box-body -->
 
         <div class="box-footer">
