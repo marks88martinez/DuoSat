@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth', 'seventh', 'eighth','neventh', 'diesth','ONCEth', 'doceth', 'treceth','14th','15th','16th', '17th','18th'],
-		sectionsColor: ['#D8D8D8', '#000000', '#000000', '#2082ec', '#666666', '#000000','#155477', '#000000', '#D8D8D8', '#000000','#D8D8D8','#d72702','#000000','#48474e','#9dc6d8','#000000','#2b2b2d', '#9dc6d8'],
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth', 'seventh', 'eighth','neventh', 'diesth'],
+		sectionsColor: ['#D8D8D8', '#000000', '#000000', '#d8d8d8', '#d72702', '#000000','#155477', '#d8d8d8', '#2b2b2e', '#9dc6d8'],
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: [],
