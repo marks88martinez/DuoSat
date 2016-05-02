@@ -16,9 +16,8 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\screen3-big.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\screen3.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\next\memory.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vista/play/js/main.js" afterPath="$PROJECT_DIR$/public/vista/play/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/next.blade.php" afterPath="$PROJECT_DIR$/resources/views/next.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/play.blade.php" afterPath="$PROJECT_DIR$/resources/views/play.blade.php" />
     </list>
     <ignored path="DUOSAT_WEB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="740" column="0" selection-start-line="739" selection-start-column="4" selection-end-line="739" selection-end-column="55" />
+              <caret line="739" column="0" selection-start-line="739" selection-start-column="0" selection-end-line="739" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,30 +79,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="next.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="next.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/next.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24364723">
-              <caret line="832" column="0" selection-start-line="832" selection-start-column="0" selection-end-line="832" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.145454">
+              <caret line="166" column="44" selection-start-line="166" selection-start-column="44" selection-end-line="166" selection-end-column="44" />
               <folding>
-                <element signature="e#18033#18053#0#HTML" expanded="true" />
-                <element signature="e#20475#20495#0#HTML" expanded="true" />
-                <element signature="e#21362#21382#0#HTML" expanded="true" />
-                <element signature="e#26605#26631#0#HTML" expanded="true" />
-                <element signature="e#27554#27574#0#HTML" expanded="true" />
-                <marker date="1462225634429" expanded="true" signature="1677:1737" placeholder="..." />
+                <element signature="e#18019#18039#0#HTML" expanded="true" />
+                <element signature="e#20461#20481#0#HTML" expanded="true" />
+                <element signature="e#21348#21368#0#HTML" expanded="true" />
+                <element signature="e#26591#26617#0#HTML" expanded="true" />
+                <element signature="e#27540#27560#0#HTML" expanded="true" />
+                <marker date="1462226934385" expanded="true" signature="1677:1737" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="play.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/play.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="601" column="0" selection-start-line="601" selection-start-column="0" selection-end-line="601" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.26934096">
+              <caret line="503" column="45" selection-start-line="503" selection-start-column="45" selection-end-line="503" selection-end-column="45" />
               <folding>
-                <marker date="1462222040308" expanded="true" signature="1673:1733" placeholder="..." />
+                <marker date="1462226963963" expanded="true" signature="1673:1733" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -205,10 +204,10 @@
         <option value="$PROJECT_DIR$/public/vista/new_prod/js/main.js" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/public/vista/play/style.css" />
-        <option value="$PROJECT_DIR$/resources/views/play.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/public/vista/play/js/main.js" />
         <option value="$PROJECT_DIR$/resources/views/next.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/play.blade.php" />
       </list>
     </option>
   </component>
@@ -669,7 +668,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1035,7 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/public/vista/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="740" column="0" selection-start-line="739" selection-start-column="4" selection-end-line="739" selection-end-column="55" />
+          <caret line="739" column="0" selection-start-line="739" selection-start-column="0" selection-end-line="739" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1045,16 +1044,6 @@
         <state vertical-scroll-proportion="-14.384615">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/play.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="601" column="0" selection-start-line="601" selection-start-column="0" selection-end-line="601" selection-end-column="0" />
-          <folding>
-            <marker date="1462222040308" expanded="true" signature="1673:1733" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,15 +1089,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/next.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24364723">
-          <caret line="832" column="0" selection-start-line="832" selection-start-column="0" selection-end-line="832" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.145454">
+          <caret line="166" column="44" selection-start-line="166" selection-start-column="44" selection-end-line="166" selection-end-column="44" />
           <folding>
-            <element signature="e#18033#18053#0#HTML" expanded="true" />
-            <element signature="e#20475#20495#0#HTML" expanded="true" />
-            <element signature="e#21362#21382#0#HTML" expanded="true" />
-            <element signature="e#26605#26631#0#HTML" expanded="true" />
-            <element signature="e#27554#27574#0#HTML" expanded="true" />
-            <marker date="1462225634429" expanded="true" signature="1677:1737" placeholder="..." />
+            <element signature="e#18019#18039#0#HTML" expanded="true" />
+            <element signature="e#20461#20481#0#HTML" expanded="true" />
+            <element signature="e#21348#21368#0#HTML" expanded="true" />
+            <element signature="e#26591#26617#0#HTML" expanded="true" />
+            <element signature="e#27540#27560#0#HTML" expanded="true" />
+            <marker date="1462226934385" expanded="true" signature="1677:1737" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/play.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26934096">
+          <caret line="503" column="45" selection-start-line="503" selection-start-column="45" selection-end-line="503" selection-end-column="45" />
+          <folding>
+            <marker date="1462226963963" expanded="true" signature="1673:1733" placeholder="..." />
           </folding>
         </state>
       </provider>
