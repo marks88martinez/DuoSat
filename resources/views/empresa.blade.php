@@ -119,7 +119,7 @@
         <div class="fonte2">• Canal exclusivo de atualização</div>
 
         <p>
-            O canal mudou o transponder original?, Não se preocupe, o AI (inteligência artificial) de todos os produtos Duosat automaticamente procuram o canal movido para o outro transponder!
+            O canal mudou o transponder original? Não se preocupe, o AI (inteligência artificial) de todos os produtos Duosat automaticamente procuram o canal movido para o outro transponder!
         </p>
         <div class="fonte2">• Suporte para Toda a Vida</div>
 
