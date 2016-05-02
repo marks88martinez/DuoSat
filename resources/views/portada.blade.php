@@ -194,7 +194,11 @@
                     }
                     @foreach($banner as $index => $bann)
                     #banner_{{ $index }} {
-                        padding-bottom: {{ $bann->style_padding_bottom }}; left: {{ $bann->style_left }}; right: {{ $bann->style_right }}; font-size: {{ $bann->style_font_size }};
+                        padding-bottom: {{ $bann->style_padding_bottom }};
+                        left: {{ $bann->style_left }};
+                        right: {{ $bann->style_right }};
+                        font-size: {{ $bann->style_font_size }};
+                        color: {{ $bann->style_color }};
                     }
                     @endforeach
                 }
