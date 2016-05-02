@@ -122,7 +122,7 @@
             <div class="col-sm-3 bann imagen">
                 <a href="{{$chicos->link}}">
                     <img src="{{$chicos->url_banner}}">
-                    <p>
+                    <p style="font-size: {{ $chicos->style_font_size }};">
                         {!! $chicos->texto !!}
                     </p>
                 </a>
@@ -194,7 +194,11 @@
                     }
                     @foreach($banner as $index => $bann)
                     #banner_{{ $index }} {
-                        padding-bottom: {{ $bann->style_padding_bottom }}; left: {{ $bann->style_left }}; right: {{ $bann->style_right }}; font-size: {{ $bann->style_font_size }};
+                        padding-bottom: {{ $bann->style_padding_bottom }};
+                        left: {{ $bann->style_left }};
+                        right: {{ $bann->style_right }};
+                        font-size: {{ $bann->style_font_size }};
+                        color: {{ $bann->style_color }};
                     }
                     @endforeach
                 }
