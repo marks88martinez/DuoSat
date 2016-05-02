@@ -63,8 +63,8 @@ Route::group(['prefix' => 'descargas'], function() {
 });
 
 Route::get('productos/{id}',['as'=>'prodsuctos.id','uses'=>'controller_prod_detalle@index']);
-Route::resource('empresa','controller_empresa');
-Route::get('contacto','controller_empresa@contacto');
+Route::get('empresa', ['as' => 'empresa', 'uses' => 'controller_empresa@index']);
+Route::get('contacto', ['as' => 'contacto', 'uses' => 'controller_empresa@contacto']);
 
 //Route::get('producto/{id}', function(){
 //     return 'user'.$id;
