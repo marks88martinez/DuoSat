@@ -2,63 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3872cd13-024c-49c2-90fa-e041c7d63aa3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/3d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/4k.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/4k2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/MEMO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/android.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/capture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/capture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/conec.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/control.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/dimensiones.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/display.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/du.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/fondo13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/game.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/h2645.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/hd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/homet - Copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/homet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/icon-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/iphone-green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/iphone-red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/iphone-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/iphone2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/iphones3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/men.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/procesador.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/screen1-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/screen1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/screen2-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/screen2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/screen3-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/New folder/screen3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/sound.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/str.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/tuner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/tuner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/usb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/use.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/use.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/new_prod/img/ico/wifi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/jquery-2.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/jquery.fancybox-thumbs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/jquery.fancybox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/jquery.fullPage.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/jquery.slimscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/play.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vista/play/js/wow.min.js" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\bg.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\icon-4.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\iphone-green.png" afterPath="" />
@@ -73,13 +16,8 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\screen3-big.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\new_prod\img\screen3.png" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\DUOSAT_WEB\public\vista\next\memory.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vista/play/playjuntos.png" afterPath="$PROJECT_DIR$/public/vista/play/playjuntos.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vista/new_prod/js/main.js" afterPath="$PROJECT_DIR$/public/vista/new_prod/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vista/play/js/main.js" afterPath="$PROJECT_DIR$/public/vista/play/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/next.blade.php" afterPath="$PROJECT_DIR$/resources/views/next.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vista/new_prod/style.css" afterPath="$PROJECT_DIR$/public/vista/new_prod/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DUOSAT_WEB.iws" />
@@ -112,16 +50,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="next_producto.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/next_producto.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-433.1154">
-              <caret line="1104" column="142" selection-start-line="1103" selection-start-column="19" selection-end-line="1104" selection-end-column="142" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -142,18 +70,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="portada.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="41.192307">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="next.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/next.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68189234">
-              <caret line="634" column="249" selection-start-line="634" selection-start-column="249" selection-end-line="634" selection-end-column="249" />
+            <state vertical-scroll-proportion="0.24364723">
+              <caret line="832" column="0" selection-start-line="832" selection-start-column="0" selection-end-line="832" selection-end-column="0" />
               <folding>
                 <element signature="e#18033#18053#0#HTML" expanded="true" />
                 <element signature="e#20475#20495#0#HTML" expanded="true" />
                 <element signature="e#21362#21382#0#HTML" expanded="true" />
                 <element signature="e#26605#26631#0#HTML" expanded="true" />
                 <element signature="e#27554#27574#0#HTML" expanded="true" />
-                <marker date="1462222885782" expanded="true" signature="1677:1737" placeholder="..." />
+                <marker date="1462225634429" expanded="true" signature="1677:1737" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -175,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/public/vista/play/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -268,8 +206,8 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/public/vista/play/style.css" />
         <option value="$PROJECT_DIR$/resources/views/play.blade.php" />
-        <option value="$PROJECT_DIR$/public/vista/play/js/main.js" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/vista/play/js/main.js" />
         <option value="$PROJECT_DIR$/resources/views/next.blade.php" />
       </list>
     </option>
@@ -731,7 +669,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -740,9 +678,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23376623" sideWeight="0.24040511" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24675325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24675325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18614718" sideWeight="0.75959486" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18614718" sideWeight="0.75959486" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1044,14 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24355301">
-          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/vista/new_prod/css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4359713">
@@ -1144,14 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vista/play/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.0">
@@ -1160,17 +1082,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/portada.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="41.192307">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vista/play/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/next.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68189234">
-          <caret line="634" column="249" selection-start-line="634" selection-start-column="249" selection-end-line="634" selection-end-column="249" />
+        <state vertical-scroll-proportion="0.24364723">
+          <caret line="832" column="0" selection-start-line="832" selection-start-column="0" selection-end-line="832" selection-end-column="0" />
           <folding>
             <element signature="e#18033#18053#0#HTML" expanded="true" />
             <element signature="e#20475#20495#0#HTML" expanded="true" />
             <element signature="e#21362#21382#0#HTML" expanded="true" />
             <element signature="e#26605#26631#0#HTML" expanded="true" />
             <element signature="e#27554#27574#0#HTML" expanded="true" />
-            <marker date="1462222885782" expanded="true" signature="1677:1737" placeholder="..." />
+            <marker date="1462225634429" expanded="true" signature="1677:1737" placeholder="..." />
           </folding>
         </state>
       </provider>

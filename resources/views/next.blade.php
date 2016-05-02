@@ -850,7 +850,7 @@ S
                                 <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/MEMO.png')}}" alt="">
                             <h4 class="fuente_titulo4">Memória RAM</h4>
 
-                            <p class="parraf">: RAM 1GB DDR3, Memória Interna de 16GB, com suporte para memória Micro SD de até 128GB</p>
+                            <p class="parraf">RAM 1GB DDR3, Memória Interna de 16GB, com suporte para memória Micro SD de até 128GB</p>
 
                             </p>
                         </div>
