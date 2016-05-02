@@ -164,7 +164,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="feature_image">
-                                <img class="img-responsive " src="{{URL::to('vista/new_prod/img/64.png')}}" alt="">
+                                <img class=" " src="{{URL::to('vista/new_prod/img/64.png')}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -757,7 +757,7 @@ S
                         <div class="">
 
                             <div class="row" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/android.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/android.png')}}" alt="">
                             </div>
                             <div class="row" >
                                 <h4 class="fuente_titulo4">Android</h4>
@@ -770,7 +770,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/tuner.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner.png')}}" alt="">
                             <h4 class="fuente_titulo4">Tuner</h4>
 
                             <p class="parraf">Tuner Modular transformável. Suporta DVB-S2, DVB-S, DVB-C, ISDBT, à eleição  </p>
@@ -781,7 +781,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/4k.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/4k.png')}}" alt="">
                             <h4 class="fuente_titulo4">Vídeo</h4>
 
                             <p class="parraf">Ultra HD 4k X 2k
@@ -797,7 +797,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/procesador.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/procesador.png')}}" alt="">
                             <h4 class="fuente_titulo4">Processador </h4>
 
                             <p class="parraf">
@@ -810,7 +810,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/usb.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/usb.png')}}" alt="">
                             <h4 class="fuente_titulo4">USB</h4>
 
                             <p class="parraf">1 x USB 3.0 Host, 1 x USB 2.0 host, USB hub </p>
@@ -821,7 +821,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/display.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/display.png')}}" alt="">
                             <h4 class="fuente_titulo4">Display</h4>
 
                             <p class="parraf"> AMOLED Display, dual LED TFT ou OLED Display * isto depende da região de comercialização </p>
@@ -837,7 +837,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/sound.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/sound.png')}}" alt="">
                             <h4 class="fuente_titulo4">Áudio</h4>
 
                             <p class="parraf">:  2 x RCA(audio L/R), Saída  Digital de áudio 1 x SPDIF(óptico), DSP dedicado de áudio, decodificador G.711,Dolby Digital e Dolby Digital plus, 2 canais de áudio, efeitos de som SRS,MS11, processador Pounding Bass,AAC-LC e decodificador HE AACV1/V2, MPEG L1/L2/L3</p>
@@ -847,10 +847,10 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/MEMO.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/MEMO.png')}}" alt="">
                             <h4 class="fuente_titulo4">Memória RAM</h4>
 
-                            <p class="parraf">: RAM 1GB DDR3, Memória Interna de 16GB, com suporte para memória Micro SD de até 128GB</p>
+                            <p class="parraf">RAM 1GB DDR3, Memória Interna de 16GB, com suporte para memória Micro SD de até 128GB</p>
 
                             </p>
                         </div>
@@ -858,7 +858,7 @@ S
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/dimensiones.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/dimensiones.png')}}" alt="">
                             <h4 class="fuente_titulo4">Especificações Físicas</h4>
 
                             <p class="parraf">Tamanho do Aparelho

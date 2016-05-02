@@ -501,7 +501,7 @@
                         <div class="">
 
                             <div class="row" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/procesador.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/procesador.png')}}" alt="">
                             </div>
                             <div class="row" >
                                 <h4 class="fuente_titulo4">Processador</h4>
@@ -517,7 +517,7 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/usb.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/usb.png')}}" alt="">
                             <h4 class="fuente_titulo4">Entrada/Saída</h4>
 
                             <p class="parraf">Suporta USB 2.0
@@ -529,7 +529,7 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/display.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/display.png')}}" alt="">
                             <h4 class="fuente_titulo4">Display</h4>
 
                             <p class="parraf">Display Externo de 7 polegadas
@@ -543,7 +543,7 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/sound.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/sound.png')}}" alt="">
                             <h4 class="fuente_titulo4">Áudio </h4>
 
                             <p class="parraf">
@@ -557,7 +557,7 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
                             <h4 class="fuente_titulo4">Conectividade</h4>
 
                             <p class="parraf">Suporta Wi Fi Externo</p>
@@ -568,7 +568,7 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class="img-responsive"  src="{{URL::to('vista/new_prod/img/ico/dimensiones.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/dimensiones.png')}}" alt="">
                             <h4 class="fuente_titulo4">Especificações Físicas</h4>
 
                             <p class="parraf">Tamanho Compacto
