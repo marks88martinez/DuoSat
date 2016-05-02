@@ -291,6 +291,10 @@
 	background-color: black;
 	
 	}
+
+	.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img {
+		width: 100%;
+	}
 	
 	.navbar-default .navbar-toggle .icon-bar{
 		background-color: white;
@@ -761,10 +765,5 @@
 		font-size:15px;
 
 	}
-
-}
-
-
-
 
 }
