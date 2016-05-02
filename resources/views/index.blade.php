@@ -266,18 +266,18 @@
             </li>
             <li class="cuadro">
                 <span></span>
-                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>
+                <a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>
 
                 <ul class="menu-sub">
                     <span></span>
                         <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next_prod">NEXT</a></li>
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
-                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">4K</h6></a>
+                <a href="{{URL::to('/next_prod')}}"><h6 class="lista">4K</h6></a>
             </li>
             <li class="cuadro">
                 <span></span>
-                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
+                <a href="{{URL::to('/play_prod')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
 
                 <ul class="menu-sub">
                     <span></span>
