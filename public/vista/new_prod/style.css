@@ -293,9 +293,22 @@ hr.hrstyle:before{
 #fp-nav ul li a:focus{
 	outline: none;
 }
+#section7{
+
+  background: url(img/capture.jpg) no-repeat;
+  background-size: cover
+
+}
+#section1{
+
+  background: url(img/fondo13.jpg) no-repeat;
+  background-size: cover
+
+}
 
 #section0, #section7{
-	background: url(img/bg.png) no-repeat;
+
+	/*background: url(img/bg.png) no-repeat;*/
 	background-size: cover
 
 }

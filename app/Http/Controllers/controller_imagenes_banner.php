@@ -57,14 +57,16 @@ class controller_imagenes_banner extends Controller
      */
     public function store(Request $request)
     {
-
-
-
-
         model_imagenes_banner::create([
             'nombre_banner'=>$request['nombre_banner'],
             'url_banner'=>$this->imagen($request->file('url_banner')),
-            'link'=>$request['link']
+            'link'=>$request['link'],
+            'texto' => $request['texto'],
+            'style_padding_bottom' => $request['style_padding_bottom'],
+            'style_left' => $request['style_left'],
+            'style_right' => $request['style_right'],
+            'style_font_size' => $request['style_font_size'],
+            'style_color' => $request['style_color'],
         ]);
         Session::flash('message','Creado exitosamente');
         return Redirect::to('imagenes_banner');
@@ -111,7 +113,7 @@ class controller_imagenes_banner extends Controller
 //        $banner->save();
 
         $chico =  model_imagenes_banner::find($id);
-        $chico->fill($request->only('nombre_banner','link'));
+        $chico->fill($request->only('nombre_banner','link', 'texto', 'style_padding_bottom', 'style_right', 'style_left', 'style_font_size', 'style_color'));
         $chico->save();
 
 

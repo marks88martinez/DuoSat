@@ -18,7 +18,7 @@
         $(window).load(function () {
 
             var size = 1;
-            var button = 1;
+            var button = 0;
             var button_class = "gallery-header-center-right-links-current";
             var normal_size_class = "gallery-content-center-normal";
             var full_size_class = "gallery-content-center-full";
@@ -28,19 +28,18 @@
 
 
             function check_button(){
-                $('.gallery-header-center-right-links').removeClass(button_class);
-                if(button==1){
+                console.log(button);
+                $('#gallery-header-center div').removeClass(button_class);
+                if(button==0){
                     $("#filter-all").addClass(button_class);
                     $("#gallery-header-center-left-title").html('All Galleries');
                 }
-                if(button==2){
-                    $("#filter-studio").addClass(button_class);
-                    $("#gallery-header-center-left-title").html('Studio Gallery');
+                @foreach($producto as $productos)
+                if(button=={{ $productos->categoria->codigo_categoria }}){
+                    $("#filter-{{ $productos->categoria->codigo_categoria }}").addClass(button_class);
+//                    $("#gallery-header-center-left-title").html('Studio Gallery');
                 }
-                if(button==3){
-                    $("#filter-landscape").addClass(button_class);
-                    $("#gallery-header-center-left-title").html('Landscape Gallery');
-                }
+                @endforeach
             }
 
 
@@ -56,11 +55,14 @@
                 }
                 $container.isotope({itemSelector : 'img'});
             }
-            $("#filter-all").click(function() { $container.isotope({ filter: '.all' }); button = 1; check_button(); });
-@foreach($producto as $productos)
-            $("#filter-"+{{$productos->categoria->codigo_categoria}}).click(function() { $container.isotope({ filter: '.{{$productos->categoria->codigo_categoria}}' }); button = 1; check_button(); });
-
-@endforeach
+            $("#filter-all").click(function() { $container.isotope({ filter: '.all' }); button = 0; check_button(); });
+            @foreach($producto as $productos)
+                $("#filter-{{ $productos->categoria->codigo_categoria }}").click(function() {
+                        $container.isotope({ filter: '.{{$productos->categoria->codigo_categoria}}' });
+                        button = {{ $productos->categoria->codigo_categoria }};
+                        check_button();
+                    });
+            @endforeach
 //            $("#filter-all").click(function() { $container.isotope({ filter: '.all' }); button = 1; check_button(); });
 //            $("#filter-studio").click(function() {  $container.isotope({ filter: '.studio' }); button = 2; check_button();  });
 //            $("#filter-landscape").click(function() {  $container.isotope({ filter: '.landscape' }); button = 3; check_button();  });
@@ -69,6 +71,9 @@
 
             check_button();
             check_size();
+            @if($query != null)
+                $('#filter-{{ $query }}').click();
+            @endif
         });
 
 
@@ -92,16 +97,14 @@
                     {{--<div id="gallery-header-center-left-icon"><span class="iconb" data-icon="&#xe23a;"></span></div>--}}
                     {{--<div id="gallery-header-center-left-title">All Galleries</div>--}}
                 {{--</div>--}}
-                <div id="gallery-header-center">
-                    <div class="btn btn-default" id="filter-all">All</div>
-                    @foreach($categoria as $categorias)
+                <div class="btn btn-default" id="filter-all">All</div>
+                @foreach($categoria as $categorias)
 
-                    <div class="btn btn-default " id="filter-{{$categorias->codigo_categoria}}">{{$categorias->nombre}}</div>
-                    @endforeach
-                    {{--<div class="gallery-header-center-right-links" id="filter-all">All</div>--}}
-                    {{--<div class="gallery-header-center-right-links" id="filter-studio">Studio</div>--}}
-                    {{--<div class="gallery-header-center-right-links" id="filter-landscape">Landscapes</div>--}}
-                </div>
+                <div class="btn btn-default " id="filter-{{$categorias->codigo_categoria}}">{{$categorias->nombre}}</div>
+                @endforeach
+                {{--<div class="gallery-header-center-right-links" id="filter-all">All</div>--}}
+                {{--<div class="gallery-header-center-right-links" id="filter-studio">Studio</div>--}}
+                {{--<div class="gallery-header-center-right-links" id="filter-landscape">Landscapes</div>--}}
             </div>
         </div>
         <style>

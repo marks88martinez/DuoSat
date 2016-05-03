@@ -12,34 +12,41 @@
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre Banner</label>
                 {!!Form::text('nombre_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}
-
-
             </div>
             <div class="form-group">
-                {{--<label for="exampleInputEmail1">Link</label>--}}
-
-
-                {{--{!!Form::text('url_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}--}}
+                <label for="input_texto">Texto del caption</label>
+                {!!Form::textarea('texto',null,['class'=>'form-control','id'=>'input_texto', 'placeholder'=>'Ingrese Texto para banner'])  !!}
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Icono</label>
-
             {!! Form::file('url_banner') !!}
-
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Link Banner</label>
                 {!!Form::text('link',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese el link'])  !!}
-
-
             </div>
-
-
-
-            <div class="checkbox">
-
+            <h3>Estilos</h3>
+            <div class="form-group">
+                <label for="input_style_font_size">Padding Bottom</label>
+                {!!Form::text('style_font_size', '40px',['class'=>'form-control','id'=>'input_style_font_size', 'placeholder'=>'Font size para caption del banner'])  !!}
+            </div>
+            <div class="form-group">
+                <label for="input_style_padding_bottom">Padding Bottom</label>
+                {!!Form::text('style_padding_bottom','30px',['class'=>'form-control','id'=>'input_style_padding_bottom', 'placeholder'=>'Padding-bottom para caption del banner'])  !!}
+            </div>
+            <div class="form-group">
+                <label for="input_style_left">Left</label>
+                {!!Form::text('style_left','20%',['class'=>'form-control','id'=>'input_style_left', 'placeholder'=>'Left para caption del banner'])  !!}
+            </div>
+            <div class="form-group">
+                <label for="input_style_right">Right</label>
+                {!!Form::text('style_right','20%',['class'=>'form-control','id'=>'input_style_right', 'placeholder'=>'Right para caption del banner'])  !!}
+            </div>
+            <div class="form-group">
+                <label for="input_style_color">Color</label>
+                {!!Form::text('style_color','#FFF',['class'=>'form-control','id'=>'input_style_color', 'placeholder'=>'Color para caption del banner'])  !!}
             </div>
         </div><!-- /.box-body -->
 

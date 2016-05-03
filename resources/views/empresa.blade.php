@@ -15,12 +15,11 @@
                 <img src="{{URL::to('admin/img/quinesomos.png')}}" class="media-object" alt="imagen">
             </a>
             <div class="media-body">
-                <h4 class="media-heading fonte">•  Quiénes somos? <small></small></h4>
+                <h4 class="media-heading fonte">• Sobre nós <small></small></h4>
                 <p>
-                    En respuesta a la demanda de receptores de alto rendimiento por parte de los consumidores, Duo Laboratorios para su marca Duosat  ha trabajado en el desarrollo de la evolución de los receptores de definición estándar y alta definición (HD), para ser capaz de proporcionar los recursos y dispositivos multimedia de alto rendimiento  con conectividad total y la más moderna tecnología, combinada con un diseño único.
-
-                    Duo Laboratorios es el fabricante de receptores de satélite al aire libre de la marca Duosat . En Duosat , la satisfacción del cliente es nuestra máxima prioridad, a través del uso de tecnología innovadora, somos capaces de ofrecer un producto superior, rico en recursos y funcionalidades a un precio justo. Con la alianza estratégica con empresas asociadas que ofrecen productos de alta calidad con precios compatibles, garantizamos la sucesión continua y la satisfacción del cliente en el futuro.
-
+                    Em resposta à demanda dos consumidores pela alta-performance dos receptores, a Duo Laboratories para sua marca Duosat, tem trabalhado para desenvolver a evolução dos receptores de definição standard e alta definição (HD), para ser capaz de oferecer recursos e aparelhos multimídia de alto desempenho com conectividade total, a mais moderna tecnologia, combinado com um design exclusivo.
+                    <br>
+                    Duo laboratórios é o fabricante dos receptores de satélite (FTA - Free to air) da marca Duosat. Na Duosat, a satisfação do cliente é a nossa maior prioridade, através da utilização de tecnologia inovadora, somos capazes de oferecer um produto superior, rico em recursos e funcionalidades a um preço justo. Através da aliança estratégica com empresas parceiras, oferecemos produtos de alta qualidade com preços compatíveis, que irão garantir a sucessão contínua e a satisfação dos clientes no futuro.
                 </p>
                 {{--******************************--}}
 
@@ -28,28 +27,27 @@
             </div>
             <br>
 
-            <h4 class="media-heading fonte">•  Visión <small></small></h4>
+            <h4 class="media-heading fonte">• Visão<small></small></h4>
             <p>
-                Duo laboratorios entiende que el éxito sólo puede ser alcanzado al lograr la satisfacción total del cliente. Duosat  promete la plena satisfacción del cliente a través de la continua investigación y desarrollo de productos además de la sustentabilidad, la vida útil garantizada, y otros servicios adicionales para cumplir nuestra promesa. Sugerimos a nuestros clientes que tengan en cuenta que Duosat  siempre deja una puerta abierta para recibir opiniones y sugerencias de los mismos.
-
-
+                Duo laboratórios entende que o sucesso só pode ser concluído no momento que atingir a satisfação total do cliente. Duosat  promete satisfação total do cliente através da contínua pesquisa e desenvolvimento de produtos junto com suporte, garantia permanente e serviços para suportar a nossa promessa. Pedimos aos nossos clientes ter em mente que Duosat é uma porta sempre deixada aberta para opiniões e sugestões dos nossos clientes.
             </p>
             {{--******************************--}}
-            <h4 class="media-heading fonte">•   Software de Terceros <small></small></h4>
+            <h4 class="media-heading fonte">• Software de Terceiros<small></small></h4>
             <p>
-                Duo Laboratorios no ofrece ni aprueba el uso de software de terceros.
-                El uso de softwares de terceros puede ser ilegal, puede dañar el aparato y anular la garantía del producto. No entre en contacto con nosotros preguntando sobre softwares ilegales.
-                Nuestros receptores de satélite están diseñados y destinados exclusivamente para uso legal. Nos negamos a vender a cualquier persona o empresa que tengan intenciones de utilizar o vender nuestros productos con fines ilegales
-
+                A Duo Laboratories não oferece nem aprova a utilização de software de terceiros.
+                <br>
+                A utilização de softwares de terceiros pode ser ilegal, danificar o seu aparelho e pode anular a garantia do produto. Não entre em contato conosco perguntando sobre qualquer software ilegal.
+                <br>
+                Nossos receptores de satélite são projetados e fabricados apenas para uso legal. Vamos recusar a venda a qualquer pessoa ou empresa que acreditamos que tenha intenções de usar o nosso produto de forma ilegal, ou tenha a pretensão de vender o nosso produto para fins ilegais.
             </p>
 
             {{--*****************************--}}
             <br>
 
 
-            <h4 class="media-heading fonte">•  Por qué Duosat ? <small></small></h4>
+            <h4 class="media-heading fonte">• Por que Duosat?<small></small></h4>
             <p>
-                Duosat  es lo más innovador en cuanto a decodificadores digitales en definición estándar o alta definición.
+                Duosat  é a última novidade em quanto a inovação  de receptores via satélite em definição padrão ou de alta definição.
 
             </p>
             {{--******************************--}}
@@ -58,7 +56,7 @@
             {{--******************************--}}
             <h4 class="media-heading fonte">• Branding <small></small></h4>
             <p>
-                La marca Duosat surge de la expresion DUO (doble), pues fue la primera fabricante de receptores con sintonizadores doble, para dar mayor eficacia y dinamismo en cuanto al uso por el cliente final.
+                A marca Duosat surge da expressão DUO (duplo), já que foi o primeiro fabricante de receptores com sintonizadores duplos, para dar maior eficiência e dinamismo na utilização por parte do cliente final.
             </p>
             {{--******************************--}}
             <br>
@@ -67,19 +65,19 @@
 
 
             {{--******************************--}}
-            <h4 class="media-heading fonte">•  Conectividad e Internet <small></small></h4>
+            <h4 class="media-heading fonte">• Conectividade com a Internet<small></small></h4>
             <p>
-                A diferencia de otros, Duosat ofrece soluciones de redes avanzadas, en los módulos alámbricos o inalámbricos en todos los receptores.
+                Diferente dos outros receptores, a Duosat oferece solução de rede avançada, com wi-fi ou internet a cabo em todos os receptores.
             </p>
             {{--******************************--}}
             <br>
 
 
-            <h4 class="media-heading fonte">•  Sintonizador Dual <small></small></h4>
+            <h4 class="media-heading fonte">• Tuner duplo<small></small></h4>
             <p>
-                La tecnología estándar aplicada a los receptores de bajo costo no permite la manipulación de dos sintonizadores DVB simultáneamente. Sin embargo, gracias a Duosat  y a la alta tecnología que incorpora, es posible alternar dos sintonizadores diferentes al mismo tiempo.
-                La configuración puede ser DVB-S, DVB-S2, esto ya depende del modelo.
-
+                A tecnologia padrão aplicada nos receptores de baixo custo, não permitem a manipulação de dois sintonizadores DVB simultaneamente. Graças a Duosat  e a alta tecnologia incorporada fornecida pelo Duo laboratórios, é possível alternar entre dois sintonizadores diferentes ao mesmo tempo.
+                <br>
+                A configuração pode ser DVB-S ou DVB-S2, isto depende apenas do modelo.
             </p>
 
 
@@ -104,39 +102,39 @@
         <div class="fonte2">• Time Machine   </div>
 
         <p>
-            Esta función permite rebobinar o avanzar programas en vivo, basta conectar un dispositivo USB Flash, y Usted podrá pausar y reanudar sus programas a cualquier hora!
-
+            Esta função permite parar, rebobinar ou avançar programas ao vivo, somente é preciso ligar um disco USB flash, que permite a você pausar e continuar seus programas a qualquer hora!
         </p>
 
-        <div class="fonte2">• Sistema de Género Exclusivo de la Marca</div>
+        <div class="fonte2">• Sistema exclusivo de Gêneros </div>
 
         <p>
-            Género: con esta función ya no es necesario separar la lista de favoritos, no pierda su tiempo, nosotros lo hacemos por Usted! Todos los canales están automáticamente separados por género para facilitar la navegación entre los canales.
+            Com esta função você não precisa separar a lista de favoritos, não perca o seu tempo, nos já fazemos isso por você! Todos os canais são automaticamente separados por gênero para facilitar a navegação entre os canais.
         </p>
 
-        <div class="fonte2">• Control automático exclusivo para padres  </div>
+        <div class="fonte2">• Controle automático exclusivo dos pais </div>
 
         <p>
-            No se preocupe con los canales de adultos o canales violentos, el control exclusivo de los programas para padres de los receptores Duosat, cuenta con un sensor automático para la categoría mayores de 18 años (puede ser desactivado)
+            Não se preocupe com a violência ou com os canais para adultos, o controle exclusivo dos pais dos receptores da Duosat vem com um sensor automático para os programas da categoria maiores de 18 anos (pode ser desativado)
         </p>
-        <div class="fonte2">• Canal exclusivo de actualización   </div>
+        <div class="fonte2">• Canal exclusivo de atualização</div>
 
         <p>
-            El canal cambió el transpondedor original? No se preocupe, la IA (inteligencia artificial) de todos los productos Duosat busca automáticamente el canal que fue trasladado a otro transpondedor!
+            O canal mudou o transponder original? Não se preocupe, o AI (inteligência artificial) de todos os produtos Duosat automaticamente procuram o canal movido para o outro transponder!
         </p>
-        <div class="fonte2">• Soporte durante el tiempo de vida útil </div>
+        <div class="fonte2">• Suporte para Toda a Vida</div>
 
         <p>
-            Duo laboratorios asegura el soporte durante la vida útil de todos los productos Duosat, que a diferencia de los demás, nunca dejará de proporcionar soporte a los usuarios!
+            Duo laboratórios assegura o suporte de vida útil para todos os produtos Duosat, a diferença dos outros, nós nunca vamos deixar de dar suporte!
         </p>
-        <div class="fonte2">• Nosotros lo escuchamos! </div>
+        <div class="fonte2">• Nós ouvimos vocês!</div>
 
         <p>
-            Duo laboratorios siempre lo oye!, Denos su opinión!
-            Tenemos un equipo preparado para acompañar sus necesidades, usted puede sugerir nuevas funcionalidades, y nosotros analizaremos la posibilidad a modo de conceder nuevos softwares.         </p>
+            A Duo laboratórios sempre ouve você! Conte a sua opinião para nós!
+            <br>
+            Temos uma equipe pronta para acompanhar as suas necessidades, você pode sugerir novas funções, e estudaremos a possibilidade de permitir o desenvolvimento de softwares novos!
 
         </p>
-        <h4 class="fonte3">• Usted es el más importante para nosotros!<small></small></h4>
+        <h4 class="fonte3">• Você é o mais importante para nós!<small></small></h4>
     </div>
 
 

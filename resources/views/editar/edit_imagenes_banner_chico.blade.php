@@ -16,10 +16,13 @@
 
             </div>
             <div class="form-group">
-                {{--<label for="exampleInputEmail1">Link</label>--}}
+                <label for="input_texto">Texto</label>
+                {!!Form::text('texto',$b_chico->texto,['class'=>'form-control','id'=>'input_texto', 'placeholder'=>'Ingrese su nombre'])  !!}
+            </div>
 
-
-                {{--{!!Form::text('url_banner',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}--}}
+            <div class="form-group">
+                <label for="input_style_font_size">Tamaño de fuente</label>
+                {!!Form::text('style_font_size',$b_chico->style_font_size,['class'=>'form-control','id'=>'input_style_font_size', 'placeholder'=>'Ingrese tamaño del texto'])  !!}
             </div>
 
             <div class="form-group">

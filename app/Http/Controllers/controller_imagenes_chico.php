@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\model_imagenes_chico;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -56,30 +57,20 @@ class controller_imagenes_chico extends Controller
      */
     public function store(Request $request)
     {
-
-
-
-
         $chico = model_imagenes_chico::get()->count();
-
         if($chico < 3){
-
             try{
-
                 $image = $this->imagen($request->file(('url_imagen')));
             }catch (NotReadableException $e){
                 $image = 'admin/img/vacio.jpg';
-
-
             }
             model_imagenes_chico::create([
                 'nombre'=>$request['nombre'],
                 'url_banner'=> $image,
-                'link'=>$request['nombre']
+                'link'=>$request['nombre'],
+                'texto' => $request['texto'],
+                'style_font_size' => $request['style_font_size'],
             ]);
-
-
-
             Session::flash('message','exitosamente ');
             return Redirect::to('banner_chico');
         }else{
@@ -87,17 +78,6 @@ class controller_imagenes_chico extends Controller
             return Redirect::to('banner_chico');
 
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 
     /**
@@ -133,10 +113,8 @@ class controller_imagenes_chico extends Controller
      */
     public function update(Request $request, $id)
     {
-
-
       $chico = model_imagenes_chico::find($id);
-        $chico->fill($request->only('nombre','link'));
+        $chico->fill($request->only('nombre','link', 'texto', 'style_font_size'));
         $chico->save();
 
         try{
@@ -144,30 +122,17 @@ class controller_imagenes_chico extends Controller
             try{
                 $imag = model_imagenes_chico::findOrFail($id);
                 $imag->url_banner = $imagen;
-//                dd($imag);
                 $imag->save();
 
             }catch(ModelNotFoundException $e){
                 model_imagenes_chico::create([
                     'url_imagen'=>$imagen
-
                 ]);
             }
 
         }catch (NotReadableException $e){
-
+            // Mostrar error, no existe imagen
         }
-
-
-
-
-
-
-
-
-
-
-
         Session::flash('message','Actulizado correctamente');
         return Redirect::to('banner_chico');
     }

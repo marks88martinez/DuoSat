@@ -32,19 +32,14 @@
         $('.search').click(function(e){
             e.preventDefault();
             $('.busqueda').slideToggle();
-
         });
-
-
-
-
-
-        $(".anima").click(function(){
-
+        
+        $(".anima").click(function(e){
+            e.preventDefault();
+            $('#top-menu').collapse('hide');
             $('.menu').slideToggle();
         });
-
-
+        
         $('ul li').click( function() {
             $(this).addClass('active').siblings().removeClass('active');
         });
@@ -173,17 +168,17 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="padd navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('vista/img/logo.png')}}"></a>
+            <a class="padd navbar-brand" href="{{url('/')}}"><img src="{{URL::to('vista/img/logo.png')}}"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="top-menu">
 
 
             <!--  <form class="navbar-form navbar-left" role="search">
@@ -197,8 +192,8 @@
 
                 <li><a class="anima" href="#">PRODUTO</a></li>
                 <li><a href="{{ route('descargas.index') }}">DESCARGA</a></li>
-                <li><a href="{{URL::to('/empresa')}}">EMPRESA</a></li>
-                <li><a href="{{URL::to('/contacto')}}">CONTATO</a></li>
+                <li><a href="{{route('empresa')}}">EMPRESA</a></li>
+                <li><a href="{{route('contacto')}}">CONTATO</a></li>
 
 
                 {{--<li class="dropdown">--}}
@@ -271,25 +266,25 @@
             </li>
             <li class="cuadro">
                 <span></span>
-                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>
+                <a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>
 
                 <ul class="menu-sub">
                     <span></span>
-                        <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next">NEXT</a></li>
+                        <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next_prod">NEXT</a></li>
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
-                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">4K</h6></a>
+                <a href="{{URL::to('/next_prod')}}"><h6 class="lista">4K</h6></a>
             </li>
             <li class="cuadro">
                 <span></span>
-                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
+                <a href="{{URL::to('/play_prod')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
 
                 <ul class="menu-sub">
                     <span></span>
-                    <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/play">PLAY</a></li>
+                    <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/play_prod">PLAY</a></li>
                     {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
-                <a href="{{URL::to('/play')}}"><h6 class="lista">
+                <a href="{{URL::to('/play_prod')}}"><h6 class="lista">
                         Media Players</h6></a>
             </li>
 
@@ -352,7 +347,7 @@
         <ul>
             <li><a href="{{ url('/') }}">HOME</a></li>
             <li><a  href="{{ route('descargas.index') }}" >DESCARGAS</a></li>
-            <li><a  href="{{ url('contacto') }}" >CONTATO</a></li>
+            <li><a  href="{{ route('contacto') }}" >CONTATO</a></li>
 
 
         </ul>
