@@ -354,7 +354,7 @@
                     <h6 class="fuent_new2">Tire fotos ou use a sua Câmera de Segurança, além disso, pode ser usado com Snapchat™, Skype™ e outros aplicativos que precisam compatibilidade de câmera.</h6>
                     <p style="color: white">Função disponível com a compra de um acessório extra</p>
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/tuner.jpg')}}" alt=""></div>
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/cam.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
