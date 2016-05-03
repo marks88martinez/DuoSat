@@ -435,7 +435,7 @@
                         <div class="col-md-6">
                             <div class="feature_detail">
                                 <h4 class="fuente_titulo1">4K UHD</h4>
-                                <h6 class="fuent_new1">A experiência mais envolvente com UHD 4K é que transforma o entretenimento ordinário em extraordinário. Veja imagens incrivelmente nítidas, uma ampla expressão de cores e detalhes bem dramáticos – tudo isso em una clara y nítida resolução 4K UHD. Aprecie imagens mais realistas com a nossa UHD TV 4K e eleve a sua experiência de entretenimento para o próximo nível.</h6>
+                                <h6 class="fuent_new1"> A experiência mais envolvente com UHD 4K é que transforma o entretenimento ordinário em extraordinário. Veja imagens incrivelmente nítidas, uma ampla expressão de cores e detalhes bem dramáticos – tudo isso em una clara y nítida resolução 4K UHD. Aprecie imagens mais realistas com a tecnologia 4K que o Duosat Next UHD oferece e eleve a sua experiência de entretenimento para o próximo nível.</h6>
 
                             </div>
                         </div>
@@ -571,7 +571,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">Streaming</h4>
-                    <h6 class="fuent_new2">Try XBMC, Netflix, Hulu, Kodi Dailymotion, YouTube, todos os aplicativos de Streaming que são suportados pelo Sistema Androide</h6>
+                    <h6 class="fuent_new2">XBMC, Netflix, Hulu, Kodi Dailymotion, YouTube, todos os aplicativos de Streaming que são suportados pelo Sistema Androide</h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/str.png')}}" alt=""></div>

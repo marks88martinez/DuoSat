@@ -179,7 +179,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">HEVC (H.265) Codec</h4>
-                    <h6 class="fuent_new2">Com o mais novo Codec H.265, as imagens ganharam uma considerável melhora em relação com os dispositivos tecnológicos atuais, o Next UHD é impulsado com um exclusivo processador de vídeo extremadamente poderoso, o que lhe permitirá aprimorar de verdade a sua experiência de imagem colorida, além de reduzir drasticamente o consumo da Internet com conteúdos Streaming</h6>
+                    <h6 class="fuent_new2">Com o novo codec H.265, as imagens ganham uma melhoria considerável quando comparadas a equipamentos eletrônicos atuais. Aproveitando o seu exclusivo processador de vídeo, que permite uma experiência de imagens com cores realistas.</h6>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/h2645.png')}}" alt=""></div>
                     </div>
@@ -274,7 +274,7 @@
                             <div class="feature_detail">
 
                                 <h4 class="fuente_titulo2">3D</h4>
-                                <h6 class="fuent_new2"> Experiência realmente envolvente com as funcionalidades 3D no seu Next UHD</h6>
+                                <h6 class="fuent_new2">Experiência imersiva única, graças à capacidade de reproduzir conteúdo 3D do Duosat Play.</h6>
                                 {{--<p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>--}}
                                 S
                             </div>
@@ -385,43 +385,7 @@
 
     {{--********************************--}}
 
-    {{--<div class="section" id="section7">--}}
-        {{--<div class="features_area">--}}
-            {{--<div class="container">--}}
-                {{--<div class="all_features">--}}
 
-                    {{--<div class="row features feature_two">--}}
-
-                        {{--<div class="col-md-7 col-md-offset-1 visible-sm visible-xs">--}}
-                            {{--<div class="feature_detail">--}}
-
-                                {{--<h4 class="fuente_titulo3">Qualidade do Áudio</h4>--}}
-                                {{--<h6 class="fuent_new3"> O Duosat Next UHD está equipado com a saída de áudio óptico (SPDIF), suportando Dolby, AC3 DTS, 5.1 y 7.1, com alta fidelidade ².</h6>--}}
-                                {{--<p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>--}}
-
-                            {{--</div>--}}
-                        {{--</div>--}}
-
-                        {{--<div class="col-md-4">--}}
-                            {{--<div class="feature_image">--}}
-                                {{--<img class="img-responsive"  src="{{URL::to('vista/new_prod/img/homet.png')}}" alt="">--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-md-7 col-md-offset-1 hidden-sm hidden-xs">--}}
-                            {{--<div class="feature_detail">--}}
-
-                                {{--<h4 class="fuente_titulo3">Qualidade do Áudio</h4>--}}
-                                {{--<h6 class="fuent_new3"> O Duosat Next UHD está equipado com a saída de áudio óptico (SPDIF), suportando Dolby, AC3 DTS, 5.1 y 7.1, com alta fidelidade ².</h6>--}}
-                                {{--<p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>--}}
-
-
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
     {{--********************************--}}
 
 
