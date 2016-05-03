@@ -1,2 +1,2 @@
 <?php
-header('Location: esp.duosat.com');
+header('Location: //esp.duosat.com');
