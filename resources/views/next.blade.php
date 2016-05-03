@@ -506,7 +506,7 @@
                                 <h4 class="fuente_titulo2">3D</h4>
                                 <h6 class="fuent_new2"> Experiência realmente envolvente com as funcionalidades 3D no seu Next UHD</h6>
                                 {{--<p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>--}}
-S
+
                             </div>
                         </div>
 
@@ -701,6 +701,9 @@ S
                             width: 100%;
                             background: #2b2b2e;
                         }
+                        .cuad2{
+                            border-right: 1px solid gray;
+                        }
                         .cuad{
                             margin: 0 auto;
                             padding: 5px;
@@ -864,6 +867,19 @@ S
                             <p class="parraf">Tamanho do Aparelho
                                 195mm x 43mm x 127mm (WxHxD) </p>
                             {{--<p class="parraf">Sistema Operacional Android 4.4 kitkat</p>--}}
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 cuad cuad2">
+                        <div class="">
+                            <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
+                            <h4 class="fuente_titulo4">WIFI</h4>
+
+                            <p class="parraf">Wifi IEEE 802.11n, IEEE 802.11g, IEEE 802.11b até 300 mbps</p>
+
                             </p>
                         </div>
                     </div>
