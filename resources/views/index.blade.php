@@ -357,8 +357,7 @@
 
         </ul>
     </nav>
-    <p>© Duosat Todos los derechos reservados
-        Laboratorios Duo</p>
+    <p>© Duosat All rights reserved Laboratories Duo</p>
 
 </div>
 </div>
