@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth', 'seventh', 'eighth','neventh', 'diesth'],
-		sectionsColor: ['#D8D8D8', '#000000', '#000000', '#d8d8d8', '#d72702', '#000000','#155477', '#d8d8d8', '#2b2b2e', '#9dc6d8'],
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth', 'seventh','neventh', 'diesth'],
+		sectionsColor: ['#D8D8D8', '#000000', '#000000', '#d8d8d8', '#d72702', '#000000','#155477', '#2b2b2e', '#9dc6d8'],
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: [],

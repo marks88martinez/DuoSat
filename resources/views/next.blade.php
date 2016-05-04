@@ -354,7 +354,7 @@
                     <h6 class="fuent_new2">Tire fotos ou use a sua Câmera de Segurança, além disso, pode ser usado com Snapchat™, Skype™ e outros aplicativos que precisam compatibilidade de câmera.</h6>
                     <p style="color: white">Função disponível com a compra de um acessório extra</p>
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/tuner.jpg')}}" alt=""></div>
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/cam.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
@@ -435,7 +435,7 @@
                         <div class="col-md-6">
                             <div class="feature_detail">
                                 <h4 class="fuente_titulo1">4K UHD</h4>
-                                <h6 class="fuent_new1">A experiência mais envolvente com UHD 4K é que transforma o entretenimento ordinário em extraordinário. Veja imagens incrivelmente nítidas, uma ampla expressão de cores e detalhes bem dramáticos – tudo isso em una clara y nítida resolução 4K UHD. Aprecie imagens mais realistas com a nossa UHD TV 4K e eleve a sua experiência de entretenimento para o próximo nível.</h6>
+                                <h6 class="fuent_new1"> A experiência mais envolvente com UHD 4K é que transforma o entretenimento ordinário em extraordinário. Veja imagens incrivelmente nítidas, uma ampla expressão de cores e detalhes bem dramáticos – tudo isso em una clara y nítida resolução 4K UHD. Aprecie imagens mais realistas com a tecnologia 4K que o Duosat Next UHD oferece e eleve a sua experiência de entretenimento para o próximo nível.</h6>
 
                             </div>
                         </div>
@@ -506,7 +506,7 @@
                                 <h4 class="fuente_titulo2">3D</h4>
                                 <h6 class="fuent_new2"> Experiência realmente envolvente com as funcionalidades 3D no seu Next UHD</h6>
                                 {{--<p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>--}}
-S
+
                             </div>
                         </div>
 
@@ -571,7 +571,7 @@ S
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">Streaming</h4>
-                    <h6 class="fuent_new2">Try XBMC, Netflix, Hulu, Kodi Dailymotion, YouTube, todos os aplicativos de Streaming que são suportados pelo Sistema Androide</h6>
+                    <h6 class="fuent_new2">XBMC, Netflix, Hulu, Kodi Dailymotion, YouTube, todos os aplicativos de Streaming que são suportados pelo Sistema Androide</h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/str.png')}}" alt=""></div>
@@ -700,6 +700,9 @@ S
                         .cuadrado{
                             width: 100%;
                             background: #2b2b2e;
+                        }
+                        .cuad2{
+                            border-right: 1px solid gray;
                         }
                         .cuad{
                             margin: 0 auto;
@@ -864,6 +867,19 @@ S
                             <p class="parraf">Tamanho do Aparelho
                                 195mm x 43mm x 127mm (WxHxD) </p>
                             {{--<p class="parraf">Sistema Operacional Android 4.4 kitkat</p>--}}
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 cuad cuad2">
+                        <div class="">
+                            <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
+                            <h4 class="fuente_titulo4">WIFI</h4>
+
+                            <p class="parraf">Wifi IEEE 802.11n, IEEE 802.11g, IEEE 802.11b até 300 mbps</p>
+
                             </p>
                         </div>
                     </div>

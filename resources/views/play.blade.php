@@ -179,7 +179,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">HEVC (H.265) Codec</h4>
-                    <h6 class="fuent_new2">Com o mais novo Codec H.265, as imagens ganharam uma considerável melhora em relação com os dispositivos tecnológicos atuais, o Next UHD é impulsado com um exclusivo processador de vídeo extremadamente poderoso, o que lhe permitirá aprimorar de verdade a sua experiência de imagem colorida, além de reduzir drasticamente o consumo da Internet com conteúdos Streaming</h6>
+                    <h6 class="fuent_new2">Com o novo codec H.265, as imagens ganham uma melhoria considerável quando comparadas a equipamentos eletrônicos atuais. Aproveitando o seu exclusivo processador de vídeo, que permite uma experiência de imagens com cores realistas.</h6>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/h2645.png')}}" alt=""></div>
                     </div>
@@ -225,7 +225,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo3">Conectividade</h4>
-                    <h6 class="fuent_new3">Aprecie mais simples e rapidamente o aceso ao seu entretimento favorito, conectando via wi-fi o seu Next UHD com outros dispositivos multimídia. Visualize o seu programa de TV favorito a partir do seu móbil ou vice-versa. Sinta uma experiência de navegação mais rápida simplesmente como se fosse um computado</h6>
+                    <h6 class="fuent_new3">Aproveite um acesso fácil e rápido a seus conteúdos favoritos de entretenimento, conectando seu Duosat Play com o Wi-Fi de outros dispositivos. O processo de Streaming foi melhorado para atingir uma experiência única de Streaming em Full HD.Aproveite um acesso fácil e rápido a seus conteúdos favoritos de entretenimento, conectando seu Duosat Play com o Wi-Fi de outros dispositivos. O processo de Streaming foi melhorado para atingir uma experiência única de Streaming em Full HD.</h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/conec.jpg')}}" alt=""></div>
@@ -274,7 +274,7 @@
                             <div class="feature_detail">
 
                                 <h4 class="fuente_titulo2">3D</h4>
-                                <h6 class="fuent_new2"> Experiência realmente envolvente com as funcionalidades 3D no seu Next UHD</h6>
+                                <h6 class="fuent_new2">Experiência imersiva única, graças à capacidade de reproduzir conteúdo 3D do Duosat Play.</h6>
                                 {{--<p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>--}}
                                 S
                             </div>
@@ -289,7 +289,7 @@
                             <div class="feature_detail">
 
                                 <h4 class="fuente_titulo2" style="text-align: center">3D</h4>
-                                <h6 class="fuent_new2"> Experiência realmente envolvente com as funcionalidades 3D no seu Next UHD</h6>
+                                <h6 class="fuent_new2"> Experiência realmente envolvente com as funcionalidades 3D no seu Play</h6>
 
 
                             </div>
@@ -311,7 +311,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">Pendure-o atrás da sua TV</h4>
-                    <h6 class="fuent_new2">Especialmente desenhado com uma tela de sete polegadas com acesso ao controle remoto, para surpreender seus amigos com sua TV</h6>
+                    <h6 class="fuent_new2">Especialmente desenhado com um display numerico e acesso ao controle remoto, para surpreender seus amigos com sua TV</h6>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/play/tv.png')}}" alt=""></div>
                     </div>
@@ -385,48 +385,12 @@
 
     {{--********************************--}}
 
-    <div class="section" id="section7">
-        <div class="features_area">
-            <div class="container">
-                <div class="all_features">
 
-                    <div class="row features feature_two">
-
-                        <div class="col-md-7 col-md-offset-1 visible-sm visible-xs">
-                            <div class="feature_detail">
-
-                                <h4 class="fuente_titulo3">Qualidade do Áudio</h4>
-                                <h6 class="fuent_new3"> O Duosat Next UHD está equipado com a saída de áudio óptico (SPDIF), suportando Dolby, AC3 DTS, 5.1 y 7.1, com alta fidelidade ².</h6>
-                                <p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="feature_image">
-                                <img class="img-responsive"  src="{{URL::to('vista/new_prod/img/homet.png')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-md-offset-1 hidden-sm hidden-xs">
-                            <div class="feature_detail">
-
-                                <h4 class="fuente_titulo3">Qualidade do Áudio</h4>
-                                <h6 class="fuent_new3"> O Duosat Next UHD está equipado com a saída de áudio óptico (SPDIF), suportando Dolby, AC3 DTS, 5.1 y 7.1, com alta fidelidade ².</h6>
-                                <p style="color: black">função disponível com a conexão ao Sistema Home Theater</p>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     {{--********************************--}}
 
 
 
-    <div class="section" id="section8">
+    <div class="section" id="section7">
         <div class="screens_area">
             <div class="container">
                 {{--<div class="row page_title text-center">--}}
@@ -560,7 +524,7 @@
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
                             <h4 class="fuente_titulo4">Conectividade</h4>
 
-                            <p class="parraf">Suporta Wi Fi Externo</p>
+                            <p class="parraf">Wifi via usb (incluso) 150mbps DLNA, miracast</p>
 
                             </p>
                         </div>
@@ -602,7 +566,7 @@
 
 
 
-    <div class="section" id="section9">
+    <div class="section" id="section8">
         <div class="contact_area">
             <div class="container">
                 <div class="row page_title text-center">

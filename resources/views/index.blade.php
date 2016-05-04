@@ -273,7 +273,7 @@
                         <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next_prod">NEXT</a></li>
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
-                <a href="{{URL::to('/next_prod')}}"><h6 class="lista">4K</h6></a>
+                <a href="{{URL::to('/next_prod')}}"><h6 class="lista">Hibridos</h6></a>
             </li>
             <li class="cuadro">
                 <span></span>
