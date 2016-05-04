@@ -57,9 +57,14 @@ class controller_imagenes_banner extends Controller
      */
     public function store(Request $request)
     {
+        try {
+            $imagen = $this->imagen($request->file('url_banner'));
+        } catch(NotReadableException $e) {
+            $imagen = '';
+        }
         model_imagenes_banner::create([
             'nombre_banner'=>$request['nombre_banner'],
-            'url_banner'=>$this->imagen($request->file('url_banner')),
+            'url_banner'=> $imagen,
             'link'=>$request['link'],
             'texto' => $request['texto'],
             'style_padding_bottom' => $request['style_padding_bottom'],
