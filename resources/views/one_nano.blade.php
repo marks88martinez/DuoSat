@@ -264,7 +264,7 @@
                     <h6 class="fuent_new3">O inovador Sistema Operacional baseado em Linux, muito rápido e fácil de usar, como apenas a Duosat sabe fazer, com um menu intuitivo e design minimalista que inclui todas as informações que você precisa.</h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/conec.jpg')}}" alt=""></div>
+                        {{--<div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/conec.jpg')}}" alt=""></div>--}}
                     </div>
                 </div>
                 <div class="row screens">
@@ -571,7 +571,7 @@
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/video.png')}}" alt="">
                             <h4 class="fuente_titulo4">Vídeo</h4>
 
-                            <p class="parraf">Ultra HD 4k X 2k Resolução: 1080P/i, 720p, 576p/i, 480p/i, decodificação: HEVC (H.265), MPEG-4 (H.264) HD, MPEG-2 HD </p>
+                            <p class="parraf">Resolução: 1080P/i, 720p, 576p/i, 480p/i, decodificação: HEVC (H.265), MPEG-4 (H.264) HD, MPEG-2 HD </p>
 
                             </p>
                         </div>
@@ -596,7 +596,7 @@
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/MEMO.png')}}" alt="">
                             <h4 class="fuente_titulo4">Memória RAM</h4>
 
-                            <p class="parraf">Ddr3 SDRAM 256MBytes, Memória Interna de 16GB</p>
+                            <p class="parraf">DDR3 SDRAM 256MBytes, Memória Interna de 16mb</p>
 
                             </p>
                         </div>
