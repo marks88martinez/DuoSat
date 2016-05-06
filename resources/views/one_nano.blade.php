@@ -42,6 +42,8 @@
 {{--</head>--}}
 {{--<body>--}}
     <style>
+
+
         .fuente_titulo{
             margin-top: 50px;
             font-size: 60px;
@@ -135,7 +137,41 @@
                     <div class="header_img">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
-                                <img src="{{URL::to('vista/one/one.png')}}" alt="" class="img-responsive wow bounceInUp">
+
+
+
+                                {{--********************************************--}}
+
+                                <div class="menu-360">
+                                    <ul class="list wow bounceInUp">
+                                        @for($i=1; $i<11; $i++)
+                                        <li><img src="{{URL::to('vista/one/images/image1_'.$i.'.jpg')}}" /></li>
+
+                                        @endfor
+                                    </ul>
+                                </div>
+                                <link rel="stylesheet" href="{{URL::to('vista/one/css/style.css')}}">
+
+                                <script type="text/javascript" src="{{URL::to('vista/one/js/script.js')}}"></script>
+                                <script type="text/javascript">
+
+                                    var _gaq = _gaq || [];
+                                    _gaq.push(['_setAccount', 'UA-36251023-1']);
+                                    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                                    _gaq.push(['_trackPageview']);
+
+                                    (function() {
+                                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                    })();
+
+                                </script>
+                                {{--********************************************--}}
+
+
+
+                                {{--<img src="{{URL::to('vista/one/one.png')}}" alt="" class="img-responsive wow bounceInUp">--}}
                             </div>
                         </div>
                     </div>
@@ -512,21 +548,19 @@
                                 <h4 class="fuente_titulo4">Processador</h4>
                             </div>
                             <div class="row" >
-                                <p class="parraf">Processador Dual-Core, 730 MHZ
-                                    Memória Flash 16Gb
+                                <p class="parraf">Duosat Cube 3100  até 1GHz
                                      </p>
-                                <p class="parraf">Sistema DRAM 256MB</p>
+                                {{--<p class="parraf">Sistema DRAM 256MB</p>--}}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/usb.png')}}" alt="">
-                            <h4 class="fuente_titulo4">Entrada/Saída</h4>
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner.png')}}" alt="">
+                            <h4 class="fuente_titulo4">Tuner</h4>
 
-                            <p class="parraf">Suporta USB 2.0
-                                Internet (LAN) 1 x RJ45</p>
+                            <p class="parraf">Tuner Duplo. Suporta DVBS/2</p>
 
                             </p>
                         </div>
@@ -534,11 +568,10 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/display.png')}}" alt="">
-                            <h4 class="fuente_titulo4">Display</h4>
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/video.png')}}" alt="">
+                            <h4 class="fuente_titulo4">Vídeo</h4>
 
-                            <p class="parraf">Display Externo de 7 polegadas
-                                Cores OSD</p>
+                            <p class="parraf">Ultra HD 4k X 2k Resolução: 1080P/i, 720p, 576p/i, 480p/i, decodificação: HEVC (H.265), MPEG-4 (H.264) HD, MPEG-2 HD </p>
 
                             </p>
                         </div>
@@ -548,13 +581,11 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/sound.png')}}" alt="">
-                            <h4 class="fuente_titulo4">Áudio </h4>
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/usb2.png')}}" alt="">
+                            <h4 class="fuente_titulo4">USB </h4>
 
                             <p class="parraf">
-                                Dolby e Dolby Digital
-                                Controle de volume inteligente
-                                Efeitos de som SRS, Dolby e MS11
+                                2 x USB 2.0 Host
                             </p>
                             </p>
                         </div>
@@ -562,10 +593,10 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
-                            <h4 class="fuente_titulo4">Conectividade</h4>
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/MEMO.png')}}" alt="">
+                            <h4 class="fuente_titulo4">Memória RAM</h4>
 
-                            <p class="parraf">Wifi via usb (incluso) 150mbps DLNA, miracast</p>
+                            <p class="parraf">Ddr3 SDRAM 256MBytes, Memória Interna de 16GB</p>
 
                             </p>
                         </div>
@@ -577,11 +608,16 @@
                             <h4 class="fuente_titulo4">Especificações Físicas</h4>
 
                             <p class="parraf">Tamanho Compacto
-                                Dimensões: 118.8 x 21 x 78.8 mm </p>
+                              170mm x 39mm x 118mm (WxHxD) </p>
 
                             </p>
                         </div>
                     </div>
+
+
+
+
+
 
 
 
