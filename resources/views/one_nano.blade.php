@@ -430,7 +430,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">Streaming</h4>
-                    <h6 class="fuent_new2"> Muitos aplicativos de Streaming disponíveis, além dos aplicativos da Duosat que você já conhece e as melhores plataformas como o YouTube, Daylimotion, entre outros.</h6>
+                    <h6 class="fuent_new2"> Muitos aplicativos de Streaming disponíveis, além dos aplicativos da Duosat que você já conhece e as melhores plataformas como o YouTube, Dailymotion, entre outros.</h6>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/str.png')}}" alt=""></div>
                     </div>
