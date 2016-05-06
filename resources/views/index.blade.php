@@ -290,7 +290,7 @@
                 <ul class="menu-sub">
                     <span></span>
                     <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/onenanoHD">One Nano HD</a></li>
-                    <button type="button" class="btn btn-default" >Tooltip on left</button>
+                    {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                 </ul>
                 <a href="{{URL::to('/next_prod')}}"><h6 class="lista">One Nano HD</h6></a>
             </li>
