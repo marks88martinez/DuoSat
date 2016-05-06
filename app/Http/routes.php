@@ -20,14 +20,18 @@ Route::get('/next_prod', function () {
 Route::get('/play_prod', function () {
     return view('play');
 });
-Route::get('/next', function () {
-    return view('next_producto');
-});
 
-
-Route::get('/play', function () {
-    return view('play_producto');
+Route::get('/onenanoHD', function () {
+    return view('one_nano');
 });
+//Route::get('/next', function () {
+//    return view('next_producto');
+//});
+//
+//
+//Route::get('/play', function () {
+//    return view('play_producto');
+//});
 
 //admin
 

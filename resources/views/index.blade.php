@@ -19,6 +19,7 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
@@ -246,7 +247,13 @@
 <div class="menu">
 
 
+    <style>@media (min-width: 1200px){
+            .container {
+                width: 1200px;
+            }
+        }
 
+    </style>
 
 
 
@@ -275,6 +282,20 @@
                 </ul>
                 <a href="{{URL::to('/next_prod')}}"><h6 class="lista">Hibridos</h6></a>
             </li>
+
+            {{--<li class="cuadro">--}}
+                {{--<span></span>--}}
+                {{--<a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/tuner.png')}}"></a>--}}
+
+                {{--<ul class="menu-sub">--}}
+                    {{--<span></span>--}}
+                    {{--<li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/onenanoHD">One Nano HD</a></li>--}}
+                    {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
+                {{--</ul>--}}
+                {{--<a href="{{URL::to('/next_prod')}}"><h6 class="lista">One Nano HD</h6></a>--}}
+            {{--</li>--}}
+
+
             <li class="cuadro">
                 <span></span>
                 <a href="{{URL::to('/play_prod')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
@@ -329,9 +350,36 @@
 </div>
 
 
+<style>
+    .red{
+        background: #c62d30;
+    }
+    .red:hover{
+        opacity: 0.8;
+    }
+    .face{
+        background: #3f5fa5;
+    }
+    .face:hover{
+        opacity: 0.8;
+    }
+    .tw{
+        background: #00aae2;
+    }
+    .tw:hover{
+        opacity: 0.8;
+    }
+    .list-inline li {
+        width: 40px;
+        height: auto;
 
+        }
 
-
+    .list-inline li a{
+color: white;
+        font-size: 25px;
+    }
+</style>
 
 
 
@@ -339,11 +387,21 @@
 <!--****************final banner****************-->
 
 <div class="container cent">
+
+    <ul class="list-inline">
+
+        <li class="face"><a href="https://www.facebook.com/duosatbrasil" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li  class="tw"><a href=" tweeter.com/duosat" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+
+        <li  class="red"><a href="youtube.com/duosat" class="icoLinkedin" title="Linkedin"><i class="fa fa-youtube"></i></a></li>
+    </ul>
     <div class="ln"></div>
 
 
 
     <nav class="nave">
+
+
         <ul>
             <li><a href="{{ url('/') }}">HOME</a></li>
             <li><a  href="{{ route('descargas.index') }}" >DESCARGAS</a></li>
@@ -356,6 +414,12 @@
 
 </div>
 </div>
+
+<div class="container">
+
+</div>
+
+
 
 </body>
 </html>
