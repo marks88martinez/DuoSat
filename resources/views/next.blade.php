@@ -872,7 +872,7 @@
                     </div>
 
 
-                    <div class="col-md-4 cuad cuad2">
+                    <div class="col-md-4 cuad cuad2" >
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">

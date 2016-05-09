@@ -391,9 +391,9 @@ color: white;
     <ul class="list-inline">
 
         <li class="face"><a href="https://www.facebook.com/duosatbrasil" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-        <li  class="tw"><a href=" tweeter.com/duosat" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li  class="tw"><a href="https://www.twitter.com/duosat" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 
-        <li  class="red"><a href="youtube.com/duosat" class="icoLinkedin" title="Linkedin"><i class="fa fa-youtube"></i></a></li>
+        <li  class="red"><a href="https://www.youtube.com/duosat" class="icoLinkedin" title="Linkedin"><i class="fa fa-youtube"></i></a></li>
     </ul>
     <div class="ln"></div>
 

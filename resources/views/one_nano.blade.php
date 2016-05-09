@@ -43,7 +43,6 @@
 {{--<body>--}}
     <style>
 
-
         .fuente_titulo{
             margin-top: 50px;
             font-size: 60px;
@@ -123,8 +122,8 @@
                         <br>
                         {{--<h1 class="logo">BOISHAkHi</h1>--}}
                         {{--<h1>NEXT</h1>--}}
-                        <h4 class="fuente_titulo">One Nano HD</h4>
-                        <p class="fuent_new">One Nano HD, Alta definição para todos
+                        <h4 class="fuente_titulo1">One Nano HD</h4>
+                        <p class="fuent_new1">One Nano HD, Alta definição para todos
                         </p>
 
                     </div>
@@ -264,7 +263,7 @@
                     <h6 class="fuent_new3">O inovador Sistema Operacional baseado em Linux, muito rápido e fácil de usar, como apenas a Duosat sabe fazer, com um menu intuitivo e design minimalista que inclui todas as informações que você precisa.</h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
-                        {{--<div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/conec.jpg')}}" alt=""></div>--}}
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/so.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
@@ -306,7 +305,7 @@
                     </h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('http://localhost:8000/vista/new_prod/img/h2645.png')}}" alt=""></div>
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('http://localhost:8000/vista/one/hevc.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
@@ -486,6 +485,14 @@
                             width: 100%;
                             background: #2b2b2e;
                         }
+                        .cuad2{
+                            border-right: 1px solid gray;
+                            border-left: 1px solid gray;
+                            margin: 0 auto;
+                            padding: 0px;
+
+                            text-align: center;
+                        }
                         .cuad{
                             margin: 0 auto;
                             padding: 5px;
@@ -495,7 +502,7 @@
                             min-height: 227px;
                             /*background: silver;*/
 
-                            border-left: 1px solid gray;
+                            /*border-left: 1px solid gray;*/
                         }
 
                         .cuad img{
@@ -515,8 +522,11 @@
                         }
 
 
-                        @media (max-width: 721px) {
-
+                        @media (max-width: 700px) {
+                            .cuad2{
+                                border-right: 0px solid gray;
+                                border-left: 0px solid gray;
+                            }
                             .cuad {
                                 border-left: 0;
 
@@ -535,6 +545,8 @@
 
                             }
                         }
+
+
                     </style>
 
 
@@ -548,7 +560,7 @@
                                 <h4 class="fuente_titulo4">Processador</h4>
                             </div>
                             <div class="row" >
-                                <p class="parraf">Duosat Cube 3100  até 1GHz
+                                <p class="parraf">Duosat Cube 3100 - 1GHz
                                      </p>
                                 {{--<p class="parraf">Sistema DRAM 256MB</p>--}}
                             </div>
@@ -613,6 +625,21 @@
                             </p>
                         </div>
                     </div>
+
+
+                        <div class=" cuad cuad2">
+                            <div class="">
+                                <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
+                                    <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
+                                <h4 class="fuente_titulo4">WIFI</h4>
+
+                                <p class="parraf">Wifi IEEE 802.11n, IEEE 802.11g, IEEE 802.11b até 300 mbps</p>
+
+                                </p>
+                            </div>
+                        </div>
+
+
 
 
 
