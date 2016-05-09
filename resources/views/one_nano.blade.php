@@ -633,7 +633,9 @@
                                     <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
                                 <h4 class="fuente_titulo4">WIFI</h4>
 
-                                <p class="parraf">Wifi IEEE 802.11n, IEEE 802.11g, IEEE 802.11b até 300 mbps</p>
+                                <p class="parraf">
+                                    IEEE 802.11n, IEEE 802.11g, por USB 2.0, frequência: 2.4GHz to 2.462GHz
+                                </p>
 
                                 </p>
                             </div>
