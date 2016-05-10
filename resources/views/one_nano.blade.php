@@ -179,35 +179,7 @@
         </div>
 
     </div>
-    <div class="section" id="section1">
-        <div class="features_area">
-            <div class="container">
-                <div class="row page_title text-center">
-                    {{--<h2>Boishakhi features</h2>--}}
-                    {{--<p>Awesome features of concord app</p>--}}
-                </div>
-                <div class="all_features">
-                    <div class="row features feature_one">
-                        <div class="col-md-6">
-                            <div class="feature_detail">
 
-                                <h4 class="fuente_titulo1">Processador Poderoso</h4>
-                                <h6 class="fuent_new1">Conseguimos! Este é um processador exclusivo Duosat Cube 3100, desenvolvido segundo as necessidades dos consumidores, processamento de conectividade aprimorada para Streaming, maior velocidade para o processamento do DVB-S2 e, além disso, processamento de vídeo melhorado para entregar mais  e melhores cores</h6>
-
-
-
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature_image">
-                                {{--<img class="img-responsive " src="{{URL::to('vista/new_prod/img/64.png')}}" alt="">--}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="section" id="section2">
         <div class="describe_area">
@@ -247,6 +219,36 @@
                         {{--</div>--}}
                     {{--</div>--}}
                 {{--</div>--}}
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section1">
+        <div class="features_area">
+            <div class="container">
+                <div class="row page_title text-center">
+                    {{--<h2>Boishakhi features</h2>--}}
+                    {{--<p>Awesome features of concord app</p>--}}
+                </div>
+                <div class="all_features">
+                    <div class="row features feature_one">
+                        <div class="col-md-6">
+                            <div class="feature_detail">
+
+                                <h4 class="fuente_titulo1">Processador Poderoso</h4>
+                                <h6 class="fuent_new1">Conseguimos! Este é um processador exclusivo Duosat Cube 3100, desenvolvido segundo as necessidades dos consumidores, processamento de conectividade aprimorada para Streaming, maior velocidade para o processamento do DVB-S2 e, além disso, processamento de vídeo melhorado para entregar mais  e melhores cores</h6>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature_image">
+                                {{--<img class="img-responsive " src="{{URL::to('vista/new_prod/img/64.png')}}" alt="">--}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
