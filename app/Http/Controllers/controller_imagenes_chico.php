@@ -24,7 +24,7 @@ class controller_imagenes_chico extends Controller
         $nombre_imagen = time() . '.png';
         $imagen_final = 'admin/img/productos/' . $nombre_imagen;
         $int_imagen = Image::make($img);
-        $int_imagen->resize(600, null, function ($constraint) {
+        $int_imagen->resize(400, null, function ($constraint) {
             $constraint->aspectRatio();
         });
         $int_imagen->save($imagen_final);

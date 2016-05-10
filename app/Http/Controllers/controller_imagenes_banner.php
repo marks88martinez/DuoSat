@@ -25,7 +25,7 @@ class controller_imagenes_banner extends Controller
         $nombre_imagen = time().'.png';
         $imagen_final = 'admin/img/img_banner/'.$nombre_imagen;
         $int_imagen= Image::make($img);
-        $int_imagen->resize(1700, null, function($constraint){
+        $int_imagen->resize(1300, null, function($constraint){
             $constraint->aspectRatio();
         });
         $int_imagen->save($imagen_final);

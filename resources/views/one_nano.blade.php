@@ -305,7 +305,7 @@
                     </h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('http://localhost:8000/vista/one/hevc.png')}}" alt=""></div>
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/h2645.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
@@ -431,7 +431,7 @@
                     <h4 class="fuente_titulo2">Streaming</h4>
                     <h6 class="fuent_new2"> Muitos aplicativos de Streaming disponíveis, além dos aplicativos da Duosat que você já conhece e as melhores plataformas como o YouTube, Dailymotion, entre outros.</h6>
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/str.png')}}" alt=""></div>
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/hevc.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
@@ -569,7 +569,7 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner2.png')}}" alt="">
                             <h4 class="fuente_titulo4">Tuner</h4>
 
                             <p class="parraf">Tuner Duplo. Suporta DVBS/2</p>

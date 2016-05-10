@@ -87,7 +87,7 @@ class controller_productos_campos extends Controller
                 'codigo_campo'=>$campo,
                 'codigo_producto'=>$request->producto,
                 'descripcion'=>$request->descripcion[$index],
-                'cheked'=>(int)in_array($campo, $request->chec),
+                'cheked'=>(int)in_array($campo, $request->chec)
 
             ]);
         }
