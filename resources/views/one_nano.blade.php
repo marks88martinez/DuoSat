@@ -502,7 +502,7 @@
                             min-height: 227px;
                             /*background: silver;*/
 
-                            /*border-left: 1px solid gray;*/
+                            border-left: 1px solid gray;
                         }
 
                         .cuad img{
@@ -569,10 +569,12 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner2.png')}}" alt="">
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner.png')}}" alt="">
                             <h4 class="fuente_titulo4">Tuner</h4>
 
-                            <p class="parraf">Tuner Duplo. Suporta DVBS/2</p>
+                            <p class="parraf">Tuner Duplo. Suporta DVBS/2: 2~45Ms/S, Demodulador: QPSK, 8PSK, 16APSK, 32APSK, Conector de entrada: F-Type, IEC169-24, Fêmea, Frequência de entrada 950~2150MHz
+                            LNB e apontamento: Vertical: +13.5V, Horizontal: +18V, Corrente: max 500mA
+                            </p>
 
                             </p>
                         </div>
@@ -583,7 +585,7 @@
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/video.png')}}" alt="">
                             <h4 class="fuente_titulo4">Vídeo</h4>
 
-                            <p class="parraf">Resolução: 1080P/i, 720p, 576p/i, 480p/i, decodificação: HEVC (H.265), MPEG-4 (H.264) HD, MPEG-2 HD </p>
+                            <p class="parraf">Resolução: 1080P/i, 720p, 576p/i, 480p/i, decodificação: HEVC (H.265), MPEG-4 (H.264) HD, MPEG-2 HD(ISO 13818) Saída HDMI: 1 x HDMI(ver 1.3)</p>
 
                             </p>
                         </div>
@@ -616,32 +618,74 @@
                     <div class="col-md-4 cuad">
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
+                            <h4 class="fuente_titulo4">Conectividade</h4>
+
+                            <p class="parraf">Wifi: IEEE 802.11n, IEEE 802.11g, por USB 2.0, frequência: 2.4GHz to 2.462GHz, Internet (LAN) 1 x RJ45, RS-232C 1 x 9pin Dsub</p>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 cuad">
+                        <div class="">
+                            <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/dimensiones.png')}}" alt="">
                             <h4 class="fuente_titulo4">Especificações Físicas</h4>
 
                             <p class="parraf">Tamanho Compacto
-                              170mm x 39mm x 118mm (WxHxD) </p>
+                                170mm x 39mm x 118mm (WxHxD) </p>
 
                             </p>
                         </div>
                     </div>
 
 
-                        <div class=" cuad cuad2">
-                            <div class="">
-                                <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
-                                    <img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">
-                                <h4 class="fuente_titulo4">WIFI</h4>
 
-                                <p class="parraf">
-                                    IEEE 802.11n, IEEE 802.11g, por USB 2.0, frequência: 2.4GHz to 2.462GHz
-                                </p>
+                    <div class="col-md-4 cuad">
+                        <div class="">
+                            <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/sound.png')}}" alt="">
+                            <h4 class="fuente_titulo4">Áudio</h4>
 
-                                </p>
-                            </div>
+                            <p class="parraf">MPEG/MusiCam Layer I/II/III, AAC, HE-AAC, AC-3, Taxa de amostra: 32/44.1/48 KHz, modo: Single Channel, Dual Channel, Joint Stereo, Stereo </p>
+
+                            </p>
                         </div>
+                    </div>
 
 
+
+
+
+
+
+                    <div class="col-md-4 cuad">
+                        <div class="">
+                            <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
+                                <img  class=""  src="{{URL::to('vista/new_prod/img/ico/power.png')}}" alt="">
+                            <h4 class="fuente_titulo4">Fonte de energia</h4>
+
+                            <p class="parraf">Voltagem de entrada: 90~250VAC, 50/60Hz. Tipo de consumo: adaptador, 12V DC 2A, Max 24W, Temperatura de operação 0~45 °C, Temperatura de armazenamento: -10°C + 70°C</p>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                        {{--<div class=" cuad  cuad2">--}}
+                            {{--<div class="">--}}
+                                {{--<p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >--}}
+                                    {{--<img  class=""  src="{{URL::to('vista/new_prod/img/ico/wifi.png')}}" alt="">--}}
+                                {{--<h4 class="fuente_titulo4">WIFI</h4>--}}
+
+                                {{--<p class="parraf">--}}
+                                    {{--IEEE 802.11n, IEEE 802.11g, por USB 2.0, frequência: 2.4GHz to 2.462GHz--}}
+                                {{--</p>--}}
+
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
 
 
