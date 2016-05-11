@@ -41,7 +41,7 @@ class model_producto extends Model
 
 
     public  function  getLinkokAttribute(){
-       return trim($this->attributes['link'] != "" ? $this->attributes['link'] : URL::to('productos'.$this->attributes['codigo_producto']));
+       return trim($this->attributes['link'] != "" ? $this->attributes['link'] : URL::to('productos/'.$this->attributes['codigo_producto']));
     }
 
 
