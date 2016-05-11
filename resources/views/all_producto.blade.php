@@ -134,7 +134,7 @@
                 @foreach( $producto as $productos)
 
 
-                           <a class="all {{$productos->categoria->codigo_categoria}}" href="{{URL::to('productos/'.$productos->linkok)}}">    <p class="nombre">{{$productos->nombre_producto}}</p><img src="{{$productos->imagenes->url_imagenes}}" class=""> </a>
+                           <a class="all {{$productos->categoria->codigo_categoria}}" href="{{$productos->linkok}}">    <p class="nombre">{{$productos->nombre_producto}}</p><img src="{{$productos->imagenes->url_imagenes}}" class=""> </a>
 
                     {{--<img src="{{$productos->imagenes->url_imagenes}}" class="all landscape"/>--}}
                 @endforeach
