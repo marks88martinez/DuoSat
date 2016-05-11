@@ -316,7 +316,7 @@
                 <ul class="menu-sub">
                     <span></span>
                     @foreach($cats->productos as $sub_cats)
-                    <li><a class="tog"  data-toggle="tooltip" data-placement="left" {{$sub_cats->descontinuado ? "title=Discontinued" :" "}}  href="{{$sub_cats->linkok}}">{{$sub_cats->nombre_producto}}</a></li>
+                    <li><a class="tog"  data-toggle="tooltip" data-placement="left" {{$sub_cats->descontinuado ? "title=New" :" "}}  href="{{$sub_cats->linkok}}">{{$sub_cats->nombre_producto}}</a></li>
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                     @endforeach
 
