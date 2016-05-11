@@ -125,7 +125,7 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Descontinuado  </label>
-                {!! Form::checkbox('descontinuado',1,true,['class'=>'form-control', ]) !!}
+                {!! Form::checkbox('descontinuado',1,true,['class'=>'', ]) !!}
             </div>
         </div><!-- /.box-body -->
 
