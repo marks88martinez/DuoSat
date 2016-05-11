@@ -37,6 +37,23 @@
     </script>
     <![endif]-->
 
+    <script>
+        $(document).ready(function(){
+            var  url = "#firstPage";
+            var a = $(location).attr('href');
+//                    console.log(a);
+            $('#btn_pro').click(function(){
+
+                var nu = window.location.replace(url);
+
+
+//                        console.log(nu);
+
+
+            })
+        })
+    </script>
+
 
 
 {{--</head>--}}
