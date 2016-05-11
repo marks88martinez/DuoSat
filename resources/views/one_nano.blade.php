@@ -352,7 +352,7 @@
             <div class="container">
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo3">Conectividade</h4>
-                    <h6 class="fuent_new3">Sem dúvida alguma, atualmente o Wi-Fi é essencial nos reprodutores multimídia, conectividade Wireless melhorada, mais estável e rápido para sustentar as suas preferências de Streaming. Baixe o Aplicativo Android para usar o controle remoto e muito mais!</h6>
+                    <h6 class="fuent_new3">Sem dúvida alguma, atualmente o Wi-Fi é essencial nos reprodutores multimídia, conectividade Wireless aprimorada, mais estável e rápido para sustentar as suas preferências de Streaming. Baixe o Aplicativo Android para usar o controle remoto e muito mais!</h6>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/conec.jpg')}}" alt=""></div>
                     </div>
