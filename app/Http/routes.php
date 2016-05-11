@@ -14,10 +14,10 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-Route::get('/next_prod', function () {
+Route::get('/next', function () {
     return view('next');
 });
-Route::get('/play_prod', function () {
+Route::get('/play', function () {
     return view('play');
 });
 
