@@ -22,7 +22,7 @@ class controller_all_product extends Controller
         $categoria = model_categoria::select('codigo_categoria','nombre','descripcion','estado')
             ->where('estado','=',1)
         ->get();
-        $producto = model_producto::with('producto_campos','categoria','producto_atributos.prodattr_attr','imagenes','linkok')
+        $producto = model_producto::with('producto_campos','categoria','producto_atributos.prodattr_attr','imagenes')
             ->where('estado','=',1)
             ->get();
         return view('all_producto',compact('producto','categoria', 'query'));
