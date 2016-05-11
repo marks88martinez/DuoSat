@@ -140,6 +140,7 @@ class controller_producto extends Controller
         }
 
         $producto = model_producto::create([
+            'link'=>$request['link_producto'],
             'nombre_producto'=>$request['nombre_producto'],
             'descripcion'=>$request['descripcion'],
             'codigo_categoria'=>$request['codigo_categoria'],
@@ -245,7 +246,7 @@ class controller_producto extends Controller
 
         $productos = model_producto::find($id);
 //        dd($productos);
-        $productos->fill($request->only(['nombre_producto','descripcion','codigo_categoria']));
+        $productos->fill($request->only(['nombre_producto','descripcion','codigo_categoria','link']));
         $productos->descontinuado = $request->has("descontinuado")? 1 : 0;
         $productos->save();
 

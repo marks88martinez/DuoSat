@@ -271,43 +271,43 @@
                 <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
                 <a href="{{URL::to('/all_producto')}}"><h6 class="lista">Todos</h6></a>
             </li>
-            <li class="cuadro">
-                <span></span>
-                <a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>
+            {{--<li class="cuadro">--}}
+                {{--<span></span>--}}
+                {{--<a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/4K.png')}}"></a>--}}
 
-                <ul class="menu-sub">
-                    <span></span>
-                        <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next_prod">NEXT</a></li>
+                {{--<ul class="menu-sub">--}}
+                    {{--<span></span>--}}
+                        {{--<li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/next_prod">NEXT</a></li>--}}
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
-                </ul>
-                <a href="{{URL::to('/next_prod')}}"><h6 class="lista">Hibridos</h6></a>
-            </li>
+                {{--</ul>--}}
+                {{--<a href="{{URL::to('/next_prod')}}"><h6 class="lista">Hibridos</h6></a>--}}
+            {{--</li>--}}
 
-            <li class="cuadro">
-                <span></span>
-                <a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/tuner.png')}}"></a>
+            {{--<li class="cuadro">--}}
+                {{--<span></span>--}}
+                {{--<a href="{{URL::to('/next_prod')}}"><img src="{{URL::to('admin/img/icon/tuner.png')}}"></a>--}}
 
-                <ul class="menu-sub">
-                    <span></span>
-                    <li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/onenanoHD">One Nano HD</a></li>
+                {{--<ul class="menu-sub">--}}
+                    {{--<span></span>--}}
+                    {{--<li><a class="tog "  data-toggle="tooltip" data-placement="left"  href="/onenanoHD">One Nano HD</a></li>--}}
                     {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
-                </ul>
-                <a href="{{URL::to('/next_prod')}}"><h6 class="lista">One Nano HD</h6></a>
-            </li>
+                {{--</ul>--}}
+                {{--<a href="{{URL::to('/next_prod')}}"><h6 class="lista">One Nano HD</h6></a>--}}
+            {{--</li>--}}
 
 
-            <li class="cuadro">
-                <span></span>
-                <a href="{{URL::to('/play_prod')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>
+            {{--<li class="cuadro">--}}
+                {{--<span></span>--}}
+                {{--<a href="{{URL::to('/play_prod')}}"><img src="{{URL::to('admin/img/icon/PLAY.png')}}"></a>--}}
 
-                <ul class="menu-sub">
-                    <span></span>
-                    <li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/play_prod">PLAY</a></li>
+                {{--<ul class="menu-sub">--}}
+                    {{--<span></span>--}}
+                    {{--<li><a class="tog SUBIR"  data-toggle="tooltip" data-placement="left"  href="/play_prod">PLAY</a></li>--}}
                     {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
-                </ul>
-                <a href="{{URL::to('/play_prod')}}"><h6 class="lista">
-                        Media Players</h6></a>
-            </li>
+                {{--</ul>--}}
+                {{--<a href="{{URL::to('/play_prod')}}"><h6 class="lista">--}}
+                        {{--Media Players</h6></a>--}}
+            {{--</li>--}}
 
 
         @foreach($cat as $cats)
@@ -316,7 +316,7 @@
                 <ul class="menu-sub">
                     <span></span>
                     @foreach($cats->productos as $sub_cats)
-                    <li><a class="tog"  data-toggle="tooltip" data-placement="left" {{$sub_cats->descontinuado ? "title=Discontinued" :" "}}  href="{{URL::to('productos/'.$sub_cats->codigo_producto)}}">{{$sub_cats->nombre_producto}}</a></li>
+                    <li><a class="tog"  data-toggle="tooltip" data-placement="left" {{$sub_cats->descontinuado ? "title=Discontinued" :" "}}  href="{{$sub_cats->linkok}}">{{$sub_cats->nombre_producto}}</a></li>
                         {{--<button type="button" class="btn btn-default" >Tooltip on left</button>--}}
                     @endforeach
 
@@ -418,6 +418,20 @@ color: white;
 <div class="container">
 
 </div>
+
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-77530187-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 
 

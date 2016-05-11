@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\URL;
 
 class model_producto extends Model
 {
     protected $table = 'productos';
     protected $primaryKey = 'codigo_producto';
-    protected $fillable = ['nombre_producto','descripcion','codigo_categoria','codigo_atributo','codigo_imagen', 'estado','descontinuado'];
+    protected $fillable = ['nombre_producto','descripcion','codigo_categoria','codigo_atributo','codigo_imagen', 'estado','descontinuado', 'link'];
     public $timestamps = false;
 
     public function descargas()
@@ -37,6 +38,12 @@ class model_producto extends Model
         return $this->attributes['descontinuado'] == 1 ;
 
     }
+
+
+    public  function  getLinkokAttribute(){
+       return trim($this->attributes['link'] != "" ? $this->attributes['link'] : URL::to('productos/'.$this->attributes['codigo_producto']));
+    }
+
 
 
 }

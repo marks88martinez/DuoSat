@@ -49,6 +49,14 @@
                 {!! Form::select('codigo_categoria',$cat,null,['class'=>'form-control','id'=>'exampleInputEmail1']) !!}
             </div>
 
+            <div class="form-group">
+                <label for="exampleInputEmail1">Link del Producto</label>
+                {!!Form::text('link_producto',null,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese el link'])  !!}
+
+
+            </div>
+
+
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Titulo del Producto</label>
