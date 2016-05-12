@@ -22,7 +22,7 @@
                <ul>
                    @foreach($articles as $article)
                        <hr>
-                       <li> <a href="/productos/{{ $article->codigo_producto}}"><img class="ima" src="{{URL::to($article->imagenes->url_imagenes)}}" alt=""> {{ $article->nombre_producto}}</a></li>
+                       <li> <a href="{{ $article->linkok}}"><img class="ima" src="{{URL::to($article->imagenes->url_imagenes)}}" alt=""> {{ $article->nombre_producto}}</a></li>
                    @endforeach
                </ul>
 
