@@ -23,7 +23,7 @@
         <div class="carousel-inner" role="listbox">
             @foreach($banner as $index => $bann)
                 <div class="item">
-                   <a href="{{$bann->link}}">
+                   <a href="{{$index->link}}">
                     <img src="{{ url($bann->url_banner) }}" alt="...">
                     <div class="carousel-caption" id="banner_{{ $index }}">
                         {!! nl2br($bann->texto) !!}
