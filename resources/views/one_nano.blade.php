@@ -286,7 +286,7 @@
                     <h6 class="fuent_new3">O inovador Sistema Operacional baseado em Linux, muito rápido e fácil de usar, como apenas a Duosat sabe fazer, com um menu intuitivo e design minimalista que inclui todas as informações que você precisa.</h6>
                     {{--<p style="color: #000000">Função disponível com a compra de um acessório extra</p>--}}
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/so.png')}}" alt=""></div>
+                        <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/one/so.jpg')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="row screens">
