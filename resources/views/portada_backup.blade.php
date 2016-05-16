@@ -37,7 +37,8 @@
 
                   </div>
 
-                    <div class="ba"><img  src="{{$banners->url_banner}}" alt="..."></div>
+                    <div class="ba"><img  src="{{$banners->url_banner}}" alt="..."> </div>
+
 <div class="container">
     <div class="col-md-6">.col-md-6</div>
     <div class="col-md-6">.col-md-6</div>
