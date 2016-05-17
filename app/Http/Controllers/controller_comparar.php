@@ -23,6 +23,8 @@ class controller_comparar extends Controller
         $productos = model_producto::with('producto_campos','imagenes')
             ->where('estado','=',1)
         ->get();
+//
+//        dd($productos);
 
 
         return view('compare.index', compact('campo','productos'));

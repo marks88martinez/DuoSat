@@ -92,10 +92,12 @@
                             @foreach($campo as $campos)
                             <li>
                                 <?php $index = $producto->producto_campos->search(function ($item, $key) use($campos) {return $item->codigo_campo == $campos->codigo_campo;})?>
-                                @if($index)
-                                    {{$producto->producto_campos[$index]->descripcion}}
-                                    @else
-                                        -----
+
+                                @if($index !== false)
+                                        {{$producto->producto_campos[$index]->descripcion}}
+                                        @else
+                                 ----
+
                                 @endif
                             </li>
                                 @endforeach
