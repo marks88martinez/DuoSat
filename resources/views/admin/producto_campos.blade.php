@@ -10,7 +10,7 @@
             html+= '<hr>';
             html+= '<div class="form-group">';
             html+= ' <h3 class="exampleInputEmail1">Check</h3>';
-            html+= '  <input name="chec[]" value="'+id+'" type="checkbox" id="check_" class="checker"/>';
+            html+= '  <input name="chec[]" value="'+id+'" type="checkbox" id="check_'+id+'" class="checker"/>';
             html+= ' <h3 class="exampleInputEmail1">'+ $('#nombre_'+id).html()+ '</h3>';
             html+= '</div>';
 
@@ -175,7 +175,7 @@
                         <td>{!!$sub_cats->cheked?'<i class="fa fa-fw fa-check"></i>':' '!!}</td>
 
 
-                        <td align="center"> {!! link_to_route('producto_campos.edit', $title = 'Editar', $parameters = $sub_cats->codigo_prod_campo, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>
+                        {{--<td align="center"> {!! link_to_route('producto_campos.edit', $title = 'Editar', $parameters = $sub_cats->codigo_prod_campo, $attributes = ['class'=>'fa fa-pencil btn btn-warning btn-xs']) !!}</td>--}}
                         <td>
                             {!!Form::open(['route'=>['producto_campos.destroy',$sub_cats->codigo_prod_campo], 'method'=>'DELETE'])!!}
 

@@ -79,7 +79,17 @@ class controller_productos_campos extends Controller
     {
 //        dd($request->all());
 
-        foreach ($request->checker as $index=>$campo ) {
+       foreach ($request->checker as $index=>$campo ) {
+
+           $checkeado = 0;
+
+           if($request->has('chec')){
+               $checkeado = (int)in_array($campo, $request->chec);
+
+           }
+
+
+
 
 
 
@@ -87,7 +97,7 @@ class controller_productos_campos extends Controller
                 'codigo_campo'=>$campo,
                 'codigo_producto'=>$request->producto,
                 'descripcion'=>$request->descripcion[$index],
-                'cheked'=>(int)in_array($campo, $request->chec)
+                'cheked'=>$checkeado
 
             ]);
         }
@@ -141,6 +151,10 @@ class controller_productos_campos extends Controller
      */
     public function destroy($id)
     {
-        //
+        $eliminar = model_producto_campos::find($id);
+         $eliminar->delete();
+
+
+        return redirect()->back()->with(['message'=>'Eliminado exitosamente']);
     }
 }

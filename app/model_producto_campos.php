@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class model_producto_campos extends Model
 {
    protected $table = 'producto_campos';
-    protected $primarykey = 'codigo_pro_compa';
+    protected $primaryKey = 'codigo_prod_campo';
     protected $fillable = ['codigo_campo','codigo_producto','descripcion','cheked'];
 
     public $timestamps = false;

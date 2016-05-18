@@ -27,7 +27,7 @@ class controller_comparar extends Controller
 //        dd($productos);
 
 
-        return view('compare.index', compact('campo','productos'));
+     return view('compare.index', compact('campo','productos'));
     }
 
     /**
