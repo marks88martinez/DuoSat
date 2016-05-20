@@ -55,7 +55,7 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Link del Producto</label>
-                {!!Form::text('link_producto',$producto->link,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}
+                {!!Form::text('link',$producto->link,['class'=>'form-control','id'=>'exampleInputEmail1', 'placeholder'=>'Ingrese su nombre'])  !!}
 
 
             </div>

@@ -34,12 +34,20 @@
             e.preventDefault();
             $('.busqueda').slideToggle();
         });
-        
-        $(".anima").click(function(e){
-            e.preventDefault();
-            $('#top-menu').collapse('hide');
+
+        function abrir(){
             $('.menu').slideToggle();
-        });
+            console.log()
+        }
+
+
+            $(".anima").click(function(e){
+                e.preventDefault();
+                $('#top-menu').collapse('hide');
+                abrir();
+
+            });
+
         
         $('ul li').click( function() {
             $(this).addClass('active').siblings().removeClass('active');

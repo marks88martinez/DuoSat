@@ -47,9 +47,7 @@
 
                 var nu = window.location.replace(url);
 
-
 //                        console.log(nu);
-
 
             })
         })
