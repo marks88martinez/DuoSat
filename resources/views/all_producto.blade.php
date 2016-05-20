@@ -83,7 +83,7 @@
 
     <br>
 <div class="container">
-    <h4 class=" gris fonte">•  Productos</h4>
+    <h4 class=" gris fonte">•  Produtos</h4>
 
 
 
@@ -97,7 +97,7 @@
                     {{--<div id="gallery-header-center-left-icon"><span class="iconb" data-icon="&#xe23a;"></span></div>--}}
                     {{--<div id="gallery-header-center-left-title">All Galleries</div>--}}
                 {{--</div>--}}
-                <div class="btn btn-default" id="filter-all">All</div>
+                <div class="btn btn-default" id="filter-all">Todos</div>
                 @foreach($categoria as $categorias)
 
                 <div class="btn btn-default " id="filter-{{$categorias->codigo_categoria}}">{{$categorias->nombre}}</div>

@@ -80,7 +80,7 @@ Route::get('contacto', ['as' => 'contacto', 'uses' => 'controller_empresa@contac
 ////     return View::make('buscador');
 //});
 Route::resource('queries', 'controller_busca');
-Route::resource('all_producto', 'controller_all_product');
+Route::resource('todos_os_produtos', 'controller_all_product');
 
 Route::resource('comparar','controller_comparar');
 Route::resource('link','controller_link_youtube');

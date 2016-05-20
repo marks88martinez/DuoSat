@@ -268,8 +268,8 @@
             </li>
             <li class="cuadro">
                 <span></span>
-                <a href="{{URL::to('/all_producto')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
-                <a href="{{URL::to('/all_producto')}}"><h6 class="lista">Todos</h6></a>
+                <a href="{{URL::to('/todos_os_produtos')}}"><img src="{{URL::to('admin/img/icon/car.png')}}"></a>
+                <a href="{{URL::to('/todos_os_produtos')}}"><h6 class="lista">Todos</h6></a>
             </li>
             {{--<li class="cuadro">--}}
                 {{--<span></span>--}}
@@ -410,7 +410,7 @@ color: white;
 
         </ul>
     </nav>
-    <p>© Duosat All rights reserved Laboratories Duo</p>
+    <p>© Duosat All rights reserved Duo Laboratories </p>
 
 </div>
 </div>
