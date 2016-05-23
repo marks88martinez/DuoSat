@@ -40,17 +40,50 @@
 
     <script>
         $(document).ready(function(){
-            var  url = "#firstPage";
-            var a = $(location).attr('href');
-//                    console.log(a);
-            $('#btn_pro').click(function(){
+//            var  url = "#firstPage";
+//            var a = $(location).attr('href');
+//
+//            $('#btn_pro').click(function(){
+//
+//                var nu = window.location.replace(url);
+//
+////                        console.log(nu);
+//
+//
+//            })
+//
+//
+//            var b = $('body').valueOf('baseURI');
+//            var c =  $('.fp-viewing-firstPage').val();
+//
+//                    if(b != c ){
+//                        console.log(b);
+//                    }else{
+//                        console.log('no son'+c);
+//                    }
+//
+////
+//////            var url2 = "/onenanoHD#firstPage";
+//
+//
+//
+//
+//
+//
+//
+//        })
+//        var b = $('body').valueOf('baseURI');
+//        var c =  $('.fp-viewing-firstPage').val();
+//
+//        if(b != c ){
+//            console.log(b);
+//        }else{
+//            console.log('no son'+c);
+//        }
 
-                var nu = window.location.replace(url);
 
-//                        console.log(nu);
 
-            })
-        })
+
     </script>
 
 
