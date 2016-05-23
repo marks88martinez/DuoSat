@@ -72,7 +72,7 @@
 		background: black;
 		/*box-shadow: 2px 2px 20px #999999;*/
 		border: 0;
-		/*position: fixed;*/
+		position: fixed;
 
 
 
@@ -94,11 +94,15 @@
 
 	}
 	 .navbar-inverse .navbar-nav>li>a {
+		 z-index: 500;
+		 background: black;
 		color: white;
 		font-size: 15px;
 		font-family: 'Oswald', sans-serif;
 	}
 	 .navbar-inverse .navbar-nav>li>a:hover {
+		
+		 background: black;
 		color: white;
 		font-size: 15px;
 		font-family: 'Oswald', sans-serif;
@@ -731,7 +735,8 @@
 
 
 	.navbar-fixed-bottom, .navbar-fixed-top{
-		position: relative;
+		z-index: 500;
+		position: fixed;
 	}
 
 
