@@ -255,7 +255,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <img class="btn-default_1 gra" onclick="popup('/onenanoHD360',600,455)" src="vista/play/360.png" alt="">
                                 {{--<img class="btn-default_1 gra" data-toggle="modal" data-target="#myModal"  src="vista/play/360.png" alt="">--}}
-                                <img src="http://localhost:8000/vista/one/images/image1_1.jpg" alt="">
+                                <img src="{{URL::to('/vista/one/images/image1_1.jpg')}}" alt="">
 
 
                                 {{--********************************************--}}
