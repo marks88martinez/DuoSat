@@ -160,7 +160,72 @@
             font-size: 15px;
             font-family: 'Open Sans Condensed', sans-serif;
         }
+
+
+
+        .btn-default_1 {
+            margin-top: -100px;
+
+            margin-left: 80%;
+            width: 80px;
+            display: block;
+            color: #000000;
+            background-color: #000000;
+            border-color: #000000;
+        }
+        .btn-default_1:hover{
+            opacity: 0.8;
+            color: #000000;
+            background-color: #000000;
+            border-color: #000000;
+        }
+        img.gra{
+            margin-bottom: 10px;
+
+            margin-left: 80%;
+
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+
+        }
+        .btn {
+
+        }
     </style>
+    {{--************************--}}
+
+
+    <script type="text/javascript">
+        function popup(url,ancho,alto) {
+            var posicion_x;
+            var posicion_y;
+            console.log(screen.width);
+
+
+            posicion_x=(screen.width/2)-(ancho/2);
+            posicion_y=(screen.height/2)-(alto/2);
+            window.open(url, "leonpurpura.com", "width="+ancho+",height="+alto+",menubar=0,toolbar=0,directories=0,scrollbars=no,resizable=no,left="+posicion_x+",top="+posicion_y+"");
+        }
+    </script>
+    {{--<div class="modal fade" id="myModal" role="dialog">--}}
+        {{--<div class="modal-dialog modal-lg">--}}
+            {{--<div class="modal-content">--}}
+                {{--<div class="modal-header">--}}
+                    {{--<button type="button" class="close" data-dismiss="modal">&times;</button>--}}
+                    {{--<h4 class="modal-title">Modal Header</h4>--}}
+                {{--</div>--}}
+                {{--<div class="modal-body">--}}
+                    {{--<p>This is a large modal.</p>--}}
+                {{--</div>--}}
+                {{--<div class="modal-footer">--}}
+                    {{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+    {{--************************--}}
 
 
 
@@ -188,36 +253,38 @@
                     <div class="header_img">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
-
+                                <img class="btn-default_1 gra" onclick="popup('/onenanoHD360',600,455)" src="vista/play/360.png" alt="">
+                                {{--<img class="btn-default_1 gra" data-toggle="modal" data-target="#myModal"  src="vista/play/360.png" alt="">--}}
+                                <img src="http://localhost:8000/vista/one/images/image1_1.jpg" alt="">
 
 
                                 {{--********************************************--}}
 
-                                <div class="menu-360">
-                                    <ul class="list wow bounceInUp">
-                                        @for($i=1; $i<11; $i++)
-                                        <li><img src="{{URL::to('vista/one/images/image1_'.$i.'.jpg')}}" /></li>
+                                {{--<div class="menu-360">--}}
+                                    {{--<ul class="list wow bounceInUp">--}}
+                                        {{--@for($i=1; $i<11; $i++)--}}
+                                        {{--<li><img src="{{URL::to('vista/one/images/image1_'.$i.'.jpg')}}" /></li>--}}
 
-                                        @endfor
-                                    </ul>
-                                </div>
-                                <link rel="stylesheet" href="{{URL::to('vista/one/css/style.css')}}">
+                                        {{--@endfor--}}
+                                    {{--</ul>--}}
+                                {{--</div>--}}
+                                {{--<link rel="stylesheet" href="{{URL::to('vista/one/css/style.css')}}">--}}
 
-                                <script type="text/javascript" src="{{URL::to('vista/one/js/script.js')}}"></script>
-                                <script type="text/javascript">
+                                {{--<script type="text/javascript" src="{{URL::to('vista/one/js/script.js')}}"></script>--}}
+                                {{--<script type="text/javascript">--}}
 
-                                    var _gaq = _gaq || [];
-                                    _gaq.push(['_setAccount', 'UA-36251023-1']);
-                                    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-                                    _gaq.push(['_trackPageview']);
+                                    {{--var _gaq = _gaq || [];--}}
+                                    {{--_gaq.push(['_setAccount', 'UA-36251023-1']);--}}
+                                    {{--_gaq.push(['_setDomainName', 'jqueryscript.net']);--}}
+                                    {{--_gaq.push(['_trackPageview']);--}}
 
-                                    (function() {
-                                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                    })();
+                                    {{--(function() {--}}
+                                        {{--var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;--}}
+                                        {{--ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';--}}
+                                        {{--var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);--}}
+                                    {{--})();--}}
 
-                                </script>
+                                {{--</script>--}}
                                 {{--********************************************--}}
 
 

@@ -771,7 +771,9 @@
                     <div class="wow fadeInDown"><h1>PLAY</h1></div>
                     {{--<div class="wow fadeInDown"><img src="{{URL::to('vista/next/logo.png')}}" alt=""></div>--}}
                     <h2 class="wow bounceInUp" style="text-align: left">Aprecie a portabilidade porque tamanho não é sinônimo de potência!
+                        <button class="btn btn-default" type="submit">Button</button>
                     </h2>
+
                     <p class="credit"></p>
                     <div class="btns">
                         {{--<a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>--}}
@@ -780,6 +782,8 @@
                 </div>
 
                <div class="re"> <img class="wow bounceInRight " src="{{URL::to('vista/play/playjuntos.png')}}" alt="phones"></div>
+
+
             </section>
 
 

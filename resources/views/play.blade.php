@@ -126,6 +126,9 @@
             font-family: 'Open Sans Condensed', sans-serif;
         }
     </style>
+
+
+
 <div id="fullpage">
     <div class="section"  id="section0">
 
@@ -138,6 +141,7 @@
                         {{--<h1>NEXT</h1>--}}
                         <h4 class="fuente_titulo">PLAY</h4>
                         <p class="fuent_new">Aprecie a portabilidade porque tamanho não é sinônimo de potência!
+
                         </p>
 
                     </div>
@@ -149,9 +153,22 @@
                 <div class="row">
                     <div class="header_img">
                         <div class="row">
+
                             <div class="col-md-8 col-md-offset-2">
+
                                 <img src="{{URL::to('vista/play/playjuntos.png')}}" alt="" class="img-responsive wow bounceInUp">
                             </div>
+                            <style>
+
+
+                            </style>
+
+
+
+
+                            {{--*************************--}}
+
+                            {{--*************************--}}
                         </div>
                     </div>
                 </div>

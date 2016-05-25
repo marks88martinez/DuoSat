@@ -21,6 +21,10 @@ Route::get('/play', function () {
     return view('play');
 });
 
+Route::get('/onenanoHD360', function () {
+    return view('one_nano_360');
+});
+
 Route::get('/onenanoHD', function () {
     return view('one_nano');
 });
