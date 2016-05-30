@@ -21,8 +21,8 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{{URL::to('vista/favicon.ico')}}" type="image/x-icon">
+<link rel="icon" href="{{URL::to('vista/favicon.ico')}}" type="image/x-icon">
 
 
 
