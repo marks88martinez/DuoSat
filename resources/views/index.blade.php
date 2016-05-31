@@ -12,6 +12,11 @@
 </head>
 
 
+<link rel="shortcut icon" href="{{URL::to('vista/duofavicon.ico')}}" type="image/x-icon">
+<link rel="icon" href="{{URL::to('vista/duofavicon.ico')}}" type="image/x-icon">
+
+
+
 
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="{{URL::to('vista/css/style.css')}}">
@@ -21,8 +26,6 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="{{URL::to('vista/favicon.ico')}}" type="image/x-icon">
-<link rel="icon" href="{{URL::to('vista/favicon.ico')}}" type="image/x-icon">
 
 
 
