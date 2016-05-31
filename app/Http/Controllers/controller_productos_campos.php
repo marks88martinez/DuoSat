@@ -23,7 +23,7 @@ class controller_productos_campos extends Controller
     {
 
         $campos = model_producto_campos::with('campo','producto_campo')
-            ->where('estado','=',1)
+
             ->orderBy('codigo_producto','desc')
             ->get();
 //        dd($campos);
