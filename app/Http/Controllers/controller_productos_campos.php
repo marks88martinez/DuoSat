@@ -78,7 +78,7 @@ class controller_productos_campos extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+//        dd($request->all());
 
        foreach ($request->checker as $index=>$campo ) {
 
