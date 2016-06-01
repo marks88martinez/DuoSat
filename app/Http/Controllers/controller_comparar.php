@@ -21,7 +21,7 @@ class controller_comparar extends Controller
         $campo = model_campos::select('codigo_campo','nombre', 'estado')
             ->where('estado','=',1)
         ->get();
-        $productos = model_producto::with('producto_campos','imagenes')
+        $productos = model_producto::with('producto_campos','imagenes', 'estado')
             ->where('estado','=',1)
         ->get();
 //
