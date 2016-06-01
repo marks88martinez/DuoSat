@@ -18,13 +18,14 @@ class controller_comparar extends Controller
      */
     public function index()
     {
-        $campo = model_campos::select('codigo_campo','nombre')
+        $campo = model_campos::select('codigo_campo','nombre', 'estado')
+            ->where('estado','=',1)
         ->get();
         $productos = model_producto::with('producto_campos','imagenes')
             ->where('estado','=',1)
         ->get();
 //
-//        dd($productos);
+//        dd($campo->all());
 
 
      return view('compare.index', compact('campo','productos'));

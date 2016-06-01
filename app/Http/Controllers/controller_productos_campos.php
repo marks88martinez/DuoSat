@@ -26,7 +26,7 @@ class controller_productos_campos extends Controller
 
             ->orderBy('codigo_producto','desc')
             ->get();
-//        dd($campos);
+
 
 
 
@@ -54,6 +54,8 @@ class controller_productos_campos extends Controller
         foreach($campo as $new_campo){
             $list[$new_campo->codigo_campo]=$new_campo->nombre ;
         }
+
+
 
 
 
