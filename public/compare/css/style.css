@@ -180,7 +180,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-columns {
-    width: 2480px;
+    width: 8480px;
     margin-left: 210px;
   }
 }
@@ -240,6 +240,7 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-features-list li {
     font-size: 1.6rem;
+    min-height:82px;
   }
   .cd-features-list li.rate {
     padding: 22px 0;

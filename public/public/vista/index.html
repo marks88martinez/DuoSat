@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inicio</title>
+	<meta charset="UTF-8">
+</head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+ <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".anima").click(function(){
+
+				$('.menu').slideToggle();
+		});
+		$('.search').click(function(e){
+
+				e.preventDefault();
+			
+			//$('.desaparecer').toggle('scale');
+			$('.search_input input[type=text]').toggle( "drop" );
+			
+
+			
+		});
+
+
+		
+
+
+			
+
+	});
+</script>
+
+
+<script type="text/javascript">
+	
+	$(function() {
+	/** -----------------------------------------
+	 * Modulo del Slider 
+	 -------------------------------------------*/
+	 var SliderModule = (function() {
+	 	var pb = {};
+	 	pb.el = $('#slider');
+	 	pb.items = {
+	 		panels: pb.el.find('.slider-wrapper > li'),
+	 	}
+
+	 	// Interval del Slider
+	 	var SliderInterval,
+	 		currentSlider = 0,
+	 		nextSlider = 1,
+	 		lengthSlider = pb.items.panels.length;
+
+	 	// Constructor del Slider
+	 	pb.init = function(settings) {
+	 		this.settings = settings || {duration: 8000};
+	 		var items = this.items,
+	 			lengthPanels = items.panels.length,
+	 			output = '';
+
+	 		// Insertamos nuestros botones
+	 		for(var i = 0; i < lengthPanels; i++) {
+	 			if(i == 0) {
+	 				output += '<li class="active"></li>';
+	 			} else {
+	 				output += '<li></li>';
+	 			}
+	 		}
+
+	 		$('#control-buttons').html(output);
+
+	 		// Activamos nuestro Slider
+	 		activateSlider();
+	 		// Eventos para los controles
+	 		$('#control-buttons').on('click', 'li', function(e) {
+	 			var $this = $(this);
+	 			if(!(currentSlider === $this.index())) {
+	 				changePanel($this.index());
+	 			}
+	 		});
+
+	 	}
+
+	 	// Funcion para activar el Slider
+	 	var activateSlider = function() {
+	 		SliderInterval = setInterval(pb.startSlider, pb.settings.duration);
+	 	}
+
+	 	// Funcion para la Animacion
+	 	pb.startSlider = function() {
+	 		var items = pb.items,
+	 			controls = $('#control-buttons li');
+	 		// Comprobamos si es el ultimo panel para reiniciar el conteo
+	 		if(nextSlider >= lengthSlider) {
+	 			nextSlider = 0;
+	 			currentSlider = lengthSlider-1;
+	 		}
+
+	 		controls.removeClass('active').eq(nextSlider).addClass('active');
+	 		items.panels.eq(currentSlider).fadeOut('slow');
+	 		items.panels.eq(nextSlider).fadeIn('slow');
+
+	 		// Actualizamos los datos del slider
+	 		currentSlider = nextSlider;
+	 		nextSlider += 1;
+	 	}
+
+	 	// Funcion para Cambiar de Panel con Los Controles
+	 	var changePanel = function(id) {
+	 		clearInterval(SliderInterval);
+	 		var items = pb.items,
+	 			controls = $('#control-buttons li');
+	 		// Comprobamos si el ID esta disponible entre los paneles
+	 		if(id >= lengthSlider) {
+	 			id = 0;
+	 		} else if(id < 0) {
+	 			id = lengthSlider-1;
+	 		}
+
+	 		controls.removeClass('active').eq(id).addClass('active');
+	 		items.panels.eq(currentSlider).fadeOut('slow');
+	 		items.panels.eq(id).fadeIn('slow');
+
+	 		// Volvemos a actualizar los datos del slider
+	 		currentSlider = id;
+	 		nextSlider = id+1;
+	 		// Reactivamos nuestro slider
+	 		activateSlider();
+	 	}
+
+		return pb;
+	 }());
+
+	 SliderModule.init({duration: 4000});
+
+});
+</script>
+
+
+
+<!--**********************-->
+
+
+
+<!--**********************-->
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-static-top">
+	<div class="header clearfix">
+	      <div class="container">
+	       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	        <nav>
+	          <ul class="nav_medida nav-pills pull-right">
+	            <li><a class="desaparecer" href="#">HOME</a></li>
+	            <li ><a class="desaparecer anima" href="#">PRODUCTO</a></li>
+	            <li><a  href="#" class="desaparecer">DESCARGAS</a></li>
+	             <li><a  href="#" class="desaparecer">CONTACTOS</a></li>
+	            <li><a  href="#" class="desaparecer">IDIOMAS</a></li>
+	               <li class='search_input'><input type='text' name='search' value=""></li>
+	              
+	             <li class='search' role="presentation "><a  href="#"><img src="img/search.png"></a></li>
+	              
+	          </ul>
+	        </nav>
+
+
+	      <div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+    
+	      </div>
+	</div>
+
+	
+
+</nav>
+
+
+
+<br>
+<br>
+<div class="menu">
+		<div class="container">
+			<ul class="box_cuadro">
+				<li class="cuadro">
+				<img src="img/icon1.png">
+				<h6>Compare os modelos</h6>
+				</li>
+
+				<li class="cuadro">
+				<img src="img/icon1.png">
+				<h6>Dongle</h6>
+				</li>
+				<li class="cuadro">
+				<img src="img/icon1.png">
+				<h6>Media Pleyers</h6>
+				</li>
+				<li class="cuadro">
+				<img src="img/icon1.png">
+				<h6>Cabo</h6>
+				</li>
+				<li class="cuadro">
+				<img src="img/icon1.png">
+				<h6>Satélites</h6>
+				</li>
+			
+		
+	
+				
+				
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="banner">
+		<!--**************************************************-->
+	<section id="slider" class="container">
+		<ul class="slider-wrapper">
+		<li class="current-slide">
+			<img src="http://i9.photobucket.com/albums/a88/creaticode/1_zpsc6871490.jpg" title="" alt="">
+
+			<div class="caption">
+				<h2 class="slider-title">Diseño web</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, placeat est. Alias illo hic quo nobis, aspernatur iste ut voluptate.</p>
+			</div>
+		</li>
+
+		<li>
+			<img src="http://i9.photobucket.com/albums/a88/creaticode/2_zps6ccd36bd.jpg" title="" alt="">
+
+			<div class="caption">
+				<h2 class="slider-title">Diseño Responsive</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto placeat aliquid tempore harum, similique!</p>
+			</div>
+		</li>
+
+		<li>
+			<img src="http://i9.photobucket.com/albums/a88/creaticode/4_zps611bc9f9.jpg" title="" alt="">
+
+			<div class="caption">
+				<h2 class="slider-title">Identidad Corporativa</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta laudantium voluptatem minima! Dolorum tempore dolores excepturi omnis provident. Commodi quis aperiam maiores, dolore a perferendis!</p>
+			</div>
+		</li>
+
+		<li>
+			<img src="http://i9.photobucket.com/albums/a88/creaticode/3_zps70e4fcc5.jpg" title="" alt="">
+
+			<div class="caption">
+				<h2 class="slider-title">Desarrollo Web</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dignissimos laudantium.</p>
+			</div>
+		</li>
+		</ul>
+		<!-- Sombras -->
+		<div class="slider-shadow"></div>
+		
+		<!-- Controles de Navegacion -->
+		<ul id="control-buttons" class="control-buttons"></ul>
+	</section>
+			
+
+
+
+		<!--**************************************************-->
+	</div>
+
+	<div class="banner_pequeno">
+
+	<div class="row">
+	  <div class="col-xs-6 col-sm-3 bann"><img src="img/banner1.jpg"></div>
+	  <div class="col-xs-6 col-sm-3 bann"><img src="img/banner2.jpg"></div>
+	  <div class="col-xs-6 col-sm-3 bann"><img src="img/banner1.jpg"></div>
+	  <div class="col-xs-6 col-sm-3 bann"><img src="img/banner2.jpg"></div>
+	</div>
+<div class="container cent">
+	<div class="ln"></div>
+
+	
+
+ 			<nav class="nav">
+	          <ul>
+	            <li><a href="#">HOME</a></li>
+	            <li ><a href="#">PRODUCTO</a></li>
+	            <li><a  href="#" >DESCARGAS</a></li>
+	             <li><a  href="#" >CONTACTOS</a></li>
+	            <li><a  href="#" >IDIOMAS</a></li>
+	                   
+	          </ul>
+				</nav>
+	        <p>© Duosat Todos los derechos reservados
+Laboratorios Duo</p>
+
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
