@@ -36,7 +36,7 @@ class controller_productos_campos extends Controller
 
 
 
-        $producto = model_producto::select('codigo_producto','nombre_producto','estado')
+        $producto = model_producto::select('codigo_producto','nombre_producto','estado', 'estado_doble')
             ->where('estado_doble','=',1)
             ->where('estado','=',1)
 
