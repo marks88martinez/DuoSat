@@ -9,7 +9,7 @@ class model_producto extends Model
 {
     protected $table = 'productos';
     protected $primaryKey = 'codigo_producto';
-    protected $fillable = ['nombre_producto','descripcion','codigo_categoria','codigo_atributo','codigo_imagen', 'estado','descontinuado', 'link'];
+    protected $fillable = ['nombre_producto','descripcion','codigo_categoria','codigo_atributo','codigo_imagen', 'estado','descontinuado', 'link', 'estado_doble'];
     public $timestamps = false;
 
     public function descargas()
