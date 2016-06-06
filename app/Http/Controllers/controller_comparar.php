@@ -22,7 +22,7 @@ class controller_comparar extends Controller
 
             ->where('estado','=',1)
         ->get();
-        $productos = model_producto::with('producto_campos','imagenes','estado_doble')
+        $productos = model_producto::with('producto_campos','imagenes')
             ->where('estado_doble','=',1)
             ->where('estado','=',1)
         ->get();
