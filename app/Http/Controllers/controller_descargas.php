@@ -26,6 +26,7 @@ class controller_descargas extends Controller
                 $q->select('codigo_producto','url_imagenes');
             }])
             ->select('codigo_producto', 'nombre_producto')
+            ->where('estado_doble','=',1)
             ->where('estado', '=', 1)
             ->get();
         return view('descargas', compact('productos'));
