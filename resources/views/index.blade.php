@@ -418,7 +418,7 @@ color: white;
 
         <ul>
             <li><a href="{{ url('/') }}">HOME</a></li>
-            <li><a  href="{{ route('descargas.index') }}" >Downloads</a></li>
+            <li><a  href="{{ route('descargas.index') }}" >DOWNLOADS</a></li>
             <li><a  href="{{ route('contacto') }}" >CONTATO</a></li>
 
 

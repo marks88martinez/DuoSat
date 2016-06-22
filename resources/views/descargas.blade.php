@@ -2,7 +2,7 @@
 @section('contenido')
     <br><br><br>
     <div class="container">
-        <h4 class=" gris fonte">• Descargas</h4>
+        <h4 class=" gris fonte">• Downloads</h4>
         <div class="row">
             @foreach($productos as $producto)
                 <div class="col-md-4 product-show">
