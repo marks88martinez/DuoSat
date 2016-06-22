@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h2>Descargas para {{ $producto->nombre_producto }}</h2>
+                <h2>Downloads para {{ $producto->nombre_producto }}</h2>
                 <img src="{{ url($producto->imagenes->url_imagenes) }}" alt="{{ $producto->nombre_producto }}" width="300px">
             </div>
             <div class="col-md-8">

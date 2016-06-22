@@ -10,10 +10,10 @@
 
              {!! Form::open(['route' => 'queries.store', 'class'=>'navbar-form navbar-left'])!!}
             <div class="form-group frm_input">
-             {!! Form::text('search', null,
+             {!! Form::text('Busca', null,
                                     array('required',
                                          'class'=>'form-control',
-                                         'placeholder'=>'Search...')) !!}
+                                         'placeholder'=>'Busca...')) !!}
             </div>
              {{--{!! Form::submit('Search',--}}
                                         {{--array('class'=>'btn btn-default')) !!}--}}
