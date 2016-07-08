@@ -217,6 +217,7 @@
                         <li><a href="http://en.duosat.com/">• English</a></li>
 
                         <li><a href="http://www.duosat.com/">• Portugues</a></li>
+                        <li><a href="http://it.duosat.com/">• Italiano</a></li>
 
                         {{--<li><a href="#">• Español</a></li>--}}
 
