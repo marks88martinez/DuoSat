@@ -11,13 +11,13 @@
             <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">Nome</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome & SobreNome" value="" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="email" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@domínio.com" value="" required>
                 </div>
             </div>
             <div class="form-group">
