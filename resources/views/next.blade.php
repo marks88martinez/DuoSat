@@ -293,6 +293,7 @@
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">WI-FI mais rápido</h4>
                     <h6 class="fuent_new2">O Next UHD é impulsado pela última tecnologia em dispositivos WI-FI. O que significa que a velocidade tem sido melhorada para suportar a transmissão multimídia a traves da Internet, segundo as mais novas tendências do entretenimento</h6>
+                    <p style="color: white">*Especificações do Wi-Fi podem variar de acordo com a região</p>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/07.jpg')}}" alt=""></div>
                     </div>
@@ -330,6 +331,7 @@
                 <div class="row page_title text-center">
                     <h4 class="fuente_titulo2">Transformador Design Modular</h4>
                     <h6 class="fuent_new2">O Novo Duosat Next UHD foi projetado para lhe ajudar a tirar o máximo proveito ao entretenimento. Uma visão futura é que o Design Modular lhe deixa usar um sintonizador companheiro para melhorar as funcionalidades do entretenimento. O deslizamento para fora do sintonizador pode ser realizado em um piscar de olhos para a personalização do tipo de Sistema de TV a usar, suportando diferentes opções de sintonização, por exemplo, ISDBT, Cabo, Satélite, a customização do Next UHD é muito simples!</h6>
+
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3"><img  class="img-responsive" src="{{URL::to('vista/new_prod/img/tuner.jpg')}}" alt=""></div>
                     </div>
@@ -896,6 +898,7 @@
                             <h4 class="fuente_titulo4">WIFI</h4>
 
                             <p class="parraf">Wifi IEEE 802.11n, IEEE 802.11g, IEEE 802.11b até 300 mbps</p>
+                            <p class="parraf">*Especificações do Wi-Fi podem variar de acordo com a região</p>
 
                             </p>
                         </div>
