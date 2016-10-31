@@ -14,6 +14,14 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+
+ Route::get('/wave', function () {
+     return view('wave_new');
+ });
+ Route::get('/troy_s', function () {
+     return view('troy_s');
+ });
+
 Route::get('/next', function () {
     return view('next');
 });
