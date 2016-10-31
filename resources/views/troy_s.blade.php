@@ -522,6 +522,9 @@
 
 
                     <style>
+                        body{
+                            line-height: 1.2;
+                        }
                         .cuadrado{
                             width: 100%;
                             background: #2b2b2e;
