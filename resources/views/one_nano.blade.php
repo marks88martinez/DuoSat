@@ -693,7 +693,7 @@
                                 <img  class=""  src="{{URL::to('vista/new_prod/img/ico/tuner.png')}}" alt="">
                             <h4 class="fuente_titulo4">Tuner</h4>
 
-                            <p class="parraf">Tuner Duplo. Suporta DVBS/2: 2~45Ms/S, Demodulador: QPSK, 8PSK, 16APSK, 32APSK, Conector de entrada: F-Type, IEC169-24, Fêmea, Frequência de entrada 950~2150MHz
+                            <p class="parraf">Tuner Duplo. Suporta DVBS/2: 2~45Ms/S, Demodulador: ACM, VCM, QPSK, 8PSK, 16APSK, 32APSK, Conector de entrada: F-Type, IEC169-24, Fêmea, Frequência de entrada 950~2150MHz
                             LNB e apontamento: Vertical: +13.5V, Horizontal: +18V, Corrente: max 500mA
                             </p>
 
