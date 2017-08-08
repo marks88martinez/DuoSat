@@ -25,6 +25,9 @@
 Route::get('/next', function () {
     return view('next');
 });
+ Route::get('/next_lite', function () {
+     return view('next_lite');
+ });
 Route::get('/play', function () {
     return view('play');
 });
