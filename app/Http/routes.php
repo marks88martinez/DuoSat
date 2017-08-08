@@ -35,6 +35,9 @@ Route::get('/play', function () {
 Route::get('/onenanoHD360', function () {
     return view('one_nano_360');
 });
+ Route::get('/next_lite_360', function () {
+     return view('next_Lite_360');
+ });
 
 Route::get('/onenanoHD', function () {
     return view('one_nano');
