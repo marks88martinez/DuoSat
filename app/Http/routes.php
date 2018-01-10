@@ -14,6 +14,9 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+Route::get('/switch-on', function () {
+    return view('switch_on');
+});
 
  Route::get('/wave', function () {
      return view('wave_new');
@@ -119,8 +122,3 @@ Route::resource('link','controller_link_youtube');
 //          dd($product->nombre_producto);
 //     }
 //});
-
-
-
-
-

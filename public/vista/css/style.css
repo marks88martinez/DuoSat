@@ -13,9 +13,7 @@
 	max-height: 100%;
 	margin: auto;
 }
-.product-text h3{
-z-index: 401;
-}
+
 .product-text{
 	position: absolute;
 	top: 40%;
@@ -86,10 +84,10 @@ z-index: 401;
 		z-index: 500;
 		background: black;
 		/*box-shadow: 2px 2px 20px #999999;*/
-		border: 0; 
+		border: 0;
 	}
 	.navbar-brand img{
-		
+
 		padding: 8px;
 		width:125px;
 		height: auto;
@@ -128,14 +126,14 @@ z-index: 401;
 		display: none;
 	}
 		.navbar{
-	    margin-bottom: 0px;	
+	    margin-bottom: 0px;
 	}
 	.box_cuadro{
-		
+
 		margin-top: 15px;
 		width: 100%;
 		/*height: 100px;*/
-	
+
 		float: right;
 
 		cursor: pointer;
@@ -172,7 +170,7 @@ z-index: 401;
 		background: #d8d8d9;
 		border-radius: 6px;
 		 /*transition: background 1s;*/
-		
+
 	}
 	h6{
 		color: black;
@@ -189,6 +187,8 @@ z-index: 401;
 		height: auto;
 	}
 	.menu-sub>li{
+		width: 180px;
+
 		z-index: 500;
 		list-style: none;
 		margin-bottom: 2px;
@@ -198,21 +198,25 @@ z-index: 401;
 	.menu-sub>li>a{
 		left: 5px;
 		margin-bottom: 5px;
-		text-decoration: none;	
+		text-decoration: none;
 	}
 	.menu-sub>li:hover{
 		background: #DFDFDF;
-		
+
 	}
 	ul .menu-sub {
+		min-height: 100px;
+		max-height: 400px;
+		overflow-y: scroll;
+
 		z-index: 500;
-		
+
 		margin: 0 auto;
 		padding:0;
 	text-align: left;
-
-
 	}
+
+
 	.padding_new {
 
 		margin-top: -40px;
@@ -296,13 +300,13 @@ z-index: 401;
 	}
 	.navbar-toggle{
 	background-color: black;
-	
+
 	}
 
 	.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img {
 		width: 100%;
 	}
-	
+
 	.navbar-default .navbar-toggle .icon-bar{
 		background-color: white;
 	}
@@ -336,7 +340,7 @@ z-index: 401;
 	}
 	.bann{
 		/*z-index: -500;*/
-	}	
+	}
 
 	.bann img {
 		/*z-index: -500;*/
@@ -393,7 +397,7 @@ z-index: 401;
 
 
 /** ---------------------------------------
- * Slider 
+ * Slider
  ----------------------------------------*/
 
 
