@@ -636,7 +636,7 @@ USB 3.0 é a terceira maior versão de universal serial bus (USB)
                     </div>
 
 
-                    <div class="col-md-4 cuad cuad2" >
+                    <div class="col-md-4 cuad " >
                         <div class="">
                             <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
                                 <img  class=""  src="{{URL::to('vista/switch_on/img/ico/wifi.png')}}" alt="">
@@ -651,7 +651,7 @@ USB 3.0 é a terceira maior versão de universal serial bus (USB)
 
 
                   {{-- ***************************** --}}
-                  <div class="col-md-4 cuad3">
+                  <div class="col-md-4 cuad">
                       <div class="">
                           <p  href="img/screen1-big.png"  title="First Screen" data-fancybox-group="thumb" >
                               <img  class=""  src="{{URL::to('vista/switch_on/img/ico/4k.png')}}" alt="">
